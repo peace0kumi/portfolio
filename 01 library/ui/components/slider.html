@@ -1,0 +1,93 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; SLIDER</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">slider</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="slider">
+					<div class="slider__item">
+						slider #1
+					</div>
+					<div class="slider__item">
+						slider #2
+					</div>
+					<div class="slider__item">
+						slider #3
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 슬라이더 : 하단 내용 주석 제거 후 사용 -->
+					<!--<div class="slider">
+						<div class="slider__item">Slide #1</div>
+						<div class="slider__item">Slide #2</div>
+						<div class="slider__item">Slide #3</div>
+					</div>--></pre>
+			</section>
+			<!-- //CODE -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">JS</h3>
+			<section class="components__item--code">
+				<pre class="brush: js;">
+				<!-- 슬라이더 : 하단 내용 주석 제거 후 사용 -->
+				<!--<script>
+					$(document).ready(function(){
+						$('.slider').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							prevArrow: '<button type="button" class="slider__direction slick-arrow slick-prev">' +
+							'<i class="fas fa-2x fa-chevron-left"></i><span class="hidden">이전</span></button>',
+							nextArrow: '<button type="button" class="slider__direction slick-arrow slick-next">' +
+							'<i class="fas fa-2x fa-chevron-right"></i><span class="hidden">다음</span></button>'
+						});
+					});
+				</script>--></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+	<!-- Slider -->
+	<script src="../common/js/jquery.js"></script>
+	<script src="../common/js/slick.js"></script>
+	<script>
+        $(document).ready(function(){
+			$('.slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: '<button type="button" class="slider__direction slick-arrow slick-prev">' +
+							'<i class="fas fa-2x fa-chevron-left"></i><span class="hidden">이전</span></button>',
+				nextArrow: '<button type="button" class="slider__direction slick-arrow slick-next">' +
+							'<i class="fas fa-2x fa-chevron-right"></i><span class="hidden">다음</span></button>'
+			});
+		});
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,1160 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"strip",
+				"stripslashes"
+			],
+			[
+				"temp",
+				"template"
+			],
+			[
+				"print",
+				"print_r"
+			],
+			[
+				"min-",
+				"min-height"
+			],
+			[
+				"in",
+				"inject"
+			],
+			[
+				"ins",
+				"instance"
+			],
+			[
+				"selc",
+				"selected"
+			],
+			[
+				"comp",
+				"comp-p\thtml-p2"
+			],
+			[
+				"hello",
+				"hello\thtml-p2"
+			],
+			[
+				"fa",
+				"fakeWrapper"
+			],
+			[
+				"snb",
+				"snb_submenu"
+			],
+			[
+				"on",
+				"oneDepthLink"
+			],
+			[
+				"cont",
+				"controllerAs"
+			],
+			[
+				"con",
+				"controller"
+			],
+			[
+				"tempate",
+				"templateUrl"
+			],
+			[
+				"i",
+				"integration"
+			],
+			[
+				"tab",
+				"tabMenuHei"
+			],
+			[
+				"C",
+				"Circular-Book"
+			],
+			[
+				"nth",
+				"nth-child"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"scrol",
+				"scrollTop"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "app/index.html",
+			"settings":
+			{
+				"buffer_size": 905,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/app.module.js",
+			"settings":
+			{
+				"buffer_size": 114,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "angular.module('phonecatApp', ["
+			}
+		},
+		{
+			"file": "app/app.config.js",
+			"settings":
+			{
+				"buffer_size": 920,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/platform/platform.template.html",
+			"settings":
+			{
+				"buffer_size": 3459,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "app/platform/platform.controller.js",
+			"settings":
+			{
+				"buffer_size": 4687,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 443.0,
+		"last_filter": "html",
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"svn co",
+				"SVN: Commit…"
+			],
+			[
+				"htm",
+				"Set Syntax: HTML"
+			],
+			[
+				"sftp up",
+				"SFTP: Upload File"
+			],
+			[
+				"svn s",
+				"SVN: Switch…"
+			],
+			[
+				"update",
+				"SVN: (File) Update"
+			],
+			[
+				"svn upd",
+				"SVN: Update"
+			],
+			[
+				"co",
+				"SVN: Commit…"
+			],
+			[
+				"svn commit",
+				"SVN: Commit…"
+			],
+			[
+				"svn info",
+				"SVN: Info"
+			],
+			[
+				"sftp down",
+				"SFTP: Download File"
+			],
+			[
+				"sftp",
+				"SFTP: Browse Remote…"
+			],
+			[
+				"sv",
+				"SVN: Checkout…"
+			],
+			[
+				"svn",
+				"SVN: Checkout…"
+			],
+			[
+				"Snippet: ",
+				"Snippet: Prototype"
+			],
+			[
+				"commit",
+				"SVN: Commit…"
+			],
+			[
+				"comm",
+				"SVN: (File) Commit"
+			],
+			[
+				"svn update",
+				"SVN: Update"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"commi",
+				"SVN: (File) Commit"
+			],
+			[
+				"svn up",
+				"SVN: Update"
+			],
+			[
+				"file upda",
+				"SVN: (File) Update"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remve",
+				"Package Control: Remove Package"
+			],
+			[
+				"json",
+				"Pretty JSON: JSON 2 XML"
+			],
+			[
+				"install p",
+				"Package Control: Install Package"
+			],
+			[
+				"install ",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Install Package Control"
+			]
+		],
+		"width": 673.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+	],
+	"file_history":
+	[
+		"/C/Users/ui-lab/Desktop/u.html",
+		"/C/_UILab_animations/app/lib/angular-route.js",
+		"/C/_Socialpoll/social-poll-app/www/api/v2/index.php",
+		"/C/_UILab_animations/gulpfile.js",
+		"/C/_WCG 2018/teaser/gulpfile.js",
+		"/C/_UILab_animations/app/incl/header.inc",
+		"/C/_UILab_animations/app/incl/footer.inc",
+		"/C/_UILab_animations/app/incl/page-top.inc",
+		"/c/users/ui-lab/appdata/local/temp/sublime-svn-1512450642/SVN",
+		"/c/users/ui-lab/appdata/local/temp/sublime-svn-1512450614/SVN",
+		"/C/_Socialpoll/social-poll-app/ionic.config.json",
+		"/C/Users/ui-lab/AppData/Local/Temp/fz3temp-2/wp-config.php",
+		"/C/Users/ui-lab/AppData/Local/Temp/fz3temp-2/essential-grid.php",
+		"/C/_Socialpoll/social-poll-app/www/js/app.js",
+		"/C/_Socialpoll/social-poll-app/www/_services/survey-list.service.js",
+		"/C/Users/ui-lab/AppData/Local/Temp/fz3temp-2/index.php",
+		"/C/_Socialpoll/social-poll/ionic.config.json",
+		"/C/_Socialpoll/social-poll-app/socialpoll.pub",
+		"/C/_Socialpoll/social-poll-app/socialpoll",
+		"/C/_Socialpoll/social-poll/www/templates/index.html",
+		"/C/_Socialpoll/social-poll/www/index.html",
+		"/C/_Socialpoll/social-poll/www/js/app.js",
+		"/C/_Socialpoll/social-poll/www/templates/menu.html",
+		"/C/test/myApp/www/js/app.js",
+		"/C/test/myApp/www/index.html",
+		"/C/test/myApp/www/templates/menu.html",
+		"/C/test/myApp/www/css/style.css",
+		"/C/test/myApp/scss/ionic.app.scss",
+		"/C/test/myApp/www/lib/ionic/scss/ionic.scss",
+		"/C/test/myApp/www/templates/playlists.html",
+		"/C/test/myApp/www/js/controllers.js",
+		"/C/test/myApp/www/templates/playlist.html",
+		"/C/test/myApp/www/templates/login.html",
+		"/C/_Socialpoll/social-poll/www/api/v2/index.php",
+		"/C/_WCG 2018/teaser/ui/ko/scss/_global.scss",
+		"/C/_Socialpoll/social-poll/www/api/v1/index.php",
+		"/C/_WCG 2018/teaser/ui/ko/scss/common.scss",
+		"/C/_WCG 2018/teaser/ui/ko/css/common.css",
+		"/C/_Socialpoll/social-poll/www/survey-list/survey-list.controller.js",
+		"/C/_Socialpoll/social-poll/www/login/login.controller.js",
+		"/C/Users/ui-lab/Documents/apm-help.php",
+		"/C/_WCG 2018/teaser/ui/ko/js/ui.common.js",
+		"/C/_Socialpoll/social-poll/www/survey-list/survey-list.template.html",
+		"/C/_Socialpoll/social-poll/www/_services/survey-list.service.js",
+		"/C/_Socialpoll/social-poll/scss/style.scss",
+		"/C/_Socialpoll/social-poll/gulpfile.js",
+		"/C/_Socialpoll/social-poll/scss/ionic.app.scss",
+		"/C/_Socialpoll/social-poll/www/survey-detail/survey-detail.template.html",
+		"/C/_Socialpoll/social-poll/www/survey-create/survey-create.template.html",
+		"/C/_Socialpoll/social-poll/www/survey-comment/survey-comment.template.html",
+		"/C/_Socialpoll/social-poll/www/login/login.template.html",
+		"/C/_Socialpoll/social-poll/www/survey-detail/survey-detail.controller.js",
+		"/C/_Socialpoll/social-poll/www/survey-create/survey-create.controller.js",
+		"/C/_Socialpoll/social-poll/www/survey-comment/survey-comment.controller.js",
+		"/C/_Socialpoll/social-poll/www/_services/service.module.js",
+		"/C/_Socialpoll/social-poll/www/survey-list/survey-list.module.js",
+		"/C/_Socialpoll/social-poll/www/survey-detail/survey-detail.module.js",
+		"/C/_Socialpoll/social-poll/www/survey-create/survey-create.module.js",
+		"/C/_Socialpoll/social-poll/www/survey-comment/survey-comment.module.js",
+		"/C/_Socialpoll/social-poll/www/login/login.module.js",
+		"/C/_Socialpoll/social-poll/www/poll-polling/polling.template.html",
+		"/C/_Socialpoll/social-poll/www/poll-create/create.template.html",
+		"/C/_Socialpoll/social-poll/www/_services/create.service.js",
+		"/C/Users/ui-lab/Downloads/lgpartner/sign_up.html",
+		"/C/Users/ui-lab/Downloads/lgpartner/global.min.css",
+		"/C/Users/ui-lab/Downloads/news-view/news-view.html",
+		"/C/Users/ui-lab/Downloads/news-view/global.min.css",
+		"/C/_Socialpoll/social-poll/www/sftp-config.json",
+		"/C/_samsung_led_aem/gulpfile.js",
+		"/C/_Socialpoll/social-poll/www/poll-result/result.template.html",
+		"/C/Users/ui-lab/AppData/Local/Temp/fz3temp-2/style.css",
+		"/C/_Socialpoll/social-poll/www/_components/share.component.js",
+		"/C/_Socialpoll/social-poll/package.json",
+		"/C/_samsung_led_aem/ui/components_library/(31) business-history-detail/business-history-detail.html",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(017) img-carousel-textbox-fixed/js/img-carousel-textbox-fixed.js",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(003) button/button.html",
+		"/C/_samsung_led_aem/package.json",
+		"/C/Users/ui-lab/Downloads/page/clientlibs/js/main.js",
+		"/C/Users/ui-lab/Downloads/license.html",
+		"/C/_Socialpoll/social-poll-web/www/api/v2/index.php",
+		"/C/_Socialpoll/social-poll-web/www/_services/poll.service.js",
+		"/C/_Socialpoll/social-poll-web/www/assets/js/app.js",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(017) img-carousel-textbox-fixed/img-carousel-textbox-fixed.html",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(010) textbox/css/textbox.css",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(010) textbox/scss/textbox.scss",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(010) textbox/scss/_mobile.scss",
+		"/C/Users/ui-lab/Downloads/samsung-library-publish/components_library/(010) textbox/scss/_global.scss",
+		"/C/Users/ui-lab/Downloads/starter_v1.0(without-build)/gulpfile.js",
+		"/C/Users/ui-lab/Downloads/page/clientlibs/js.txt",
+		"/C/_Socialpoll/social-poll-web/www/poll-create/create.template.html",
+		"/C/_Socialpoll/social-poll-web/www/poll-polling/polling.controller.js",
+		"/C/_Socialpoll/social-poll-web/www/_services/service.module.js",
+		"/C/_Socialpoll/social-poll-web/www/poll-create/create.controller.js",
+		"/C/_Socialpoll/social-poll-web/www/_services/poll.service",
+		"/C/_Daou_cloud_vpc/ui/common/js/ng.app.js",
+		"/C/_Daou_cloud_vpc/ui/common/js/controllers/volume.controller.js",
+		"/C/_Daou_cloud_vpc/ui/storage-volume.html",
+		"/C/_Daou_cloud_vpc/ui/incl/nav.inc",
+		"/C/_Daou_cloud_vpc/ui/vserver-instance.html",
+		"/C/_Daou_cloud_vpc/ui/incl/page-top.inc",
+		"/C/_Daou_cloud_vpc/ui/@pub/03_스토리지_01볼륨_00리스트형.html",
+		"/C/_Daou_cloud_vpc/ui/@pub/03_스토리지_01볼륨_00타일형.html",
+		"/C/_Daou_cloud_vpc/ui/index.html",
+		"/C/_Daou_cloud_vpc/ui/common/js/controllers/main.controller.js",
+		"/C/Users/ui-lab/Downloads/daoucloud_vpc_vserver.yaml",
+		"/C/_Daou_cloud_vpc/ui/daoucloud_vpc_vserver.yaml",
+		"/C/_Daou_cloud_vpc/ui/daoucloud_vpc_storage.yaml",
+		"/C/_Daou_cloud_vpc/ui/daoucloud_vpc_network.yaml",
+		"/C/_Daou_cloud_vpc/ui/daoucloud_vpc_management.yaml",
+		"/C/Users/ui-lab/Downloads/daoucloud_vpc.yaml",
+		"/C/_Daou_cloud_vpc/ui/instance.html",
+		"/C/_Daou_cloud_vpc/ui/@pub/01_가상서버.html",
+		"/C/_Daou_cloud_vpc/ui/common/css/front.css",
+		"/c/users/ui-lab/appdata/local/temp/sublime-svn-1494816112/SVN",
+		"/C/_Daou_vpc/common/css/cloud_style.css",
+		"/C/Users/ui-lab/Desktop/hosts",
+		"/C/Windows/System32/drivers/etc/hosts",
+		"/C/_Daou_vpc/index.html",
+		"/C/Sublime-projects/PSDtoHTML_www.sublime-project",
+		"/C/_PSDtoHTML_www/wp-content/themes/mrseo-child/style.css",
+		"/C/_PSDtoHTML_www/sftp-config.json",
+		"/C/Users/ui-lab/AppData/Roaming/Sublime Text 3/Packages/User/SVN.errors.log",
+		"/C/Users/ui-lab/AppData/Roaming/Sublime Text 3/Packages/SVN/SVN.sublime-settings",
+		"/C/Users/ui-lab/AppData/Roaming/Sublime Text 3/Packages/SVN/Default (Windows).sublime-keymap",
+		"/C/pjt_UILab_lib/ui/common/scss/base/mixins/_hide-text.scss",
+		"/C/pjt_UILab_lib/ui/common/scss/base/_variables.scss",
+		"/C/pjt-daou-cloud/ui/incl/page-top.inc",
+		"/C/pjt-daou-cloud/ui/@pub/01_가상서버_01인스턴스_01네트워크.html"
+	],
+	"find":
+	{
+		"height": 32.0
+	},
+	"find_in_files":
+	{
+		"height": 158.0,
+		"where_history":
+		[
+			"C:\\_Socialpoll\\social-poll-web\\www",
+			"C:\\pjt_hope_studio\\ui,,*.html",
+			"C:\\pjt_hope_studio\\ui,+*.html",
+			"C:\\pjt_hope_studio\\ui,-*.css",
+			"C:\\pjt_hope_studio\\ui",
+			"C:\\pjt_hope_studio",
+			"C:\\pjt_hope_studio\\ui"
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"'title': 'title2',",
+			"=\"33\" ",
+			"end",
+			"path.inc",
+			"inc",
+			"/common/",
+			"$data->userId",
+			"update",
+			"f0df8dbd",
+			"#/",
+			"getUserProfileAPI",
+			"logoMotion",
+			"animate",
+			"BACK",
+			"logoMotion",
+			"SurveyList",
+			"List page",
+			"/",
+			"pollFactory",
+			"$q",
+			"pollCtrlModify",
+			"pollCtrlRadio",
+			"pollCtrlInput",
+			"tab-",
+			"tab.",
+			"LoginCtrl",
+			"$scope",
+			"mysql_insert_id",
+			"2017-11",
+			"2017.11",
+			"2017",
+			".grid-blog-thumb",
+			"browserSync",
+			"runSequence",
+			"uglify",
+			"concat",
+			"gutil",
+			"includePaths",
+			"namespace",
+			"$n",
+			"socialpoll.services",
+			"getPoll",
+			"pollFactory.getPolls",
+			"pollFactory",
+			"$q",
+			"src=\"images/",
+			"eltdf-iwt-icon-small",
+			"rowClick",
+			"display",
+			" style=\"display:;\"",
+			" style=\"display:none;\"",
+			"console.log",
+			" style=\"display:none;\"",
+			"displayItems",
+			"\"id\": \"",
+			"copyCss",
+			" style=\"display:block;\"",
+			"dis",
+			"dist",
+			"copyHtml",
+			"log",
+			"images/logo_small.png",
+			"images/logo_small.png ",
+			"copyCss",
+			"assets",
+			"sass",
+			"network",
+			"sref",
+			"ref",
+			"src=\"images/",
+			"p",
+			"console.log",
+			"PG 결제정보 위탁 및 PG 이용약관",
+			"console",
+			"window",
+			"floatingMenu",
+			"stop(true,true",
+			"true",
+			"trhe",
+			"true",
+			"floatingMenu.offset().top",
+			"'true'",
+			"floatingTab",
+			"console.log",
+			"floating-menu",
+			"console.log",
+			"tab-content",
+			"tab-active",
+			"mine",
+			"새로운 소식을 이메일로 받아보겠습니다",
+			"cssnano",
+			"layerFix",
+			"history-list",
+			"history-list\n",
+			"#support-contents",
+			";\n",
+			"8기 나노스튜디오<br>‘무연’",
+			"history-nav-item",
+			".section-apply",
+			".apply-list",
+			"apply-list",
+			"left",
+			".future-lab-for-youth",
+			"future-lab-for-youth",
+			"력",
+			"future-lab-for-youth",
+			"@include",
+			"<li",
+			"<li class=",
+			"<p>(",
+			"partner-list",
+			"stit",
+			"sub-title",
+			".stit",
+			"HANKOOKTIRE",
+			"more",
+			"wrap-txt",
+			"view",
+			"class=\"wrap-box\"",
+			"wrap-box",
+			"id=",
+			"footer-main",
+			"tab-active",
+			"mobile",
+			"commonTab",
+			"btn-wrap",
+			"mypage-content",
+			" vm\""
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"btn",
+			"txt-list",
+			"VIEW",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 3,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "app/index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 905,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "app/app.module.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 114,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"auto_name": "angular.module('phonecatApp', [",
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "app/app.config.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 920,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								454,
+								454
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"open_with_edit": true,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "app/platform/platform.template.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 3459,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								285,
+								285
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/HTML/HTML.sublime-syntax",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "app/platform/platform.controller.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 4687,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1860,
+								1860
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 630.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 32.0
+	},
+	"input":
+	{
+		"height": 52.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.sftp":
+	{
+		"height": 148.0
+	},
+	"pinned_build_system": "",
+	"project": "UILabanimates.sublime-project",
+	"replace":
+	{
+		"height": 59.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"cloud",
+				"common\\css\\cloud_style.css"
+			],
+			[
+				"clou",
+				"common\\css\\cloud_style.css"
+			],
+			[
+				"cs",
+				"common\\css\\cloud_style.css"
+			],
+			[
+				"cloude",
+				"@pub\\stylesheets\\cloud_style.css"
+			],
+			[
+				"nav.co",
+				"common\\js\\controllers\\nav.controller.js"
+			],
+			[
+				"ap",
+				"common\\js\\ng.app.js"
+			],
+			[
+				"memout",
+				"member\\member-out.html"
+			],
+			[
+				"profile",
+				"mypage\\profile-modify-landing.html"
+			],
+			[
+				"ui.js",
+				"common\\js\\ui.js"
+			],
+			[
+				"hope",
+				"common\\scss\\hope.scss"
+			],
+			[
+				"story",
+				"hope-studio\\story.html"
+			],
+			[
+				"footer.scss",
+				"common\\scss\\footer.scss"
+			],
+			[
+				"faq",
+				"footer\\faq.html"
+			],
+			[
+				"main.scss",
+				"common\\scss\\main.scss"
+			],
+			[
+				"main",
+				"main.html"
+			],
+			[
+				"youmain",
+				"future-lab-for-youth\\main.html"
+			],
+			[
+				"about",
+				"ui\\about.html"
+			],
+			[
+				"arch",
+				"ui\\future-lab-for-teens\\archive.html"
+			],
+			[
+				"teensar",
+				"ui\\future-lab-for-teens\\archive.html"
+			],
+			[
+				"future",
+				"ui\\future-lab-for-teens\\futurelab.html"
+			],
+			[
+				"what",
+				"ui\\hope-studio\\whatwedo.html"
+			],
+			[
+				"main.html",
+				"ui\\future-lab-for-teens\\main.html"
+			],
+			[
+				"donation-normal-step3.html",
+				"ui\\future-lab-for-teens\\donation-normal-step3.html"
+			],
+			[
+				"teensseed",
+				"ui\\future-lab-for-teens\\seed.html"
+			],
+			[
+				"uifuturelab.html",
+				"ui\\future-lab-for-teens\\futurelab.html"
+			],
+			[
+				"uiui.js",
+				"ui\\common\\js\\ui.js"
+			],
+			[
+				"ui.jss",
+				"ui\\common\\js\\jquery.sticky.js"
+			],
+			[
+				"receiplist",
+				"dist\\mypage\\receipt-list.html"
+			],
+			[
+				"recei",
+				"dist\\mypage\\receipt-input.html"
+			],
+			[
+				"teens",
+				"ui\\common\\scss\\teens.scss"
+			],
+			[
+				"ui.",
+				"ui\\common\\js\\ui.js"
+			],
+			[
+				"whatwedo",
+				"ui\\hope-studio\\whatwedo.html"
+			],
+			[
+				"give.html",
+				"ui\\hope-studio\\give.html"
+			],
+			[
+				"givstroy",
+				"ui\\hope-studio\\give-story-review.html"
+			],
+			[
+				"reci",
+				"ui\\mypage\\receipt-input.html"
+			],
+			[
+				"mypagepro",
+				"ui\\mypage\\profile-modify.html"
+			],
+			[
+				"global.scss",
+				"ui\\common\\scss\\global.scss"
+			],
+			[
+				"mix",
+				"ui\\common\\scss\\lib\\_mixin.scss"
+			],
+			[
+				"youth",
+				"ui\\common\\scss\\youth.scss"
+			],
+			[
+				"smgpro",
+				"ui\\future-lab-for-youth\\sgm-program.html"
+			],
+			[
+				"game",
+				"ui\\future-lab-for-youth\\program-gamejam.html"
+			],
+			[
+				"main.",
+				"ui\\hope-studio\\main.html"
+			],
+			[
+				"seed",
+				"ui\\future-lab-for-teens\\seed-about-story.html"
+			],
+			[
+				"globalscss",
+				"ui\\common\\scss\\global.scss"
+			],
+			[
+				"sgmmem",
+				"ui\\future-lab-for-youth\\sgm-member.html"
+			],
+			[
+				"creathtml",
+				"pjt_socialpoll_app\\social-poll\\www\\poll-create\\create.template.html"
+			],
+			[
+				"pollinghtml",
+				"pjt_socialpoll_app\\social-poll\\www\\poll-polling\\polling.template.html"
+			],
+			[
+				"terms",
+				"ui\\footer\\terms-of-use.html"
+			],
+			[
+				"mypage.scss",
+				"ui\\common\\scss\\mypage.scss"
+			],
+			[
+				"global",
+				"ui\\common\\scss\\global.scss"
+			],
+			[
+				"applystep2",
+				"ui\\future-lab-for-teens\\apply-step2.html"
+			],
+			[
+				"applystep3",
+				"ui\\future-lab-for-teens\\apply-step3.html"
+			],
+			[
+				"icon",
+				"ui\\common\\scss\\base\\_icon.scss"
+			],
+			[
+				"scssfont.scss",
+				"ui\\common\\scss\\base\\_fonts.scss"
+			],
+			[
+				"appstep4",
+				"ui\\future-lab-for-teens\\apply-step4.html"
+			],
+			[
+				"appstep2",
+				"ui\\future-lab-for-teens\\apply-step2.html"
+			],
+			[
+				"applyste1",
+				"ui\\future-lab-for-youth\\apply-step1.html"
+			],
+			[
+				"apply-ste",
+				"ui\\future-lab-for-youth\\apply-step1.html"
+			],
+			[
+				"apply",
+				"ui\\future-lab-for-teens\\apply-step1.html"
+			],
+			[
+				"hope.scss",
+				"ui\\common\\scss\\hope.scss"
+			],
+			[
+				"hopestory",
+				"ui\\hope-studio\\story.html"
+			],
+			[
+				"whah",
+				"hope-studio\\whatwedo.html"
+			],
+			[
+				"hopestor",
+				"hope-studio\\story.html"
+			],
+			[
+				"you",
+				"common\\scss\\youth.scss"
+			],
+			[
+				"smg-p",
+				"future-lab-for-youth\\sgm-program.html"
+			],
+			[
+				"youmain.",
+				"future-lab-for-youth\\main.html"
+			],
+			[
+				"arc",
+				"future-lab-for-teens\\archive-view-video.html"
+			],
+			[
+				"ar",
+				"future-lab-for-teens\\archive-view-photo.html"
+			],
+			[
+				"about-sto",
+				"future-lab-for-teens\\seed-about-story.html"
+			],
+			[
+				"teenmain.html",
+				"future-lab-for-teens\\main.html"
+			],
+			[
+				"hopegive",
+				"hope-studio\\give.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 625.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"",
+				"C:\\_Socialpoll\\socialpoll.sublime-project"
+			],
+			[
+				"smile",
+				"C:\\Sublime-projects\\SmilegateFoundation.sublime-project"
+			],
+			[
+				"so",
+				"C:\\sublime projects\\socialpoll-web.sublime-project"
+			],
+			[
+				"smail",
+				"C:\\sublime projects\\smilegate-ui.sublime-project"
+			],
+			[
+				"cms",
+				"C:\\sublime projects\\kshop-cms.sublime-project"
+			],
+			[
+				"k",
+				"C:\\sublime projects\\kshop-cms.sublime-project"
+			]
+		],
+		"width": 475.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 242.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

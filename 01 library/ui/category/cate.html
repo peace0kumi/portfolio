@@ -1,0 +1,27 @@
+@@include('./incl/page-top.inc')
+	<title>Default Html</title>
+	<!--build:css ../common/css/global.min.css-->
+	<link rel="stylesheet" href="/common/css/global.css">
+	<!--endbuild-->
+	<!--build:js ../common/js/global.min.js -->
+	<script src="/common/js/jquery.js"></script>
+	<!-- endbuild -->
+	<!--[if lt IE 9]>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	@@include('./incl/header.inc')
+	<div id="content">
+		content
+		<i class="icon-right-open"></i>
+		<ul>
+			<li>1</li>
+			<li>2</li>
+			<li>3</li>
+		</ul>
+	</div>
+	@@include('./incl/footer.inc')
+</body>
+</html>

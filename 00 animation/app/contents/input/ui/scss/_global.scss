@@ -1,0 +1,431 @@
+/* iframe layout */
+body {
+	position: relative;
+	background-color: #fafafa;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.actions {
+	position: absolute;
+	right: 6vw;
+	bottom: 60px;
+	text-align: center;
+}
+.btn {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #3f51b5;
+	color: #fff;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.no-js {
+	.actions {
+		display: none;
+	}
+}
+
+/* variables */
+$point-color: #5141d6;
+$support-color: #808080;
+$tundora: #4b4848;
+$snappy: cubic-bezier(0.694,  0.048, 0.335, 1.000);
+
+/* moving search */
+@keyframes spin {
+	0% {
+		transform: rotate(0deg);
+	}
+	100% {
+		transform: rotate(360deg);
+	}
+}
+.moving-search {
+	.fieldset {
+		position: relative;
+		width: 330px;
+		height: 50px;
+		margin: 0;
+		padding: 0;
+		border: 0;
+	}
+	.input {
+		width: 100%;
+		height: 100%;
+		padding: 10px 20px 10px 15px;
+		border: 0;
+		border-radius: 3px;
+		background: white;
+		box-shadow: 0px 8px 15px rgba($tundora, 0.1);
+		transition: all 0.4s ease;
+
+		line-height: 50px;
+		&:focus {
+			outline: none;
+			box-shadow: 0px 9px 20px rgba($tundora, 0.3);
+			+ .icon {
+				.icon--close {
+					opacity: 1;
+					transform: translateX(0);
+				}
+				.icon--search {
+					opacity: 0;
+					transform: translateX(200%);
+				}
+			}
+		}
+	}
+	.icon {
+		position: absolute;
+		overflow: hidden;
+		top: 0;
+		right: 10px;
+		width: 35px;
+		height: 50px;
+		&--close {
+			position: absolute;
+			top: 0;
+			left: 8px;
+			width: 75%;
+			height: 100%;
+			opacity: 0;
+			cursor: pointer;
+			transform: translateX(-200%);
+			transition: opacity 0.25s ease, transform 0.43s $snappy;
+			&-up {
+				position: relative;
+				width: 100%;
+				height: 50%;
+				&:before {
+					content: '';
+					position: absolute;
+					bottom: 2px;
+					left: 2px;
+					width: 50%;
+					height: 2px;
+					background-color: $point-color;
+					transform: rotate(45deg);
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					bottom: 2px;
+					right: 2px;
+					width: 50%;
+					height: 2px;
+					background-color: $point-color;
+					transform: rotate(-45deg);
+				}
+			}
+			&-down {
+				position: relative;
+				width: 100%;
+				height: 50%;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 5px;
+					left: 2px;
+					width: 50%;
+					height: 2px;
+					background-color: $point-color;
+					transform: rotate(-45deg);
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 5px;
+					right: 2px;
+					width: 50%;
+					height: 2px;
+					background-color: $point-color;
+					transform: rotate(45deg);
+				}
+			}
+		}
+		&--search {
+			position: relative;
+			top: 11px;
+			left: 8px;
+			width: 50%;
+			height: 35%;
+			opacity: 1;
+			border-radius: 50%;
+			border: 3px solid mix($point-color, white, 35%);
+			transition: opacity 0.25s ease, transform 0.43s $snappy;
+			&:after {
+				content: '';
+				position: absolute;
+				bottom: -9px;
+				right: -2px;
+				width: 4px;
+				border-radius: 3px;
+				transform: rotate(-45deg);
+				height: 10px;
+				background-color: mix($point-color, white, 35%);
+			}
+		}
+	}
+}
+
+/* toggle search */
+.toggle-search {
+	width: 500px;
+	min-height: 200px;
+	margin: 0 auto;
+
+	.search {
+		position: relative;
+		margin-top: 10px;
+		width: 0%;
+		min-width: 60px;
+		height: 60px;
+		float: right;
+		overflow: hidden;
+		-webkit-transition: width 0.3s;
+		-moz-transition: width 0.3s;
+		transition: width 0.3s;
+		-webkit-backface-visibility: hidden;
+
+		input[type="search"] {
+			-webkit-appearance: none;
+			-webkit-border-radius: 0px;
+		}
+		.input {
+			&__icon,
+			&__submit {
+				width: 60px;
+				height: 60px;
+				display: block;
+				position: absolute;
+				right: 0;
+				top: 0;
+				padding: 0;
+				margin: 0;
+				line-height: 60px;
+				text-align: center;
+				cursor: pointer;
+			}
+			&__search {
+				position: absolute;
+				top: 0;
+				right: 0;
+				border: none;
+				outline: none;
+				background: #fff;
+				width: 100%;
+				height: 60px;
+				margin: 0;
+				z-index: 10;
+				padding: 20px 65px 20px 20px;
+				font-family: inherit;
+				font-size: 20px;
+				color: #000;
+				&::-webkit-input-placeholder {
+					color: $support-color;
+				}
+				&:-moz-placeholder {
+					color: $support-color;
+				}
+				&::-moz-placeholder {
+					color: $support-color;
+				}
+				&:-ms-input-placeholder {
+					color: $support-color;
+				}
+			}
+			&__submit {
+				background: #fff; /* IE needs this */
+				-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)"; /* IE 8 */
+				filter: alpha(opacity=0); /* IE 5-7 */
+				opacity: 0;
+				color: transparent;
+				border: none;
+				outline: none;
+				z-index: -1;
+			}
+			&__icon {
+				background: $point-color;
+				z-index: 90;
+				color: #fff;
+				speak: none;
+				&:before {
+					content: '';
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 24px;
+					height: 24px;
+					margin-top: -16px;
+					margin-left: -16px;
+					opacity: 1;
+					border-radius: 50%;
+					border: 3px solid mix($point-color, white, 0);
+					transition: opacity 0.25s ease, transform 0.43s $snappy;
+				}
+				&:after {
+					content: '';
+					position: absolute;
+					top: 65%;
+					left: 65%;
+					width: 4px;
+					height: 10px;
+					border-radius: 3px;
+					transform: rotate(-45deg);
+					background-color: mix($point-color, white, 0);
+				}
+			}
+		}
+
+		/* is open */
+		&.is-open {
+			width: 100%;
+			.input {
+				&__icon {
+					background: mix($point-color, white, 75%);
+					color: #fff;
+					z-index: 11;
+				}
+				&__submit {
+					z-index: 90;
+				}
+			}
+		}
+	}
+}
+
+/* visible password */
+.visible-password {
+	.password {
+		width: 350px;
+		height: 75px;
+		background: #7c7c7c;
+		border-radius: 10px;
+		position: relative;
+		overflow: hidden;
+		-webkit-box-shadow: 0 0 12px 0px rgba(1, 1, 1, 0.25);
+		box-shadow: 0 0 12px 0px rgba(1, 1, 1, 0.25);
+		&--background {
+			background: #fefefe;
+			position: absolute;
+			width: 150%;
+			height: 100%;
+			right: -50%;
+			top: 0;
+			-webkit-transition: .20s all ease-in-out;
+			transition: .20s all ease-in-out;
+			border-radius: 5px;
+		}
+		&--visible-toggle {
+			position: absolute;
+			width: 50px;
+			height: 50px;
+			right: 10px;
+			top: 10px;
+			z-index: 1;
+			-webkit-appearance: none;
+			-moz-appearance: none;
+			appearance: none;
+			outline: none;
+			&-eye {
+				width: 25px;
+				height: 25px;
+				position: absolute;
+				right: 25px;
+				top: 25px;
+				-webkit-perspective: 1000px;
+				perspective: 1000px;
+				overflow: hidden;
+				&.close {
+					-webkit-transition: .4s all ease-in-out;
+					transition: .4s all ease-in-out;
+				}
+				&.open {
+					-webkit-transition: .2s .2s all ease-out;
+					transition: .2s .2s all ease-out;
+				}
+				img {
+					width: 100%;
+				}
+			}
+			&:checked {
+				& ~ .password--background {
+					right: 12.5px;
+					top: 12.5px;
+					width: 50px;
+					height: 50px;
+					border-radius: 50%;
+				}
+				& ~ .password--input {
+					-webkit-text-security: disc;
+					-ms-text-security: disc;
+					-moz-text-security: disc;
+					-o-text-security: disc;
+				}
+				& ~ .password--lock {
+					fill: #fff;
+				}
+				& ~ .password--visible-toggle-eye.close {
+					-webkit-transform: rotateX(180deg);
+					transform: rotateX(180deg);
+				}
+				& ~ .password--visible-toggle-eye.open {
+					opacity: 0;
+				}
+			}
+		}
+		&--lock {
+			width: 20px;
+			height: 20px;
+			fill: #111;
+			-webkit-transition: all .5s;
+			transition: all .5s;
+			position: absolute;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			left: 25px;
+		}
+		&--input {
+			background: none;
+			border: none;
+			color: #000;
+			position: absolute;
+			width: 200px;
+			left: 60px;
+			top: 50%;
+			-webkit-transform: translateY(-50%);
+			transform: translateY(-50%);
+			font-size: 18px;
+			letter-spacing: 2px;
+			-webkit-transition: all .5s;
+			transition: all .5s;
+			outline: none;
+			-webkit-text-security: none;
+			&:focus {
+				border-bottom: 1px solid;
+			}
+		}
+	}
+}

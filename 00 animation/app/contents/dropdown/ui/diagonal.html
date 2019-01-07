@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="lib/tympanus/style.css">
+    <title></title>
+</head>
+<body>
+
+<div class="container dropdown-diagonal">
+    <select id="dropdown" class="select">
+        <option value="-1" selected>UI Lab에 대한 느낌을 고르세요.</option>
+        <option value="1">진짜 좋다</option>
+        <option value="2">아주 좋다</option>
+        <option value="3">최강 좋다</option>
+        <option value="4">그냥 좋다</option>
+    </select>
+</div>
+
+<!-- scripts -->
+<script src="lib/tympanus/modernizr.custom.63321.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="lib/tympanus/jquery.dropdown.js"></script>
+<script type="text/javascript">
+    $( function() {
+        $( '#dropdown' ).dropdown( {
+            gutter : 5,
+            delay : 100,
+            random : true
+        } );
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,393 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; INPUT</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">input</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 체크박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">CHECKBOX TYPE : </p>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample1" checked>
+						<label for="checkboxSample1"><em>Checked</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample2">
+						<label for="checkboxSample2"><em>Unchecked</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample3" disabled>
+						<label for="checkboxSample3"><em>Disabled</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample4" disabled checked>
+						<label for="checkboxSample4"><em>Disabled &amp; Checked</em></label>
+					</div>
+				</div>
+				<!-- //체크박스 -->
+
+				<!-- 라디오 -->
+				<div class="input__group">
+					<p class="input__title title--h6">RADIO TYPE : </p>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample1" name="name" value="checked" checked>
+						<label for="radioSample1"><em>Checked</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample2" name="name1" value="unchecked">
+						<label for="radioSample2"><em>Unchecked 1</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample3" name="name1" value="unchecked">
+						<label for="radioSample3"><em>Unchecked 2</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample4" name="name" value="disabled" disabled>
+						<label for="radioSample4"><em>Disabled</em></label>
+					</div>
+				</div>
+				<!-- //라디오 -->
+
+				<!-- 셀렉트박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">SELECT BOX TYPE : </p>
+					<div class="input input__select">
+						<select id="selectSample1">
+							<option selected>Choose Option...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<!-- //셀렉트박스 -->
+
+				<!-- 멀티 셀렉트박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">SELECT BOX MULTIPLE TYPE : </p>
+					<div class="input input__select input__select--multiple">
+						<label for="selectSample1-1"></label>
+						<select id="selectSample1-1" multiple>
+							<option selected value="0">Zero</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<!-- //멀티 셀렉트박스 -->
+
+				<!-- 파일타입 -->
+				<div class="input__group">
+					<p class="input__title title--h6">FILE TYPE : </p>
+					<div class="input input__file">
+						<input type="file" id="fileSample1">
+						<label for="fileSample1">Choose File...</label>
+					</div>
+				</div>
+				<!-- //파일타입 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 체크박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">CHECKBOX TYPE : </p>
+						<div class="input input__checkbox">
+							<input type="checkbox" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" >
+							<label><em>Unchecked</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" disabled checked>
+							<label><em>Disabled &amp; Checked</em></label>
+						</div>
+					</div>
+					<!-- //체크박스 -->
+
+					<!-- 라디오 -->
+					<div class="input__group">
+						<p class="input__title title--h6">RADIO TYPE : </p>
+						<div class="input input__radio">
+							<input type="radio" name="name" value="checked" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 1</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 2</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name" value="disabled" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+					</div>
+					<!-- //라디오 -->
+
+					<!-- 셀렉트박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">SELECT BOX TYPE : </p>
+						<div class="input input__select">
+							<select>
+								<option selected>Choose Option...</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					<!-- //셀렉트박스 -->
+
+					<!-- 멀티 셀렉트박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">SELECT BOX MULTIPLE TYPE : </p>
+						<div class="input input__select input__select--multiple">
+							<label></label>
+							<select multiple>
+								<option selected value="0">Zero</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					<!-- //멀티 셀렉트박스 -->
+
+					<!-- 파일타입 -->
+					<div class="input__group">
+						<p class="input__title title--h6">FILE TYPE : </p>
+						<div class="input input__file">
+							<input type="file">
+							<label>Choose File...</label>
+						</div>
+					</div>
+					<!-- //파일타입 --></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!--
+			 인라인
+			 input__inline : middle 정렬
+			 input__inline--top : top 정렬
+			 input__inline--bottom : bottom 정렬
+		-->
+		<section class="components__item">
+			<h2 class="components__title title--h4">INLINE</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 체크박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">CHECKBOX TYPE : </p>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-1" checked>
+						<label for="checkboxSample2-1"><em>Checked</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-2">
+						<label for="checkboxSample2-2"><em>Unchecked</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-3" disabled>
+						<label for="checkboxSample2-3"><em>Disabled</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-4" disabled checked>
+						<label for="checkboxSample2-4"><em>Disabled &amp; Checked</em></label>
+					</div>
+				</div>
+				<!-- //체크박스 -->
+
+				<!-- 라디오 -->
+				<div class="input__group">
+					<p class="input__title title--h6">RADIO TYPE : </p>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-1" name="name21" value="checked" checked>
+						<label for="radioSample2-1"><em>Checked</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-2" name="name22" value="unchecked1">
+						<label for="radioSample2-2"><em>Unchecked 1</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-3" name="name22" value="unchecked2">
+						<label for="radioSample2-3"><em>Unchecked 2</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-4" name="name21" value="disabled" disabled>
+						<label for="radioSample2-4"><em>Disabled</em></label>
+					</div>
+				</div>
+				<!-- //라디오 -->
+
+				<!-- 셀렉트박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">SELECT BOX TYPE : </p>
+					<div class="input input__inline input__select">
+						<label for="selectSample2"></label>
+						<select id="selectSample2">
+							<option selected>Choose</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<!-- //셀렉트박스 -->
+
+				<!-- 멀티 셀렉트박스 -->
+				<div class="input__group">
+					<p class="input__title title--h6">SELECT BOX MULTIPLE TYPE : </p>
+					<div class="input input__inline input__select input__select--multiple">
+						<label for="selectSample2-1"></label>
+						<select id="selectSample2-1" multiple>
+							<option selected value="0">Zero</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+				<!-- //멀티 셀렉트박스 -->
+
+				<!-- 파일타입 -->
+				<div class="input__group">
+					<p class="input__title title--h6">FILE TYPE : </p>
+					<div class="input input__inline input__file">
+						<input type="file" id="fileSample2">
+						<label for="fileSample2">Choose File...</label>
+					</div>
+				</div>
+				<!-- //파일타입 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 체크박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">CHECKBOX TYPE : </p>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox">
+							<label><em>Unchecked</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" disabled checked>
+							<label><em>Disabled &amp; Checked</em></label>
+						</div>
+					</div>
+					<!-- //체크박스 -->
+
+					<!-- 라디오 -->
+					<div class="input__group">
+						<p class="input__title title--h6">RADIO TYPE : </p>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name" value="checked" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 1</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 2</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name" value="disabled" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+					</div>
+					<!-- //라디오 -->
+
+					<!-- 셀렉트박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">SELECT BOX TYPE : </p>
+						<div class="input input__inline input__select">
+							<select>
+								<option selected>Choose Option...</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					<!-- //셀렉트박스 -->
+
+					<!-- 멀티 셀렉트박스 -->
+					<div class="input__group">
+						<p class="input__title title--h6">SELECT BOX MULTIPLE TYPE : </p>
+						<div class="input input__inline input__select input__select--multiple">
+							<label></label>
+							<select multiple>
+								<option selected value="0">Zero</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+					<!-- //멀티 셀렉트박스 -->
+
+					<!-- 파일타입 -->
+					<div class="input__group">
+						<p class="input__title title--h6">FILE TYPE : </p>
+						<div class="input input__inline input__file">
+							<input type="file">
+							<label>Choose File...</label>
+						</div>
+					</div>
+					<!-- //파일타입 --></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //인라인 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+</body>
+</html>

@@ -1,0 +1,681 @@
+@charset "UTF-8";
+/*
+@font-face {
+	font-family: 'Nanum Square';
+	font-style: normal;
+	font-weight: normal;
+	src: url(../font/NanumSquareR.eot);
+	src: local('※'),
+	url(../font/NanumSquareR.eot?#iefix) format('embedded-opentype'),
+	url(../font/NanumSquareR.woff) format('woff'),
+	url(../font/NanumSquareR.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'Nanum Square';
+	font-style: normal;
+	font-weight: bold;
+	src: url(../font/NanumSquareB.eot);
+	src: local('※'),
+	url(../font/NanumSquareB.eot?#iefix) format('embedded-opentype'),
+	url(../font/NanumSquareB.woff) format('woff'),
+	url(../font/NanumSquareB.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'roboto';
+	font-style: normal;
+	font-weight: 400;
+	src: url(../font/Roboto-Regular.eot);
+	src: local('※'),
+	url(../font/Roboto-Regular.eot?#iefix) format('embedded-opentype'),
+	url(../font/Roboto-Regular.woff) format('woff'),
+	url(../font/Roboto-Regular.ttf) format('truetype');
+}
+@font-face {
+	font-family: 'roboto';
+	font-style: normal;
+	font-weight: bold;
+	src: url(../font/Roboto-Bold.eot);
+	src: local('※'),
+	url(../font/Roboto-Bold.eot?#iefix) format('embedded-opentype'),
+	url(../font/Roboto-Bold.woff) format('woff'),
+	url(../font/Roboto-Bold.ttf) format('truetype');
+}
+*/
+/* --------------------------------------------
+ * default
+/* ------------------------------------------ */
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+html, body { width: 100%; height: 100%; }
+
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; outline: 0; vertical-align: baseline; background: transparent; }
+
+body { overflow-x: hidden; margin: 0; padding: 0; font-family: 'Nanum Square', '돋움', 'Dotum', Apple Gothic, Tahoma, Verdana, sans-serif; font-size: 12px; line-height: 1.25; }
+
+body::-webkit-scrollbar { width: 8px; height: 8px; border: 3px solid #ffffff; }
+
+body::-webkit-scrollbar-track { border-radius: 10px; -webkit-border-radius: 10px; background: #ffffff; -webkit-box-shadow: inset 0 0 4px rgba(59, 59, 32, 0.2); }
+
+body::-webkit-scrollbar-thumb { width: 50px; height: 50px; border-radius: 8px; -webkit-border-radius: 8px; background: #8c8c8c; -webkit-box-shadow: inset 0 0 4px rgba(0, 0, 0, 0.1); }
+
+/* -------------------------------------------- html5 block ------------------------------------------ */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, main { display: block; }
+
+/* ------------------------------------------ */
+a { color: #fff; text-decoration: none; }
+
+/* --------------------------------------------
+	list
+/* ------------------------------------------ */
+ul, ol { list-style: none; }
+
+/* --------------------------------------------
+ * etc
+/* ------------------------------------------ */
+address, em { font-style: normal; }
+
+hr { display: none; }
+
+sup { position: relative; top: -3px; padding-left: 3px; font-size: 11px; }
+
+/* --------------------------------------------
+ * img
+/* ------------------------------------------ */
+img { vertical-align: top; }
+
+/* --------------------------------------------
+ * table
+/* ------------------------------------------ */
+table { width: 100%; border-collapse: collapse; border-spacing: 0; }
+
+tbody, tfoot, thead, tr, th, td { word-break: break-all; vertical-align: middle; }
+
+caption { display: none; }
+
+/* --------------------------------------------
+ * fieldset
+/* ------------------------------------------ */
+fieldset { border: none; }
+
+legend { visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; position: absolute; left: 0; top: -999999px; }
+
+/* --------------------------------------------
+ * form
+/* ------------------------------------------ */
+/*input[type=text]::-ms-clear{display:none;width:0;height:0;}*/
+input[type=button], input[type=submit] { cursor: pointer; }
+
+input[type="radio"], input[type="checkbox"] { width: 13px; height: 13px; margin: -2px 0 0; }
+
+button { width: auto; overflow: visible; background: none; border: none; cursor: pointer; margin: 0; padding: 0; }
+
+button > span { position: relative; }
+
+textarea { resize: none; padding: 10px; color: #666; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
+
+select { height: 26px; font: 12px '돋움', 'Dotum', Apple Gothic, Tahoma, Verdana, sans-serif; color: #666; padding: 1px; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
+
+input, button, select, textarea { color: #666; font: 12px 'Nanum Square', '돋움', 'Dotum', Apple Gothic, Tahoma, Verdana, sans-serif; vertical-align: middle; }
+
+input[type="text"] { padding: 5px 10px; height: 38px; color: #666; border: none; box-sizing: border-box; -webkit-box-sizing: border-box; -ms-box-sizing: border-box; }
+
+/* common */
+#skip { z-index: 99999; position: absolute; width: 100%; height: 0px; left: 0px; top: -40px; }
+
+#skip a:active, #skip a:focus { z-index: 99999; position: absolute; width: 100%; height: 30px; left: 0px; top: 40px; padding-top: 10px; font-size: 16px; text-align: center; border-bottom: 1px solid #666; background: #fff; }
+
+.blind { display: block; overflow: hidden; position: absolute; left: -1000%; top: 0; width: 0; height: 0; font-size: 0; line-height: 0; text-indent: -10000px; }
+
+.hide { display: none; }
+
+.ir { display: block; overflow: hidden; text-indent: -9999px; }
+
+.js-tab-cont { display: none; }
+
+.js-tab-cont.active { display: block; }
+
+/* iframe layout */
+body { position: relative; background-color: #fafafa; }
+
+.container { position: absolute; top: 50%; left: 50%; -webkit-transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -o-transform: translate(-50%, -50%); transform: translate(-50%, -50%); cursor: pointer; }
+
+.actions { position: absolute; right: 6vw; bottom: 60px; text-align: center; }
+
+.btn { border: none; padding: 0.6em 1.2em; background: #3f51b5; color: #fff; font-family: 'Lato', 'Arial', sans-serif; font-size: 1.5em; letter-spacing: 1px; text-transform: uppercase; cursor: pointer; display: inline-block; margin: 3px 2px; border-radius: 2px; }
+
+.btn:focus { outline: none; }
+
+.btn:hover { opacity: 0.5; }
+
+.no-js .actions { display: none; }
+
+/* rotate panel */
+.rotate-panel { display: -webkit-box; display: -ms-flexbox; display: flex; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; -webkit-box-align: end; -ms-flex-align: end; align-items: flex-end; -webkit-transform-origin: 0 0; transform-origin: 0 0; -webkit-transform: scale(0.9) rotateX(56deg) rotateY(0deg) rotate(45deg); transform: scale(0.9) rotateX(56deg) rotateY(0deg) rotate(45deg); width: 100%; }
+
+.panel { -ms-flex-preferred-size: 30%; flex-basis: 30%; margin-right: 2.18978%; margin-top: 2.18978%; -webkit-transform-style: preserve-3d; transform-style: preserve-3d; -webkit-backface-visibility: hidden; backface-visibility: hidden; cursor: pointer; outline: none; }
+
+.panel:last-child, .panel:nth-child(3n) { margin-right: 0; }
+
+.panel:nth-child(3n+2) { -webkit-transform: translateY(-50%); transform: translateY(-50%); }
+
+.panel:nth-child(3n+3) { -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+
+.panel:focus .panel__item, .panel:hover .panel__item { -webkit-box-shadow: 2vw 1.5vw 25px rgba(0, 0, 0, 0.2); box-shadow: 2vw 1.5vw 25px rgba(0, 0, 0, 0.2); -webkit-transform: translate3d(-6%, -6%, -20vh); transform: translate3d(-6%, -6%, -20vh); -webkit-transition: all 0.2s cubic-bezier(0.11, 0.83, 0.29, 0.83); transition: all 0.2s cubic-bezier(0.11, 0.83, 0.29, 0.83); }
+
+.panel__item { min-height: 10vw; -webkit-transform: translateZ(0); transform: translateZ(0); -webkit-transition: all 0.2s cubic-bezier(0.11, 0.83, 0.29, 0.83); transition: all 0.2s cubic-bezier(0.11, 0.83, 0.29, 0.83); position: relative; display: block; -webkit-box-shadow: 0.65vw 0.5vw 25px rgba(0, 0, 0, 0.2); box-shadow: 0.65vw 0.5vw 25px rgba(0, 0, 0, 0.2); line-height: 0; }
+
+.panel__link { z-index: 1; bottom: 0; left: 0; position: absolute; right: 0; top: 0; }
+
+.panel__image { position: relative; overflow: hidden; }
+
+.panel__image img { display: block; width: 100%; height: 100%; }
+
+/* baraja demo */
+.baraja-demo .actions { position: static; }
+
+.baraja-demo .btn { line-height: 24px; }
+
+.baraja-demo .baraja-container { margin: 0 auto 150px; box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.07); border-radius: 10px; }
+
+.baraja-demo .baraja-container li { padding: 10px; border: 1px #eee solid; border-radius: 10px; box-sizing: border-box; }
+
+.baraja-demo .baraja-container li img { width: 100%; }
+
+.baraja-demo .baraja-container li h4 { margin: 20px 0 10px; }
+
+.baraja-demo .baraja-container li p { padding-top: 10px; border-top: 1px #eee solid; }
+
+/* hover visible */
+.hover-visible { width: 100%; max-width: 1440px; margin: 0 auto; padding: 4rem 2rem; }
+
+.hover-visible .items { display: flex; flex-flow: row wrap; justify-content: center; }
+
+.hover-visible .items .item { display: flex; align-items: center; justify-content: center; position: relative; overflow: hidden; width: 300px; height: 200px; margin: 5px; cursor: pointer; background-color: #3b3e46; border-radius: 2px; box-shadow: 0 5px 5px rgba(0, 0, 0, 0.02), inset 0 0px 0px 1px rgba(0, 0, 0, 0.07); transform: translateZ(0); }
+
+.hover-visible .items .item:hover circle, .hover-visible .items .item:hover image { transform: scale(1); }
+
+.hover-visible .items .item svg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; }
+
+.hover-visible .items .item svg .svg-masked-text { fill: white; }
+
+.hover-visible .items .item svg circle { transform-origin: 50% 50%; transform: scale(0); transition: transform 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+.hover-visible .items .item svg text { font-size: 1.1rem; text-transform: uppercase; text-anchor: middle; letter-spacing: 1px; font-weight: 600; fill: #545a64; }
+
+.hover-visible .items .item svg image { transform: scale(1.1); transform-origin: 50% 50%; transition: transform 200ms cubic-bezier(0.25, 0.46, 0.45, 0.94); }
+
+/* instagram card */
+.instagram-card { font-family: 'Open Sans', sans-serif !important; }
+
+.instagram-card #u4191 { width: 340px; height: 500px; border-width: 0px; overflow: hidden; }
+
+.instagram-card #u4191_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 340px; height: 500px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4191_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4192_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 280px; height: 440px; background: inherit; background-color: white; border: none; border-radius: 4px; -moz-box-shadow: 0px 5px 24px rgba(40, 28, 79, 0.34902); -webkit-box-shadow: 0px 5px 24px rgba(40, 28, 79, 0.34902); box-shadow: 0px 5px 24px rgba(40, 28, 79, 0.34902); }
+
+.instagram-card #u4192 { border-width: 0px; position: absolute; left: 30px; top: 40px; width: 280px; height: 440px; opacity: 0.35; }
+
+.instagram-card #u4193 { border-width: 0px; position: absolute; left: 2px; top: 212px; width: 276px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4194_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 280px; height: 440px; background: inherit; background-color: white; border: none; border-radius: 4px; -moz-box-shadow: 0px 4px 24px rgba(40, 28, 79, 0.54902); -webkit-box-shadow: 0px 4px 24px rgba(40, 28, 79, 0.54902); box-shadow: 0px 4px 24px rgba(40, 28, 79, 0.54902); }
+
+.instagram-card #u4194 { border-width: 0px; position: absolute; left: 30px; top: 40px; width: 280px; height: 440px; opacity: 0.55; }
+
+.instagram-card #u4195 { border-width: 0px; position: absolute; left: 2px; top: 212px; width: 276px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4196_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; background: inherit; background-color: white; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4196 { border-width: 0px; position: absolute; left: 20px; top: 20px; width: 300px; height: 460px; }
+
+.instagram-card #u4197 { border-width: 0px; position: absolute; left: 2px; top: 222px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4198_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 301px; height: 2px; }
+
+.instagram-card #u4198 { border-width: 0px; position: absolute; left: 20px; top: 80px; width: 300px; height: 1px; }
+
+.instagram-card #u4199 { border-width: 0px; position: absolute; left: 2px; top: -8px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4200 { border-width: 0px; position: absolute; left: 20px; top: 160px; width: 300px; height: 270px; overflow: hidden; }
+
+.instagram-card #u4200_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 270px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4200_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4201_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 350px; height: 350px; }
+
+.instagram-card #u4201 { border-width: 0px; position: absolute; left: -30px; top: -44px; width: 350px; height: 350px; }
+
+.instagram-card #u4202 { border-width: 0px; position: absolute; left: 2px; top: 167px; width: 346px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4203_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 140px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #9FA8DA; }
+
+.instagram-card #u4203 { border-width: 0px; position: absolute; left: 80px; top: 30px; width: 140px; height: 20px; color: #9FA8DA; }
+
+.instagram-card #u4204 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 140px; white-space: nowrap; }
+
+.instagram-card #u4205_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 69px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; color: #B0BEC5; }
+
+.instagram-card #u4205 { border-width: 0px; position: absolute; left: 80px; top: 50px; width: 69px; height: 20px; font-style: normal; font-size: 10px; color: #B0BEC5; }
+
+.instagram-card #u4206 { border-width: 0px; position: absolute; left: 0px; top: 4px; width: 69px; white-space: nowrap; }
+
+.instagram-card #u4207_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 80px; background: inherit; background-color: white; border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4207 { border-width: 0px; position: absolute; left: 20px; top: 80px; width: 300px; height: 80px; }
+
+.instagram-card #u4208 { border-width: 0px; position: absolute; left: 2px; top: 32px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4209_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 260px; height: 69px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 17px; line-height: 23px; }
+
+.instagram-card #u4209 { border-width: 0px; position: absolute; left: 40px; top: 80px; width: 260px; height: 69px; font-weight: 300; font-style: normal; font-size: 17px; line-height: 23px; }
+
+.instagram-card #u4210 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 260px; word-wrap: break-word; }
+
+.instagram-card #u4211_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; color: #78909C; text-align: center; }
+
+.instagram-card #u4211 { border-width: 0px; position: absolute; left: 60px; top: 440px; width: 30px; height: 30px; font-style: normal; color: #78909C; text-align: center; }
+
+.instagram-card #u4212 { border-width: 0px; position: absolute; left: 0px; top: 6px; width: 30px; word-wrap: break-word; }
+
+.instagram-card #u4213_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; color: #78909C; }
+
+.instagram-card #u4213 { border-width: 0px; position: absolute; left: 280px; top: 440px; width: 30px; height: 30px; font-style: normal; color: #78909C; }
+
+.instagram-card #u4214 { border-width: 0px; position: absolute; left: 0px; top: 6px; width: 30px; word-wrap: break-word; }
+
+.instagram-card #u4215_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4215 { border-width: 0px; position: absolute; left: 30px; top: 440px; width: 30px; height: 30px; opacity: 0.25; }
+
+.instagram-card #u4215.mouseOver { opacity: 0.5; }
+
+.instagram-card #u4216 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4217 { position: absolute; left: 250px; top: 440px; }
+
+.instagram-card #u4217_state0 { position: relative; left: 0px; top: 0px; width: 30px; height: 30px; background-image: none; }
+
+.instagram-card #u4217_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4218_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4218 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; opacity: 0.25; }
+
+.instagram-card #u4218.mouseOver { opacity: 0.5; }
+
+.instagram-card #u4219 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4217_state1 { position: relative; left: 0px; top: 0px; width: 30px; height: 30px; visibility: hidden; background-image: none; }
+
+.instagram-card #u4217_state1_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4220_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4220 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4221 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4222_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4222 { border-width: 0px; position: absolute; left: 30px; top: 30px; width: 40px; height: 40px; }
+
+.instagram-card #u4223 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4224_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4224 { border-width: 0px; position: absolute; left: 280px; top: 30px; width: 30px; height: 30px; opacity: 0.25; }
+
+.instagram-card #u4224.mouseOver { opacity: 0.5; }
+
+.instagram-card #u4225 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4226_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 50px; height: 50px; background: inherit; background-color: rgba(77, 182, 172, 0.878431); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4226 { border-width: 0px; position: absolute; left: 270px; top: 20px; width: 50px; height: 50px; }
+
+.instagram-card #u4227 { border-width: 0px; position: absolute; left: 2px; top: 17px; width: 46px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4228 { border-width: 0px; position: absolute; left: 20px; top: 20px; width: 300px; height: 460px; overflow: hidden; visibility: hidden; }
+
+.instagram-card #u4228_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4228_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4228_state1 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; visibility: hidden; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4228_state1_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4229_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; background: inherit; background-color: rgba(77, 182, 172, 0.298039); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; }
+
+.instagram-card #u4229 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; color: #FFFFFF; }
+
+.instagram-card #u4230 { border-width: 0px; position: absolute; left: 2px; top: 222px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4231_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.6); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4231 { border-width: 0px; position: absolute; left: 40px; top: 70px; width: 100px; height: 100px; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4231_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.8); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4231_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4232 { border-width: 0px; position: absolute; left: 0px; top: 48px; width: 100px; word-wrap: break-word; }
+
+.instagram-card #u4233_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4233 { border-width: 0px; position: absolute; left: 75px; top: 80px; width: 30px; height: 30px; opacity: 0.5; }
+
+.instagram-card #u4234 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4235_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.6); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4235 { border-width: 0px; position: absolute; left: 40px; top: 190px; width: 100px; height: 100px; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4235_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.8); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4235_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4236 { border-width: 0px; position: absolute; left: 0px; top: 48px; width: 100px; word-wrap: break-word; }
+
+.instagram-card #u4237_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4237 { border-width: 0px; position: absolute; left: 75px; top: 200px; width: 30px; height: 30px; opacity: 0.5; }
+
+.instagram-card #u4238 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4239_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.6); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4239 { border-width: 0px; position: absolute; left: 160px; top: 70px; width: 100px; height: 100px; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4239_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.8); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4239_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4240 { border-width: 0px; position: absolute; left: 0px; top: 48px; width: 100px; word-wrap: break-word; }
+
+.instagram-card #u4241_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4241 { border-width: 0px; position: absolute; left: 195px; top: 80px; width: 30px; height: 30px; opacity: 0.5; }
+
+.instagram-card #u4242 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4243_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.6); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4243 { border-width: 0px; position: absolute; left: 160px; top: 190px; width: 100px; height: 100px; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4243_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: rgba(0, 150, 136, 0.8); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4243_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4244 { border-width: 0px; position: absolute; left: 0px; top: 48px; width: 100px; word-wrap: break-word; }
+
+.instagram-card #u4245_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4245 { border-width: 0px; position: absolute; left: 195px; top: 200px; width: 30px; height: 30px; opacity: 0.5; }
+
+.instagram-card #u4246 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4247_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 220px; height: 50px; background: inherit; background-color: rgba(0, 150, 136, 0.6); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4247 { border-width: 0px; position: absolute; left: 40px; top: 330px; width: 220px; height: 50px; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4247_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 220px; height: 50px; background: inherit; background-color: rgba(0, 150, 136, 0.8); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; color: #FFFFFF; text-align: center; line-height: 20px; }
+
+.instagram-card #u4248 { border-width: 0px; position: absolute; left: 30px; top: 15px; width: 190px; word-wrap: break-word; }
+
+.instagram-card #u4249_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4249 { border-width: 0px; position: absolute; left: 70px; top: 340px; width: 30px; height: 30px; opacity: 0.5; }
+
+.instagram-card #u4250 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4251_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 50px; height: 50px; background: inherit; background-color: white; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4251 { border-width: 0px; position: absolute; left: 20px; top: 430px; width: 50px; height: 50px; }
+
+.instagram-card #u4252 { border-width: 0px; position: absolute; left: 2px; top: 17px; width: 46px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4253 { border-width: 0px; position: absolute; left: 20px; top: 20px; width: 300px; height: 460px; overflow: hidden; visibility: hidden; }
+
+.instagram-card #u4253_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4253_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4253_state1 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 460px; visibility: hidden; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4253_state1_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4254_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 50px; background: inherit; background-color: white; border: none; border-radius: 4px; border-top-left-radius: 0px; border-top-right-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4254 { border-width: 0px; position: absolute; left: 0px; top: 410px; width: 300px; height: 50px; }
+
+.instagram-card #u4255 { border-width: 0px; position: absolute; left: 2px; top: 17px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4256_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 190px; height: 30px; background: inherit; background-color: #f2f2f2; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; color: #999999; text-align: left; }
+
+.instagram-card #u4256 { border-width: 0px; position: absolute; left: 60px; top: 420px; width: 190px; height: 30px; font-style: normal; font-size: 14px; color: #999999; text-align: left; }
+
+.instagram-card #u4256_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 190px; height: 30px; background: inherit; background-color: #f2f2f2; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; color: #999999; text-align: left; }
+
+.instagram-card #u4256_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 190px; height: 30px; background: inherit; background-color: white; box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #d7d7d7; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; color: #999999; text-align: left; }
+
+.instagram-card #u4257 { border-width: 0px; position: absolute; left: 10px; top: 6px; width: 178px; word-wrap: break-word; }
+
+.instagram-card #u4258_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4258 { border-width: 0px; position: absolute; left: 260px; top: 420px; width: 30px; height: 30px; opacity: 0.25; }
+
+.instagram-card #u4258.mouseOver { opacity: 0.8; }
+
+.instagram-card #u4259 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4260_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 130px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4260 { border-width: 0px; position: absolute; left: 60px; top: 40px; width: 130px; height: 20px; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4261 { border-width: 0px; position: absolute; left: 0px; top: 1px; width: 130px; white-space: nowrap; }
+
+.instagram-card #u4262_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 86px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4262 { border-width: 0px; position: absolute; left: 60px; top: 60px; width: 86px; height: 20px; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4263 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 87px; white-space: nowrap; }
+
+.instagram-card #u4264_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4264 { border-width: 0px; position: absolute; left: 10px; top: 40px; width: 40px; height: 40px; }
+
+.instagram-card #u4265 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4266_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 146px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4266 { border-width: 0px; position: absolute; left: 60px; top: 100px; width: 146px; height: 20px; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4267 { border-width: 0px; position: absolute; left: 0px; top: 1px; width: 146px; white-space: nowrap; }
+
+.instagram-card #u4268_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 180px; height: 40px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4268 { border-width: 0px; position: absolute; left: 60px; top: 120px; width: 180px; height: 40px; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4269 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 180px; word-wrap: break-word; }
+
+.instagram-card #u4270_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4270 { border-width: 0px; position: absolute; left: 10px; top: 100px; width: 40px; height: 40px; }
+
+.instagram-card #u4271 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4272_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 141px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4272 { border-width: 0px; position: absolute; left: 60px; top: 180px; width: 141px; height: 20px; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4273 { border-width: 0px; position: absolute; left: 0px; top: 1px; width: 140px; white-space: nowrap; }
+
+.instagram-card #u4274_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 203px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4274 { border-width: 0px; position: absolute; left: 60px; top: 200px; width: 203px; height: 20px; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4275 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 203px; white-space: nowrap; }
+
+.instagram-card #u4276_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4276 { border-width: 0px; position: absolute; left: 10px; top: 180px; width: 40px; height: 40px; }
+
+.instagram-card #u4277 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4278_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 143px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4278 { border-width: 0px; position: absolute; left: 60px; top: 240px; width: 143px; height: 20px; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4279 { border-width: 0px; position: absolute; left: 0px; top: 1px; width: 140px; white-space: nowrap; }
+
+.instagram-card #u4280_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 210px; height: 80px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4280 { border-width: 0px; position: absolute; left: 60px; top: 260px; width: 210px; height: 80px; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4281 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 210px; word-wrap: break-word; }
+
+.instagram-card #u4282_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4282 { border-width: 0px; position: absolute; left: 10px; top: 240px; width: 40px; height: 40px; }
+
+.instagram-card #u4283 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4284_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 30px; height: 30px; }
+
+.instagram-card #u4284 { border-width: 0px; position: absolute; left: 10px; top: 420px; width: 30px; height: 30px; opacity: 0.25; }
+
+.instagram-card #u4284.mouseOver { opacity: 0.8; }
+
+.instagram-card #u4285 { border-width: 0px; position: absolute; left: 2px; top: 7px; width: 26px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4286_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 301px; height: 2px; }
+
+.instagram-card #u4286 { border-width: 0px; position: absolute; left: 0px; top: 410px; width: 300px; height: 1px; }
+
+.instagram-card #u4287 { border-width: 0px; position: absolute; left: 2px; top: -8px; width: 296px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4288_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 143px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 17px; line-height: 23px; }
+
+.instagram-card #u4288 { border-width: 0px; position: absolute; left: 10px; top: 0px; width: 143px; height: 30px; font-style: normal; font-size: 17px; line-height: 23px; }
+
+.instagram-card #u4289 { border-width: 0px; position: absolute; left: 0px; top: 7px; width: 138px; white-space: nowrap; }
+
+.instagram-card #u4290_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 155px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4290 { border-width: 0px; position: absolute; left: 60px; top: 361px; width: 155px; height: 20px; font-style: normal; font-size: 10px; }
+
+.instagram-card #u4291 { border-width: 0px; position: absolute; left: 0px; top: 1px; width: 154px; white-space: nowrap; }
+
+.instagram-card #u4292_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 210px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4292 { border-width: 0px; position: absolute; left: 60px; top: 381px; width: 210px; height: 20px; font-size: 14px; color: #78909C; line-height: 20px; }
+
+.instagram-card #u4293 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 210px; word-wrap: break-word; }
+
+.instagram-card #u4294_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; }
+
+.instagram-card #u4294 { border-width: 0px; position: absolute; left: 10px; top: 360px; width: 40px; height: 40px; }
+
+.instagram-card #u4295 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4296_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 43px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 4px; border-top-left-radius: 0px; border-top-right-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 17px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4296 { border-width: 0px; position: absolute; left: 247px; top: 0px; width: 43px; height: 30px; font-style: normal; font-size: 17px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4296_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 43px; height: 30px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; border-top-left-radius: 0px; border-top-right-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 17px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4297 { border-width: 0px; position: absolute; left: 0px; top: 7px; width: 43px; word-wrap: break-word; }
+
+.instagram-card #u4298 { border-width: 0px; position: absolute; left: 20px; top: 20px; width: 300px; height: 350px; overflow: hidden; visibility: hidden; }
+
+.instagram-card #u4298_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 350px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4298_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4299_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 600px; height: 600px; background: inherit; background-color: white; border: none; border-radius: 666px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4299 { border-width: 0px; position: absolute; left: -270px; top: -270px; width: 600px; height: 600px; }
+
+.instagram-card #u4300 { border-width: 0px; position: absolute; left: 2px; top: 292px; width: 596px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4298_state1 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 350px; visibility: hidden; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4298_state1_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4301_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 40px; height: 40px; background: inherit; background-color: white; border: none; border-radius: 666px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+
+.instagram-card #u4301 { border-width: 0px; position: absolute; left: 10px; top: 10px; width: 40px; height: 40px; }
+
+.instagram-card #u4302 { border-width: 0px; position: absolute; left: 2px; top: 12px; width: 36px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4303 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 350px; overflow: hidden; }
+
+.instagram-card #u4303_state0 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 350px; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4303_state0_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4303_state1 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 300px; height: 350px; visibility: hidden; -ms-overflow-x: hidden; overflow-x: hidden; -ms-overflow-y: hidden; overflow-y: hidden; background-image: none; }
+
+.instagram-card #u4303_state1_content { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 1px; height: 1px; }
+
+.instagram-card #u4304_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 100px; height: 100px; }
+
+.instagram-card #u4304 { border-width: 0px; position: absolute; left: -20px; top: -10px; width: 100px; height: 100px; }
+
+.instagram-card #u4305 { border-width: 0px; position: absolute; left: 2px; top: 42px; width: 96px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4306_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 140px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; color: #78909C; }
+
+.instagram-card #u4306 { border-width: 0px; position: absolute; left: 90px; top: 10px; width: 140px; height: 20px; font-style: normal; color: #78909C; }
+
+.instagram-card #u4307 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 140px; white-space: nowrap; }
+
+.instagram-card #u4308_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 73px; height: 20px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 10px; color: #B0BEC5; }
+
+.instagram-card #u4308 { border-width: 0px; position: absolute; left: 110px; top: 30px; width: 73px; height: 20px; font-style: normal; font-size: 10px; color: #B0BEC5; }
+
+.instagram-card #u4309 { border-width: 0px; position: absolute; left: 0px; top: 4px; width: 72px; white-space: nowrap; }
+
+.instagram-card #u4310_img { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 20px; height: 20px; }
+
+.instagram-card #u4310 { border-width: 0px; position: absolute; left: 90px; top: 30px; width: 20px; height: 20px; opacity: 0.15; }
+
+.instagram-card #u4311 { border-width: 0px; position: absolute; left: 2px; top: 2px; width: 16px; visibility: hidden; word-wrap: break-word; }
+
+.instagram-card #u4312_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 110px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #f2f2f2; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4312 { border-width: 0px; position: absolute; left: 90px; top: 60px; width: 110px; height: 30px; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4312_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 110px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #00897b; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4312_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 110px; height: 30px; background: inherit; background-color: rgba(0, 150, 136, 0.8); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #00897b; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4313 { border-width: 0px; position: absolute; left: 0px; top: 4px; width: 110px; word-wrap: break-word; }
+
+.instagram-card #u4314_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 80px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #f2f2f2; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4314 { border-width: 0px; position: absolute; left: 210px; top: 60px; width: 80px; height: 30px; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4314_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 80px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #00897b; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4314_div.selected { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 80px; height: 30px; background: inherit; background-color: rgba(0, 150, 136, 0.8); box-sizing: border-box; border-width: 1px; border-style: solid; border-color: #00897b; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 14px; text-align: center; line-height: 23px; }
+
+.instagram-card #u4315 { border-width: 0px; position: absolute; left: 0px; top: 4px; width: 80px; word-wrap: break-word; }
+
+.instagram-card #u4316_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 260px; height: 90px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 0px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; line-height: 28px; }
+
+.instagram-card #u4316 { border-width: 0px; position: absolute; left: 20px; top: 110px; width: 260px; height: 90px; font-style: normal; line-height: 28px; }
+
+.instagram-card #u4317 { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 260px; word-wrap: break-word; }
+
+.instagram-card #u4318_div { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 120px; height: 30px; background: inherit; background-color: rgba(255, 255, 255, 0); border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 12px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4318 { border-width: 0px; position: absolute; left: 10px; top: 270px; width: 120px; height: 30px; font-style: normal; font-size: 12px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4318_div.mouseOver { border-width: 0px; position: absolute; left: 0px; top: 0px; width: 120px; height: 30px; background: inherit; background-color: #00897b; border: none; border-radius: 4px; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; font-style: normal; font-size: 12px; color: #9FA8DA; text-align: center; line-height: 23px; }
+
+.instagram-card #u4319 { border-width: 0px; position: absolute; left: 0px; top: 4px; width: 120px; word-wrap: break-word; }
+
+/*# sourceMappingURL=common.css.map */

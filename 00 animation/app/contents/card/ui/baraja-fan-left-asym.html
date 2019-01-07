@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="lib/tympanus/baraja.css">
+    <title></title>
+</head>
+<body>
+<div class="container baraja-demo">
+    <ul id="baraja-el" class="baraja-container">
+        <li>
+            <img src="img//1.jpg" alt=""/>
+            <h4>Coco Loko</h4>
+            <p>Total bicycle rights in blog four loko raw denim ex, helvetica sapiente odio placeat.</p>
+        </li>
+        <li>
+            <img src="img//2.jpg" alt=""/>
+            <h4>Vermouth Land</h4>
+            <p>Velit chambray fugiat, enim aesthetic esse ullamco typewriter.</p>
+        </li>
+        <li>
+            <img src="img//3.jpg" alt=""/>
+            <h4>Electrodynamics</h4>
+            <p>Before they sold out PBR magna jean shorts non seitan ea. Dolor wolf pop-up.</p>
+        </li>
+        <li>
+            <img src="img//4.jpg" alt=""/>
+            <h4>Retinal Bliss</h4>
+            <p>Locavore vero ad, before they sold out food truck bushwick helvetica.</p>
+        </li>
+        <li>
+            <img src="img//5.jpg" alt=""/>
+            <h4>Disco Fever</h4>
+            <p>Cillum laboris consequat, qui elit retro next level skateboard freegan hella.</p>
+        </li>
+        <li>
+            <img src="img//6.jpg" alt=""/>
+            <h4>Serenity</h4>
+            <p>Truffaut wes anderson hoodie 3 wolf moon labore, fugiat lomo iphone eiusmod vegan.</p>
+        </li>
+        <li>
+            <img src="img//7.jpg" alt=""/>
+            <h4>Dark Honor</h4>
+            <p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p>
+        </li>
+        <li>
+            <img src="img//8.jpg" alt=""/>
+            <h4>Nested Happiness</h4>
+            <p>Minim post-ironic banksy american apparel iphone wayfarers.</p>
+        </li>
+        <li>
+            <img src="img//9.jpg" alt=""/>
+            <h4>Cherry Country</h4>
+            <p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p>
+        </li>
+        <li>
+            <img src="img//10.jpg" alt="0"/>
+            <h4>Cherry Country</h4>
+            <p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p>
+        </li>
+        <li>
+            <img src="img//11.jpg" alt="1"/>
+            <h4>Coco Loko</h4>
+            <p>Total bicycle rights in blog four loko raw denim ex, helvetica sapiente odio placeat.</p>
+        </li>
+        <li>
+            <img src="img//12.jpg" alt="2"/>
+            <h4>Vermouth Land</h4>
+            <p>Velit chambray fugiat, enim aesthetic esse ullamco typewriter.</p>
+        </li>
+        <li>
+            <img src="img//3.jpg" alt=""/>
+            <h4>Electrodynamics</h4>
+            <p>Before they sold out PBR magna jean shorts non seitan ea. Dolor wolf pop-up.</p>
+        </li>
+        <li>
+            <img src="img//4.jpg" alt=""/>
+            <h4>Retinal Bliss</h4>
+            <p>Locavore vero ad, before they sold out food truck bushwick helvetica.</p>
+        </li>
+        <li>
+            <img src="img//5.jpg" alt=""/>
+            <h4>Disco Fever</h4>
+            <p>Cillum laboris consequat, qui elit retro next level skateboard freegan hella.</p>
+        </li>
+        <li>
+            <img src="img//6.jpg" alt=""/>
+            <h4>Serenity</h4>
+            <p>Truffaut wes anderson hoodie 3 wolf moon labore, fugiat lomo iphone eiusmod vegan.</p>
+        </li>
+        <li>
+            <img src="img//7.jpg" alt=""/>
+            <h4>Dark Honor</h4>
+            <p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p>
+        </li>
+        <li>
+            <img src="img//8.jpg" alt=""/>
+            <h4>Nested Happiness</h4>
+            <p>Minim post-ironic banksy american apparel iphone wayfarers.</p>
+        </li>
+    </ul>
+    <nav class="actions">
+        <button type="button" id="nav-fan4" class="btn">ACTION</button>
+        <button type="button" id="nav-prev" class="btn">&lt;</button>
+        <button type="button" id="nav-next" class="btn">&gt;</button>
+        <button type="button" id="close" class="btn">close</button>
+    </nav>
+</div>
+
+<!-- scripts -->
+<script src="lib/tympanus/modernizr.custom.79639.js"></script>
+<script src="lib/tympanus/jquery.min.js"></script>
+<script src="lib/tympanus/jquery.baraja.js"></script>
+<script type="text/javascript">
+    $(function() {
+        var $el = $( '#baraja-el' ),
+            baraja = $el.baraja();
+        // navigation
+        $( '#nav-prev' ).on( 'click', function( event ) {
+            baraja.previous();
+        } );
+        $( '#nav-next' ).on( 'click', function( event ) {
+            baraja.next();
+        } );
+        // active
+        $( '#nav-fan4' ).on( 'click', function( event ) {
+            baraja.fan( {
+                speed : 500,
+                easing : 'ease-out',
+                range : 90,
+                direction : 'left',
+                origin : { minX : 20, maxX : 80, y : 100 },
+                center : true,
+                translation : 60
+            } );
+        } );
+        // close the baraja
+        $( '#close' ).on( 'click', function( event ) {
+            baraja.close();
+        } );
+        // example of how to add more items
+        $( '#add' ).on( 'click', function( event ) {
+            if( $( this ).hasClass( 'disabled' ) ) {
+                return false;
+            }
+            $( this ).addClass( 'disabled' );
+            baraja.add( $('<li><img src="img//6.jpg" alt=""/><h4>Serenity</h4><p>Truffaut wes anderson hoodie 3 wolf moon labore, fugiat lomo iphone eiusmod vegan.</p></li><li><img src="img//7.jpg" alt=""/><h4>Dark Honor</h4><p>Chillwave mustache pinterest, marfa seitan umami id farm-to-table iphone.</p></li><li><img src="img//8.jpg" alt=""/><h4>Nested Happiness</h4><p>Minim post-ironic banksy american apparel iphone wayfarers.</p></li><li><img src="img//9.jpg" alt=""/><h4>Cherry Country</h4><p>Sint vinyl Austin street art odd future id trust fund, terry richardson cray.</p></li>') );
+        } );
+    });
+</script>
+</body>
+</html>

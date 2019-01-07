@@ -1,0 +1,73 @@
+<!-- page-top -->
+@@include('./work/include/base.inc')
+<!-- // page-top -->
+<body>
+	<!-- header -->
+	<!-- desktop & tablet -->
+	<header class="header">
+		<a href="index.html" class="header__link">
+			<img src="../image/logo_uilab.png" alt="UI Lab" class="header__image"/>
+			<h1 class="header__title">GUIDE</h1>
+		</a>
+	</header>
+
+	<aside class="aside">
+		<nav class="gnb">
+			<h2 class="gnb__title">작업용</h2>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">프로젝트개요</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">환경설정</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">코드작성 규칙</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">컴포넌트</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">스타일</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">폴더구조</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">페이지리스트</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">테스트리스트</a>
+		</nav>
+
+		<nav class="gnb">
+			<h2 class="gnb__title">배포용</h2>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">지원범위</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">폴더구조</a>
+			<a class="gnb__item" href="javascript:void(0);" target="_self">페이지리스트</a>
+		</nav>
+	</aside>
+	<!-- //desktop & tablet -->
+
+	<!-- mobile -->
+	<header class="header header--mobile">
+		<a href="#" class="header__link" data-js="aside__toggle">
+			<i class="fa fa-bars"></i>
+			<span class="hidden">메뉴</span>
+		</a>
+
+		<aside class="aside aside--mobile">
+			<nav class="gnb">
+				<h2 class="gnb__title">필수요소</h2>
+				<a class="gnb__item" href="javascript:void(0);" target="_self"></a>
+			</nav>
+		</aside>
+	</header>
+	<!-- //mobile -->
+	<!-- // header -->
+
+	<!-- contents -->
+	<div class="contents">
+		<!-- components -->
+		<section class="components">
+			<h1 class="components__title components__title--emphasized">대제목</h1>
+			<!-- 기본 -->
+			<section class="components__item">
+				<h2 class="components__title">소제목</h2>
+				<section class="components__item">내용</section>
+			</section>
+			<!-- //기본 -->
+		</section>
+		<!-- // components -->
+	</div>
+	<!-- // contents -->
+
+	<!-- footer -->
+	@@include('./work/include/footer.inc')
+	<!-- // footer -->
+</body>
+</html>

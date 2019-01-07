@@ -1,0 +1,27 @@
+.container{
+	width: 100vw;
+	&:after {
+		content: '';
+		display: block;
+		clear: both;
+		visibility: hidden;
+	}
+}
+.box{
+	float: left;
+	width: calc(33% - 30px);
+	height: 200px;
+	margin: 15px;
+	&.box1{
+		background-color: #00bcd4;
+	}
+	&.box2{
+		background-color: #0097a7;
+	}
+	&.box3{
+		background-color: #0083bf;
+	}
+	&.box4{
+		background-color: #69f0ae;
+	}
+}

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <title></title>
+</head>
+<body>
+    <div class="container toggle-search">
+        <div class="search" id="toggleSearch">
+            <form>
+                <input class="input input__search" placeholder="UI Lab Animation" type="search" name="search" id="search">
+                <input class="input input__submit" type="submit" value="">
+                <div class="input input__icon"></div>
+            </form>
+        </div>
+    </div>
+
+    <!-- scripts -->
+    <script src="./lib/tympanus/classie.js"></script>
+    <script src="./lib/tympanus/uisearch.js"></script>
+    <script>
+        new UISearch( document.getElementById( 'toggleSearch' ));
+    </script>
+</body>
+</html>

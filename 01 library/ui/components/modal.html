@@ -1,0 +1,72 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; MODAL</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">modal</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="modal">
+					<!-- 모달 버튼 -->
+					<div class="remodal-bg">
+						<a href="#" class="button button--outline" data-remodal-target="modal">MODAL</a>
+					</div>
+					<!-- //모달 버튼 -->
+
+					<!-- 모달 팝업 -->
+					<div class="remodal" data-remodal-id="modal">
+						<a data-remodal-action="close" class="remodal-close"></a>
+						<a data-remodal-action="cancel" class="remodal-cancel" href="#">취소</a>
+						<a data-remodal-action="confirm" class="remodal-confirm" href="#">확인</a>
+					</div>
+					<!-- //모달 팝업 -->
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="modal">
+						<!-- 모달 버튼 -->
+						<div class="remodal-bg">
+							<a href="#" class="button button--outline" data-remodal-target="modal">MODAL</a>
+						</div>
+						<!-- //모달 버튼 -->
+
+						<!-- 모달 팝업 : 하단 내용 주석 제거 후 사용 -->
+						<!-- <div class="remodal remodal-is-opened" data-remodal-id="modal">
+							<a data-remodal-action="close" class="remodal-close"></a>
+							<a data-remodal-action="cancel" class="remodal-cancel" href="#">취소</a>
+							<a data-remodal-action="confirm" class="remodal-confirm" href="#">확인</a>
+						</div> -->
+						<!-- //모달 팝업 -->
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+	<!-- Modal -->
+	<script src="../common/js/remodal.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <link rel="stylesheet" type="text/css" href="lib/tympanus/component.css">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <div class="content content--2">
+        <svg width="100%" height="100%" viewBox="0 0 320 160" class="letters letters--effect-2">
+            <!--U-->
+            <g class="letter letter--1">
+                <g class="letter__part">
+                    <path class="letter__layer" d="M33,25 Q14,90 44,90 Q78,90 65,25"></path>
+                    <path class="letter__layer" d="M33,25 Q14,90 44,90 Q78,90 65,25"></path>
+                    <path class="letter__layer" d="M33,25 Q14,90 44,90 Q78,90 65,25"></path>
+                </g>
+            </g>
+            <!--I-->
+            <g class="letter letter--2">
+                <g class="letter__part">
+                    <path class="letter__layer" d="M90,30.3 l8.4,58.4"></path>
+                    <path class="letter__layer" d="M90,30.3 l8.4,58.4"></path>
+                    <path class="letter__layer" d="M90,30.3 l8.4,58.4"></path>
+                </g>
+            </g>
+            <!--L-->
+            <g class="letter letter--3">
+                <g class="letter__part">
+                    <path class="letter__layer" d="M126.4,70.8 l27.6,0.5"></path>
+                    <path class="letter__layer" d="M126.4,70.8 l27.6,0.5"></path>
+                    <path class="letter__layer" d="M126.4,70.8 l27.6,0.5"></path>
+                </g>
+                <g class="letter__part">
+                    <path class="letter__layer" d="M128.9,15.6 l-2.3,60.2"></path>
+                    <path class="letter__layer" d="M128.9,15.6 l-2.3,60.2"></path>
+                    <path class="letter__layer" d="M128.9,15.6 l-2.3,60.2"></path>
+                </g>
+            </g>
+            <!--A-->
+            <g class="letter letter--4">
+                <g class="letter__part">
+                    <path class="letter__layer" d="M165,80 L190,20 L215,80"></path>
+                    <path class="letter__layer" d="M165,80 L190,20 L215,80"></path>
+                    <path class="letter__layer" d="M165,80 L190,20 L215,80"></path>
+                </g>
+                <g class="letter__part">
+                    <path class="letter__layer" d="M171,50 l25.6,5"></path>
+                    <path class="letter__layer" d="M171,50 l25.6,5"></path>
+                    <path class="letter__layer" d="M171,50 l25.6,5"></path>
+                </g>
+            </g>
+            <!--B-->
+            <g class="letter letter--5">
+                <g class="letter__part">
+                    <path class="letter__layer" d="M240,55 c0,0, 26.8,0.9, 32.9,-9.9 c8.4,-15 10.8,-31.6 -46.7,-25.6"></path>
+                    <path class="letter__layer" d="M240,55 c0,0, 26.8,0.9, 32.9,-9.9 c8.4,-15 10.8,-31.6 -46.7,-25.6"></path>
+                    <path class="letter__layer" d="M240,55 c0,0, 26.8,0.9, 32.9,-9.9 c8.4,-15 10.8,-31.6 -46.7,-25.6"></path>
+                </g>
+                <g class="letter__part">
+                    <path class="letter__layer" d="M238,58 c45.8-10.3,59.4,49.7-13,36.4"></path>
+                    <path class="letter__layer" d="M238,58 c45.8-10.3,59.4,49.7-13,36.4"></path>
+                    <path class="letter__layer" d="M238,58 c45.8-10.3,59.4,49.7-13,36.4"></path>
+                </g>
+                <g class="letter__part">
+                    <path class="letter__layer" d="M230,25 v60"></path>
+                    <path class="letter__layer" d="M230,25 v60"></path>
+                    <path class="letter__layer" d="M230,25 v60"></path>
+                </g>
+            </g>
+        </svg>
+        <nav class="actions">
+            <button class="btn" aria-label="Start animation">ACTION</button>
+        </nav>
+    </div>
+</div>
+<script src="lib/tympanus/anime.min.js"></script>
+<script src="lib/tympanus/main.js"></script>
+<script>
+    ;(function() {
+        var svgFx2 = document.querySelector('svg'),
+            phrase2 = new Phrase(svgFx2, {
+                pathOpacityAnim: true,
+                outAnimation: {
+                    scale: 0,
+                    opacity: [1, 0],
+                    duration: 250,
+                    easing: 'easeInOutQuad'
+                },
+                inAnimation: {
+                    delay: 150,
+                    properties: {
+                        scale: {
+                            value: function() {
+                                return [0, 1];
+                            },
+                            duration: 900,
+                            elasticity: 600,
+                            easing: 'easeOutElastic'
+                        },
+                        opacity: {
+                            value: [0, 1],
+                            duration: 50,
+                            easing: 'linear'
+                        },
+                    }
+                },
+                pathAnimation: {
+                    duration: 700,
+                    easing: 'easeOutSine',
+                    delay: 200
+                }
+            });
+
+        // Trigger the animations.
+        svgFx2.nextElementSibling.querySelector('button').addEventListener('click', function() { phrase2.animate(); });
+    })();
+</script>
+</body>
+</html>

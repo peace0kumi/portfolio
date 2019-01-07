@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="lib/tympanus/component.css">
+    <title></title>
+</head>
+<body>
+
+<div class="container">
+    <div class="md-slider">
+        <div class="md-device-wrapper">
+            <div class="md-device md-device-1">
+                <a href="#">
+                    <img src="img/morphing_site1.jpg" />
+                </a>
+                <div class="md-border-element"></div>
+                <div class="md-base-element"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- scripts -->
+<script src="lib/tympanus/modernizr.custom.js"></script>
+<script src="lib/tympanus/morphingdevice.js"></script>
+<script>
+    var el = document.querySelector( '.md-slider' ),
+        settings = {
+            autoplay : true,
+            interval : 3000,
+            devices : [
+                { cName : 'md-device-1', canRotate : false, imgsrc : 'img/morphing_site1.jpg' },
+                { cName : 'md-device-2', canRotate : false, imgsrc : 'img/morphing_site2.jpg' },
+                { cName : 'md-device-3', canRotate : true, imgsrc : 'img/morphing_site3.jpg', rotatedsrc : 'img/morphing_site3r.jpg' },
+                { cName : 'md-device-4', canRotate : true, imgsrc : 'img/morphing_site4.jpg', rotatedsrc : 'img/morphing_site4r.jpg' }
+            ]
+        },
+        devicesTotal = settings.devices.length,
+        ds = MorphingDevice( el, settings );
+
+    // create navigation triggers
+    var nav = document.createElement( 'nav' );
+    for( var i = 0; i < devicesTotal; ++i ) {
+
+        var trigger = document.createElement( 'a' );
+        trigger.className = i === 0 ? 'md-current' : '';
+        trigger.setAttribute( 'href', '#' );
+        trigger.setAttribute( 'pos', i );
+        trigger.onclick = function( event ) {
+
+            ds.stopSlideshow();
+            var pos = Number( event.target.getAttribute( 'pos' ) );
+            if( pos === ds.getCurrent() ) {
+                return false;
+            }
+            ds.updateCurrentTrigger( event.target );
+            ds.setCurrent( pos );
+            ds.changeDevice();
+            return false;
+
+        };
+        nav.appendChild( trigger );
+
+    }
+    el.appendChild( nav );
+
+    if( settings.autoplay ) {
+        ds.startSlideshow();
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+        <a href="#" onclick="clickEvent();" class="actionBtn13" id="actionBtn"></a>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript">
+        function clickEvent(){
+            var thisBtn = document.getElementById("actionBtn");
+            thisBtn.onclick = function() {
+                thisBtn.classList.toggle("is-active");
+            };
+
+            if(!(thisBtn.classList.contains("is-active"))){
+                thisBtn.classList.add("is-active");
+                setInterval( function(){
+                    thisBtn.classList.remove("is-active")
+                }, 3000);
+            }
+        };
+    </script>
+</body>
+</html>

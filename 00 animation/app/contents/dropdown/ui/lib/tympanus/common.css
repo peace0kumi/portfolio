@@ -1,0 +1,72 @@
+* {
+	box-sizing: border-box;
+}
+.dropdown,
+.select {
+	position: relative;
+	width: 400px;
+	margin: 20px auto;
+	display: block;
+}
+.dropdown > span {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	color: #999;
+	font-weight: 700;
+	font-size: 16px;
+	background: #fff;
+	display: block;
+	padding: 0 50px 0 30px;
+	position: relative;
+	cursor: pointer;
+}
+.dropdown > span:after {
+	content: '\25BC';
+	position: absolute;
+	right: 0px;
+	top: 0;
+	width: 50px;
+	text-align: center;
+	font-size: 12px;
+	padding: 10px;
+	height: 70%;
+	line-height: 38px;
+}
+.dropdown.is-active > span:after {
+	content: '\25B2';
+}
+.dropdown ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: block;
+	position: relative;
+}
+.dropdown ul li {
+	display: block;
+}
+.dropdown ul li span {
+	width: 100%;
+	background: #fff;
+	line-height: 60px;
+	padding: 0 30px;
+	display: block;
+	color: #bcbcbc;
+	cursor: pointer;
+	font-weight: 700;
+}
+.dropdown > span,
+.dropdown ul li span {
+	-webkit-backface-visibility: hidden;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Select fallback styling */
+.select {
+	border: 1px solid #ddd;
+}

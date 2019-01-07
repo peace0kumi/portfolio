@@ -1,0 +1,186 @@
+<!-- header -->
+<nav class="navbar" ng-cloak="">
+	<ul class="nav navbar-nav navbar-left">
+		<li class="navbar-header">
+			<a href="javascript:void(0);" class="bars"></a>
+			<a class="navbar-brand" href="index.html" target="_self">
+				<img src="//i2.wp.com/ui-lab.co.kr/wp-content/uploads/2016/07/cropped-ui-lab_favicon_B02-1.png?fit=32%2C32" alt="UI Lab">
+				<span>ANIMATION</span>
+			</a>
+		</li>
+		<li class="search_bar">
+			<div class="input-group">
+				<input ng-model="search.title" type="text" class="form-control" placeholder="Search Keywords">
+				<span class="input-group-addon">
+                    <i class="zmdi zmdi-search"></i>
+					<span class="hidden">검색</span>
+                </span>
+			</div>
+		</li>
+		<li class="float-right">
+			<a href="javascript:void(0);" class="fullscreen hidden-md-down hidden-sm-down" data-provide="fullscreen">
+				<i class="zmdi zmdi-fullscreen"></i>
+				<span class="hidden">전체화면</span>
+			</a>
+		</li>
+	</ul>
+</nav>
+<!-- //header -->
+
+<!-- left sidebar -->
+<aside id="leftsidebar" class="sidebar" ng-cloak="">
+	<div class="menu">
+		<ul class="list">
+			<li>
+				<a href="javascript:void(0);" class="menu-toggle toggled">
+					<i class="zmdi zmdi-label"></i>
+					<span>Category</span>
+				</a>
+				<ul class="ml-menu">
+					<li ng-click="clickAll($event)">
+						<a href="javascript:void(0);" ng-click="getList('ALL')">
+							<span>All ({{countAll}})</span>
+						</a>
+					</li>
+					<li ng-click="clickCategories($event)" ng-repeat="item in categories">
+						<a href="javascript:void(0);" ng-click="getList(item.id)" class="waves-effect waves-block">
+							<span>{{item.name}}</span>
+							<span>({{item.count}})</span>
+						</a>
+					</li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+</aside>
+<!-- //left sidebar -->
+
+<!-- content -->
+<section class="content" ng-cloak="">
+	<div class="container-fluid">
+		<!-- //category info -->
+		<div class="row">
+			<!-- col -->
+			<div class="col-lg-4 col-md-6 col-sm-12" ng-repeat="item in items | filter:search | limitTo: limit">
+				<!-- card -->
+				<div class="card">
+					<!-- card header -->
+					<div class="card__header">
+						<ul class="tag">
+							<li class="tag__item tag__item--main-category"><span class="tag__text">{{item.cName}}</span></li>
+							<li class="tag__item" ng-repeat="tag in item['tags']"><span class="tag__text">{{tag.name}}</span></li>
+						</ul>
+						<h2 class="title">{{item.title}}</h2>
+					</div>
+					<!-- //card header -->
+					<!-- card body -->
+					<div class="card__body">
+						<!-- video -->
+						<div class="video">
+							<video class="video__media" id="thisVideo" preload="metadata" muted playsinline>
+								<source ng-src="{{item.video}}" type="video/mp4" />
+								Your browser does not support the <code>video</code> tag.
+							</video>
+							<button class="video__controls" type="button" ng-click="playVideo($index)">
+								<span class="hidden">동영상 재생</span>
+							</button>
+						</div>
+						<!-- //video -->
+					</div>
+					<!-- //card body -->
+					<!-- card footer -->
+					<div class="card__footer">
+						<!-- support -->
+						<div class="support">
+							<a href="javascript:void(0);" ng-click="clickDropdown($event)" class="button information">
+								<i class="zmdi zmdi-info-outline"></i>
+								<span class="hidden">지원범위</span>
+							</a>
+						</div>
+						<!-- //support -->
+						<!-- zoom in -->
+						<div class="zoom-in">
+							<a href="#largeModal" data-toggle="modal" data-target="#largeModal" ng-click="goDetail($event,item.linkId)" class="button zoom-in">
+								<i class="zmdi zmdi-zoom-in"></i>
+								<span class="hidden">크게보기</span>
+							</a>
+						</div>
+						<!-- //zoom in -->
+					</div>
+					<!-- //card footer -->
+
+					<!-- support table -->
+					<div class="support__table table">
+						<h5 class="table__title">지원범위</h5>
+						<a href="javascript:void(0);" ng-click="clickClose($event)" class="button close">
+							<i class="zmdi zmdi-close"></i>
+							<span class="hidden">닫기</span>
+						</a>
+						<table>
+							<caption class="hidden">지원범위</caption>
+							<thead>
+							<tr>
+								<th class="table__head">IE</th>
+								<th class="table__head">Chrome</th>
+								<th class="table__head">FireFox</th>
+								<th class="table__head">Opera</th>
+								<th class="table__head">Safari</th>
+								<th class="table__head">Mobile</th>
+							</tr>
+							</thead>
+							<tbody>
+							<tr>
+								<td>{{item.supportIE}}</td>
+								<td>{{item.supportChrome}}</td>
+								<td>{{item.supportFirefox}}</td>
+								<td>{{item.supportOpera}}</td>
+								<td>{{item.supportSafari}}</td>
+								<td>{{item.supportMobile}}</td>
+							</tr>
+							</tbody>
+						</table>
+					</div>
+					<!-- //support table -->
+				</div>
+				<!-- //card -->
+			</div>
+			<!-- //col -->
+			<!-- load more -->
+			<div class="button__container" ng-show="checkItemLen()">
+				<button type="button" class="button btn" ng-click="loadmore()">LOAD MORE</button>
+			</div>
+			<!-- //load more -->
+		</div>
+	</div>
+	<!-- footer -->
+	<footer class="footer">
+		<small class="footer__copyright">
+			Copyright 2018.
+			<a href="mailto:jhlee@ui-lab.co.kr" class="footer__link">UI Lab</a>
+			All rights reserved.
+		</small>
+	</footer>
+	<!-- //footer -->
+</section>
+<!-- //content -->
+
+<!-- modal -->
+<script type="text/ng-template" id="dialog1.tmpl.html" ng-cloak="">
+	<div class="modal fade show" id="largeModal" tabindex="-1" role="dialog">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-body">
+					<iframe ng-src="{{url}}" class="iframe-content"></iframe>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-round waves-effect" data-dismiss="modal" ng-click="answer('useful')">CLOSE</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</script>
+<!-- //modal -->
+
+<!-- overlay for sidebars -->
+<div class="overlay"></div>
+<!-- //overlay for sidebars -->

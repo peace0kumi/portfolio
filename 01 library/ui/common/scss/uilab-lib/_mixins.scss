@@ -1,0 +1,57 @@
+// Mixins
+//
+
+// clearfix
+@mixin clearfix {
+	&:before,&:after{
+		content: '';
+		display: block;
+		clear: both;
+	}
+}
+
+// 순차적 리스트 넘버링
+// 사용법 : @include number(from, through, target);
+// from : 시작 넘버, through: 종료 넘버, target: 대상 태그 또는 클래스
+@mixin number($from, $through, $target) {
+	@for $i from $from through $through {
+		#{$target}:nth-child(#{$i}) {
+      &:before {
+        content: '#{$i}';
+      }
+    }
+  }
+}
+
+// IR
+@mixin ir {
+	overflow: hidden;
+	position: absolute;
+	left: -10000px;
+	width: 1px;
+	height: 1px;
+	opacity: 0;
+}
+
+// Ellipsis
+
+// Break Point
+$mobile:767px;
+$tablet:1024px;
+$desktop:1025px;
+
+@mixin mobile {
+	@media screen and (max-width:$mobile) {
+		@content;
+	}
+}
+@mixin tablet {
+	@media screen and (max-width:$tablet) {
+		@content;
+	}
+}
+@mixin desktop {
+	@media screen and (min-width:$desktop){
+		@content;
+	}
+}

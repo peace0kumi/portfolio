@@ -1,0 +1,206 @@
+@import url('common.css');
+
+/* common */
+.is-active.dropdown > span {
+	color: #3f51b5;
+}
+.is-active.dropdown ul li span:hover {
+	background: #3f51b5;
+	color: #fff;
+}
+
+/* normal */
+.dropdown-normal .dropdown > span,
+.dropdown-normal .dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-normal .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-normal .dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+.dropdown-normal .is-active.dropdown > span,
+.dropdown-normal .is-active.dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-normal .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/* diagonal */
+.dropdown-diagonal .dropdown > span,
+.dropdown-diagonal .dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-diagonal .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-diagonal .dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+.dropdown-diagonal .is-active.dropdown > span,
+.dropdown-diagonal .is-active.dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-diagonal .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/* curve */
+.dropdown-curve .dropdown > span,
+.dropdown-curve .dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-curve .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-curve .dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+.dropdown-curve .is-active.dropdown > span,
+.dropdown-curve .is-active.dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-curve .is-active.dropdown ul li {
+	-webkit-transform-origin: -200% 50%;
+	-moz-transform-origin: -200% 50%;
+	-o-transform-origin: -200% 50%;
+	-ms-transform-origin: -200% 50%;
+	transform-origin: -200% 50%;
+}
+.dropdown-curve .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/* cover */
+.dropdown-cover .dropdown {
+	-webkit-perspective: 800px;
+	-moz-perspective: 800px;
+	-o-perspective: 800px;
+	-ms-perspective: 800px;
+	perspective: 800px;
+}
+.dropdown-cover .dropdown > span {
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	-o-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	-o-transform-origin: 50% 0%;
+	-ms-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+
+	-webkit-transition: -webkit-transform .3s;
+	-moz-transition: -moz-transform .3s;
+	-o-transition: -o-transform .3s;
+	-ms-transition: -ms-transform .3s;
+	transition: transform .3s;
+}
+.dropdown-cover .dropdown > span:active {
+	-webkit-transform: rotateX(60deg);
+	-moz-transform: rotateX(60deg);
+	-o-transform: rotateX(60deg);
+	-ms-transform: rotateX(60deg);
+	transform: rotateX(60deg);
+}
+.dropdown-cover .dropdown > span,
+.dropdown-cover .dropdown ul li:nth-last-child(-n+3) span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-cover .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-cover .dropdown ul li {
+	position: absolute;
+	width: 100%;
+}
+.dropdown-cover .is-active.dropdown > span,
+.dropdown-cover .is-active.dropdown ul li span {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-cover .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/* scatter */
+.dropdown-scatter .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-scatter .dropdown > span,
+.dropdown-scatter .dropdown ul li {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-scatter .dropdown ul li {
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+}
+.dropdown-scatter .is-active.dropdown ul li {
+	pointer-events: auto;
+}
+.dropdown-scatter .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}
+
+/* delay */
+.dropdown-delay .dropdown ul {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+}
+.dropdown-delay .dropdown > span,
+.dropdown-delay .dropdown ul li {
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+.dropdown-delay .dropdown ul li {
+	position: absolute;
+	width: 100%;
+	pointer-events: none;
+}
+.dropdown-delay .is-active.dropdown ul li {
+	pointer-events: auto;
+}
+.dropdown-delay .is-active.dropdown ul li span {
+	-webkit-transition: all 0.2s linear 0s;
+	-moz-transition: all 0.2s linear 0s;
+	-ms-transition: all 0.2s linear 0s;
+	-o-transition: all 0.2s linear 0s;
+	transition: all 0.2s linear 0s;
+}

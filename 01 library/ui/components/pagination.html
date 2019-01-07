@@ -1,0 +1,139 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; PAGINATION</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">pagination</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<ul class="pagination">
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">Prev</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">1</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">3</a>
+					</li>
+					<li class="pagination__item is-disabled">
+						<a class="pagination__link" href="#">Next</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<ul class="pagination">
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">Prev</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">3</a>
+						</li>
+						<li class="pagination__item is-disabled">
+							<a class="pagination__link" href="#">Next</a>
+						</li>
+					</ul></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!-- 아이콘 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">ICON</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<ul class="pagination pagination--icon">
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">
+							<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+							<span class="hidden">Prev</span>
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">1</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">3</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="#">
+							<i class="fas fa-angle-double-right" aria-hidden="true"></i>
+							<span class="hidden">Next</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<ul class="pagination pagination--icon">
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">
+								<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+								<span class="hidden">Prev</span>
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">3</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="#">
+								<i class="fas fa-angle-double-right" aria-hidden="true"></i>
+								<span class="hidden">Next</span>
+							</a>
+						</li>
+					</ul></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //아이콘 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+</body>
+</html>

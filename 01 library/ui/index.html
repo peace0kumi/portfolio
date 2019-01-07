@@ -1,0 +1,1620 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<meta name="description" content="웹표준 기술을 기반으로 보다 나은 사용자 환경을 만들기 위해 끊임없이 고민하고 웹퍼블리싱 전문기업" />
+	<meta name="author" content="UI Lab">
+	<meta name="keywords" content="html,html5,css,css3,javascript,jquery,mobile app,nodejs,웹표준,웹퍼블리싱,웹퍼블리셔,웹 접근성,frontend developer,ui개발,워드프레스,웹퍼블리싱 회사" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="msapplication-TileImage" content="//i2.wp.com/ui-lab.co.kr/wp-content/uploads/2016/07/cropped-ui-lab_favicon_B02-1.png?fit=270%2C270" />
+	<link rel="icon" href="//i2.wp.com/ui-lab.co.kr/wp-content/uploads/2016/07/cropped-ui-lab_favicon_B02-1.png?fit=32%2C32" sizes="32x32" />
+	<link rel="icon" href="//i2.wp.com/ui-lab.co.kr/wp-content/uploads/2016/07/cropped-ui-lab_favicon_B02-1.png?fit=192%2C192" sizes="192x192" />
+	<link rel="apple-touch-icon-precomposed" href="//i2.wp.com/ui-lab.co.kr/wp-content/uploads/2016/07/cropped-ui-lab_favicon_B02-1.png?fit=180%2C180" />
+	<link rel="stylesheet" href="/common/css/global.css" />
+	<link rel="stylesheet" href="/common/css/uilab-library.css">
+	<!-- syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="/common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="/common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //syntax highlighter -->
+	<!-- fontawesome -->
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css?ver=4.8.5" id="font-awesome-css" media="all" />
+	<!-- //fontawesome -->
+	<!-- asset preload -->
+	<link rel="prelaod" href="//ui-lab.co.kr/wp-content/uploads/2016/07/HUILab_logo_H100.png" as="image">
+	<!-- //asset preload -->
+	<title>UI Lab &#124; Library</title>
+</head>
+<body>
+<!-- header -->
+	<!-- desktop & tablet -->
+	<header class="header">
+		<a href="index.html" class="header__link" target="_self">
+			<img src="//ui-lab.co.kr/wp-content/uploads/2016/07/HUILab_logo_H100.png" alt="UI Lab" class="header__image"/>
+			<h1 class="header__title">LIBRARY</h1>
+		</a>
+		<div class="header__contact">
+			<a class="header__link fullscreen" href="#" onclick="toggleFullScreen();">
+				<i class="fas fa-expand"></i>
+				<span class="hidden">확대</span>
+			</a>
+			<a class="header__link tel" href="tel:070-4112-1012">
+				<i class="fas fa-phone"></i>
+				<span class="hidden">전화</span>
+			</a>
+			<a class="header__link mail" href="mailto:jhlee@ui-lab.co.kr?cc=yjkim@ui-lab.co.kr,yhpark@ui-lab.co.kr&subject=[UI Lab]%20문의&body=안녕하세요,%20문의%20사항이%20있습니다.">
+				<i class="far fa-envelope"></i>
+				<span class="hidden">메일</span>
+			</a>
+		</div>
+	</header>
+	<aside class="aside">
+		<nav class="gnb" data-js="gnb__toggle">
+			<h2 class="gnb__title">COMPONENTS</h2>
+			<a class="gnb__item" href="#headline" target="_self">headline</a>
+			<a class="gnb__item" href="#button" target="_self">button</a>
+			<a class="gnb__item" href="#input" target="_self">input</a>
+			<a class="gnb__item" href="#pagination" target="_self">pagination</a>
+			<a class="gnb__item" href="#tabs" target="_self">tabs</a>
+			<a class="gnb__item" href="#modal" target="_self">modal</a>
+			<a class="gnb__item" href="#accordion" target="_self">accordion</a>
+			<a class="gnb__item" href="#dropdown" target="_self">dropdown</a>
+			<a class="gnb__item" href="#slider" target="_self">slider</a>
+			<a class="gnb__item" href="#grid" target="_self">grid</a>
+		</nav>
+	</aside>
+	<!-- //desktop & tablet -->
+	<!-- mobile -->
+	<header class="header header--mobile">
+		<!-- mobile hamburger menu -->
+		<a href="#" class="header__link" data-js="aside__toggle">
+			<i class="fas fa-bars fa-2x"></i>
+			<span class="hidden">메뉴</span>
+		</a>
+		<!-- //mobile hamburger menu -->
+		<div class="header__contact">
+			<a class="header__link" href="tel:070-4112-1012">
+				<i class="fas fa-phone fa-2x"></i>
+				<span class="hidden">전화</span>
+			</a>
+			<a class="header__link" href="mailto:jhlee@ui-lab.co.kr?cc=yjkim@ui-lab.co.kr,yhpark@ui-lab.co.kr&subject=[UI Lab]%20문의&body=안녕하세요,%20문의%20사항이%20있습니다.">
+				<i class="far fa-envelope fa-2x"></i>
+				<span class="hidden">메일</span>
+			</a>
+		</div>
+		<aside class="aside aside--mobile">
+			<nav class="gnb" data-js="gnb__toggle">
+				<h2 class="gnb__title">COMPONENTS</h2>
+				<a class="gnb__item is-active" href="#headline" target="_self">headline</a>
+				<a class="gnb__item" href="#button" target="_self">button</a>
+				<a class="gnb__item" href="#input" target="_self">input</a>
+				<a class="gnb__item" href="#pagination" target="_self">pagination</a>
+				<a class="gnb__item" href="#tabs" target="_self">tabs</a>
+				<a class="gnb__item" href="#modal" target="_self">modal</a>
+				<a class="gnb__item" href="#accordion" target="_self">accordion</a>
+				<a class="gnb__item" href="#dropdown" target="_self">dropdown</a>
+				<a class="gnb__item" href="#slider" target="_self">slider</a>
+				<a class="gnb__item" href="#grid" target="_self">grid</a>
+			</nav>
+		</aside>
+	</header>
+	<!-- //mobile -->
+<!-- //header -->
+
+<!-- contents -->
+<div class="contents">
+	<!-- headline -->
+	<section class="components" id="headline">
+		<h1 class="components__title components__title--emphasized">headline</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<h1 class="title title--h1">First Header</h1>
+				<h2 class="title title--h2">Second Header</h2>
+				<h3 class="title title--h3">Third Header</h3>
+				<h4 class="title title--h4">Fourth Header</h4>
+				<h5 class="title title--h5">Fifth Header</h5>
+				<h6 class="title title--h6">Sixth Header</h6>
+				<p class="title">Default Header</p>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<h1 class="title title--h1">First Header</h1>
+					<h2 class="title title--h2">Second Header</h2>
+					<h3 class="title title--h3">Third Header</h3>
+					<h4 class="title title--h4">Fourth Header</h4>
+					<h5 class="title title--h5">Fifth Header</h5>
+					<h6 class="title title--h6">Sixth Header</h6>
+					<p class="title">Default Header</p></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+	<!-- //headline -->
+
+	<!-- button -->
+	<section class="components" id="button">
+		<h1 class="components__title components__title--emphasized">button</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="button__group">
+					<button type="button" class="button">BUTTON</button>
+					<button type="button" class="button button--blue">BUTTON</button>
+					<button type="button" class="button button--indigo">BUTTON</button>
+					<button type="button" class="button button--purple">BUTTON</button>
+					<button type="button" class="button button--pink">BUTTON</button>
+					<button type="button" class="button button--red">BUTTON</button>
+					<button type="button" class="button button--orange">BUTTON</button>
+					<button type="button" class="button button--yellow">BUTTON</button>
+					<button type="button" class="button button--green">BUTTON</button>
+					<button type="button" class="button button--teal">BUTTON</button>
+					<button type="button" class="button button--cyan">BUTTON</button>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="button__group">
+						<button type="button" class="button">BUTTON</button>
+						<button type="button" class="button button--blue">BUTTON</button>
+						<button type="button" class="button button--indigo">BUTTON</button>
+						<button type="button" class="button button--purple">BUTTON</button>
+						<button type="button" class="button button--pink">BUTTON</button>
+						<button type="button" class="button button--red">BUTTON</button>
+						<button type="button" class="button button--orange">BUTTON</button>
+						<button type="button" class="button button--yellow">BUTTON</button>
+						<button type="button" class="button button--green">BUTTON</button>
+						<button type="button" class="button button--teal">BUTTON</button>
+						<button type="button" class="button button--cyan">BUTTON</button>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!-- 아웃라인 -->
+		<section class="components__item">
+			<h2 class="components__title">OUTLINE</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="button__group">
+					<button type="button" class="button button--outline">BUTTON</button>
+					<button type="button" class="button button--outline-blue">BUTTON</button>
+					<button type="button" class="button button--outline-indigo">BUTTON</button>
+					<button type="button" class="button button--outline-purple">BUTTON</button>
+					<button type="button" class="button button--outline-pink">BUTTON</button>
+					<button type="button" class="button button--outline-red">BUTTON</button>
+					<button type="button" class="button button--outline-orange">BUTTON</button>
+					<button type="button" class="button button--outline-yellow">BUTTON</button>
+					<button type="button" class="button button--outline-green">BUTTON</button>
+					<button type="button" class="button button--outline-teal">BUTTON</button>
+					<button type="button" class="button button--outline-cyan">BUTTON</button>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="button__group">
+						<button type="button" class="button button--outline">BUTTON</button>
+						<button type="button" class="button button--outline-blue">BUTTON</button>
+						<button type="button" class="button button--outline-indigo">BUTTON</button>
+						<button type="button" class="button button--outline-purple">BUTTON</button>
+						<button type="button" class="button button--outline-pink">BUTTON</button>
+						<button type="button" class="button button--outline-red">BUTTON</button>
+						<button type="button" class="button button--outline-orange">BUTTON</button>
+						<button type="button" class="button button--outline-yellow">BUTTON</button>
+						<button type="button" class="button button--outline-green">BUTTON</button>
+						<button type="button" class="button button--outline-teal">BUTTON</button>
+						<button type="button" class="button button--outline-cyan">BUTTON</button>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //아웃라인 -->
+
+	</section>
+	<!-- //button -->
+
+	<!-- input -->
+	<section class="components" id="input">
+		<h1 class="components__title components__title--emphasized">input</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- 체크박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">CHECKBOX TYPE : </p>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample1" checked>
+						<label for="checkboxSample1"><em>Checked</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample2">
+						<label for="checkboxSample2"><em>Unchecked</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample3" disabled>
+						<label for="checkboxSample3"><em>Disabled</em></label>
+					</div>
+					<div class="input input__checkbox">
+						<input type="checkbox" id="checkboxSample4" disabled checked>
+						<label for="checkboxSample4"><em>Disabled &amp; Checked</em></label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<div class="input input__checkbox">
+							<input type="checkbox" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" >
+							<label><em>Unchecked</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+						<div class="input input__checkbox">
+							<input type="checkbox" disabled checked>
+							<label><em>Disabled &amp; Checked</em></label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //체크박스 -->
+
+			<!-- 라디오 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">RADIO TYPE : </p>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample1" name="name" value="checked" checked>
+						<label for="radioSample1"><em>Checked</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample2" name="name1" value="unchecked">
+						<label for="radioSample2"><em>Unchecked 1</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample3" name="name1" value="unchecked">
+						<label for="radioSample3"><em>Unchecked 2</em></label>
+					</div>
+					<div class="input input__radio">
+						<input type="radio" id="radioSample4" name="name" value="disabled" disabled>
+						<label for="radioSample4"><em>Disabled</em></label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">RADIO TYPE : </p>
+						<div class="input input__radio">
+							<input type="radio" name="name" value="checked" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 1</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 2</em></label>
+						</div>
+						<div class="input input__radio">
+							<input type="radio" name="name" value="disabled" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //라디오 -->
+
+			<!-- 셀렉트박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">SELECT BOX TYPE : </p>
+					<div class="input input__select">
+						<select id="selectSample1">
+							<option selected>Choose Option...</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">SELECT BOX TYPE : </p>
+						<div class="input input__select">
+							<select>
+								<option selected>Choose Option...</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //셀렉트박스 -->
+
+			<!-- 멀티 셀렉트박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">SELECT BOX MULTIPLE TYPE : </p>
+					<div class="input input__select input__select--multiple">
+						<label for="selectSample1-1"></label>
+						<select id="selectSample1-1" multiple>
+							<option selected value="0">Zero</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">SELECT BOX MULTIPLE TYPE : </p>
+						<div class="input input__select input__select--multiple">
+							<label></label>
+							<select multiple>
+								<option selected value="0">Zero</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //멀티 셀렉트박스 -->
+
+			<!-- 파일타입 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">FILE TYPE : </p>
+					<div class="input input__file">
+						<input type="file" id="fileSample1">
+						<label for="fileSample1">Choose File...</label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">FILE TYPE : </p>
+						<div class="input input__file">
+							<input type="file">
+							<label>Choose File...</label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //파일타입 -->
+
+		</section>
+		<!-- //기본 -->
+
+		<!--
+			 인라인
+			 input__inline : middle 정렬
+			 input__inline--top : top 정렬
+			 input__inline--bottom : bottom 정렬
+		-->
+		<section class="components__item">
+			<h2 class="components__title">INLINE</h2>
+
+			<!-- 체크박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">CHECKBOX TYPE : </p>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-1" checked>
+						<label for="checkboxSample2-1"><em>Checked</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-2">
+						<label for="checkboxSample2-2"><em>Unchecked</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-3" disabled>
+						<label for="checkboxSample2-3"><em>Disabled</em></label>
+					</div>
+					<div class="input input__inline input__checkbox">
+						<input type="checkbox" id="checkboxSample2-4" disabled checked>
+						<label for="checkboxSample2-4"><em>Disabled &amp; Checked</em></label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">CHECKBOX TYPE : </p>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox">
+							<label><em>Unchecked</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+						<div class="input input__inline input__checkbox">
+							<input type="checkbox" disabled checked>
+							<label><em>Disabled &amp; Checked</em></label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //체크박스 -->
+
+			<!-- 라디오 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">RADIO TYPE : </p>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-1" name="name21" value="checked" checked>
+						<label for="radioSample2-1"><em>Checked</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-2" name="name22" value="unchecked1">
+						<label for="radioSample2-2"><em>Unchecked 1</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-3" name="name22" value="unchecked2">
+						<label for="radioSample2-3"><em>Unchecked 2</em></label>
+					</div>
+					<div class="input input__inline input__radio">
+						<input type="radio" id="radioSample2-4" name="name21" value="disabled" disabled>
+						<label for="radioSample2-4"><em>Disabled</em></label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">RADIO TYPE : </p>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name" value="checked" checked>
+							<label><em>Checked</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 1</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name1" value="unchecked">
+							<label><em>Unchecked 2</em></label>
+						</div>
+						<div class="input input__inline input__radio">
+							<input type="radio" name="name" value="disabled" disabled>
+							<label><em>Disabled</em></label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //라디오 -->
+
+			<!-- 셀렉트박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">SELECT BOX TYPE : </p>
+					<div class="input input__inline input__select">
+						<label for="selectSample2"></label>
+						<select id="selectSample2">
+							<option selected>Choose</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">SELECT BOX TYPE : </p>
+						<div class="input input__inline input__select">
+							<select>
+								<option selected>Choose Option...</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //셀렉트박스 -->
+
+			<!-- 멀티 셀렉트박스 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">SELECT BOX MULTIPLE TYPE : </p>
+					<div class="input input__inline input__select input__select--multiple">
+						<label for="selectSample2-1"></label>
+						<select id="selectSample2-1" multiple>
+							<option selected value="0">Zero</option>
+							<option value="1">One</option>
+							<option value="2">Two</option>
+							<option value="3">Three</option>
+						</select>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">SELECT BOX MULTIPLE TYPE : </p>
+						<div class="input input__inline input__select input__select--multiple">
+							<label></label>
+							<select multiple>
+								<option selected value="0">Zero</option>
+								<option value="1">One</option>
+								<option value="2">Two</option>
+								<option value="3">Three</option>
+							</select>
+						</div>
+					</div>
+				</pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //멀티 셀렉트박스 -->
+
+			<!-- 파일타입 -->
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="input__group">
+					<p class="input__title">FILE TYPE : </p>
+					<div class="input input__inline input__file">
+						<input type="file" id="fileSample2">
+						<label for="fileSample2">Choose File...</label>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="input__group">
+						<p class="input__title">FILE TYPE : </p>
+						<div class="input input__inline input__file">
+							<input type="file">
+							<label>Choose File...</label>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+			<!-- //파일타입 -->
+
+		</section>
+		<!-- //인라인 -->
+
+	</section>
+	<!-- //input -->
+
+	<!-- pagination -->
+	<section class="components" id="pagination">
+		<h1 class="components__title components__title--emphasized">pagination</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<ul class="pagination">
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">Prev</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">1</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">3</a>
+					</li>
+					<li class="pagination__item is-disabled">
+						<a class="pagination__link" href="javascript:void(0);">Next</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<ul class="pagination">
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">Prev</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">3</a>
+						</li>
+						<li class="pagination__item is-disabled">
+							<a class="pagination__link" href="javascript:void(0);">Next</a>
+						</li>
+					</ul></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!-- 아이콘 -->
+		<section class="components__item">
+			<h2 class="components__title">ICON</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<ul class="pagination pagination--icon">
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">
+							<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+							<span class="hidden">Prev</span>
+						</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">1</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">2</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">3</a>
+					</li>
+					<li class="pagination__item">
+						<a class="pagination__link" href="javascript:void(0);">
+							<i class="fas fa-angle-double-right" aria-hidden="true"></i>
+							<span class="hidden">Next</span>
+						</a>
+					</li>
+				</ul>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<ul class="pagination pagination--icon">
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">
+								<i class="fas fa-angle-double-left" aria-hidden="true"></i>
+								<span class="hidden">Prev</span>
+							</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">1</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">2</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">3</a>
+						</li>
+						<li class="pagination__item">
+							<a class="pagination__link" href="javascript:void(0);">
+								<i class="fas fa-angle-double-right" aria-hidden="true"></i>
+								<span class="hidden">Next</span>
+							</a>
+						</li>
+					</ul></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //아이콘 -->
+
+	</section>
+	<!-- //pagination -->
+
+	<!-- tabs -->
+	<section class="components" id="tabs">
+		<h1 class="components__title components__title--emphasized">tabs</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //기본 -->
+
+		<!-- 알약형태 -->
+		<section class="components__item">
+			<h2 class="components__title">pills</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--pills" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-2" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-2" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-2" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--pills" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-2" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-2" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-2" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //알약형태 -->
+
+		<!-- 유동적인 넓이 -->
+		<section class="components__item">
+			<h2 class="components__title">flex</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--flex" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-3" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-3" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-3" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--flex" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-3" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-3" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-3" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //유동적인 넓이 -->
+
+		<!-- 수직 위로 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title">align top</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-top" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-4" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-4" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-4" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-4" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-top" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-4" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-4" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-4" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-4" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수직 위로 정렬 -->
+
+		<!-- 수직 아래로 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title">align bottom</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-bottom" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-5" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-5" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-5" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-5" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-bottom" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-5" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-5" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-5" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-5" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수직 아래로 정렬 -->
+
+		<!-- 수평 가운데 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title">align center</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-center" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-6" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-6" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-6" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-6" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-center" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-6" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-6" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-6" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-6" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수평 가운데 정렬 -->
+
+	</section>
+	<!-- //tabs -->
+
+	<!-- modal -->
+	<section class="components" id="modal">
+		<h1 class="components__title components__title--emphasized">modal</h1>
+		<p class="components__plugin">
+			PLUGIN NAME :
+			<a href="http://vodkabears.github.io/remodal/" target="_blank">REMODAL</a>
+		</p>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="modal">
+					<!-- 모달 버튼 -->
+					<div class="remodal-bg">
+						<a href="#" class="button button--outline" data-remodal-target="modal">MODAL</a>
+					</div>
+					<!-- //모달 버튼 -->
+
+					<!-- 모달 팝업 -->
+					<div class="remodal" data-remodal-id="modal">
+						<a data-remodal-action="close" class="remodal-close"></a>
+						<a data-remodal-action="cancel" class="remodal-cancel" href="#">취소</a>
+						<a data-remodal-action="confirm" class="remodal-confirm" href="#">확인</a>
+					</div>
+					<!-- //모달 팝업 -->
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="modal">
+						<!-- 모달 버튼 -->
+						<div class="remodal-bg">
+							<a href="#" class="button button--outline" data-remodal-target="modal">MODAL</a>
+						</div>
+						<!-- //모달 버튼 -->
+
+						<!-- 모달 팝업 : 하단 내용 주석 제거 후 사용 -->
+						<!-- <div class="remodal remodal-is-opened" data-remodal-id="modal">
+							<a data-remodal-action="close" class="remodal-close"></a>
+							<a data-remodal-action="cancel" class="remodal-cancel" href="#">취소</a>
+							<a data-remodal-action="confirm" class="remodal-confirm" href="#">확인</a>
+						</div> -->
+						<!-- //모달 팝업 -->
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+	<!-- //modal -->
+
+	<!-- accordion -->
+	<section class="components" id="accordion" data-js="accordion">
+		<h1 class="components__title components__title--emphasized">accordion</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="accordion" id="accrodion">
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+							Accordion Heading #1
+						</a>
+						<div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Accordion Heading #2
+						</a>
+						<div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Accordion Heading #3
+						</a>
+						<div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="accordion" id="accrodion">
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
+								Accordion Heading #1
+							</a>
+							<div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne" data-parent="#accordion">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Accordion Heading #2
+							</a>
+							<div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo" data-parent="#accordion">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Accordion Heading #3
+							</a>
+							<div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree" data-parent="#accordion">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+	<!-- //accordion -->
+
+	<!-- dropdown -->
+	<section class="components" id="dropdown">
+		<h1 class="components__title components__title--emphasized">dropdown</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 -->
+				<div class="dropdown" data-js="dropdown">
+					<a class="dropdown__toggle button" href="#" role="button" data-target="#dropdownMenu" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="false" aria-activedescendant="DROPDOWN">
+						DROPDOWN</a>
+					<div class="dropdown__menu" data-js="dropdown__panel" id ="dropdownMenu">
+						<a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_1">THIS CONTENTS1</a>
+						<a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_2">THIS CONTENTS2</a>
+						<a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item1_3">THIS CONTENTS3</a>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="dropdown" data-js="dropdown">
+						<a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="false" aria-activedescendant="DROPDOWN">
+							DROPDOWN</a>
+						<div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu">
+							<a class="dropdown__item" data-js="dropdown__item" href="#">THIS CONTENTS1</a>
+							<a class="dropdown__item" data-js="dropdown__item" href="#">THIS CONTENTS2</a>
+							<a class="dropdown__item dropdown__divider" data-js="dropdown__item"href="#">THIS CONTENTS3</a>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!-- 다크 -->
+		<section class="components__item">
+			<h2 class="components__title">dark theme</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="dropdown dropdown--dark" data-js="dropdown">
+					<a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu1" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="true" aria-activedescendant="DROPDOWN">
+						DROPDOWN</a>
+					<div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu1">
+						<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_1">THIS CONTENTS1</a>
+						<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_2">THIS CONTENTS2</a>
+						<a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item2_3">THIS CONTENTS3</a>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="dropdown dropdown--dark" data-js="dropdown">
+						<a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu1" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="true" aria-activedescendant="DROPDOWN">
+							DROPDOWN</a>
+						<div class="dropdown__menu" data-js="dropdown_panel" id="dropdownMenu1">
+							<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_1">THIS CONTENTS1</a>
+							<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_2">THIS CONTENTS3</a>
+							<a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item2_3">THIS CONTENTS3</a>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //다크 -->
+
+	</section>
+	<!-- //dropdown -->
+
+	<!-- slider -->
+	<section class="components" id="slider">
+		<h1 class="components__title components__title--emphasized">slider</h1>
+		<p class="components__plugin">
+			PLUGIN NAME :
+			<a href="http://kenwheeler.github.io/slick/" target="_blank">SLICK</a>
+		</p>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="slider">
+					<div class="slider__item">
+						slider #1
+					</div>
+					<div class="slider__item">
+						slider #2
+					</div>
+					<div class="slider__item">
+						slider #3
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 슬라이더 : 하단 내용 주석 제거 후 사용 -->
+					<!--<div class="slider">
+						<div class="slider__item">Slide #1</div>
+						<div class="slider__item">Slide #2</div>
+						<div class="slider__item">Slide #3</div>
+					</div>--></pre>
+			</section>
+			<!-- //CODE -->
+
+			<!-- CODE -->
+			<h3 class="components__title">JS</h3>
+			<section class="components__item--code">
+				<pre class="brush: js;">
+				<!-- 슬라이더 : 하단 내용 주석 제거 후 사용 -->
+				<!--<script>
+					$(document).ready(function(){
+						$('.slider').slick({
+							slidesToShow: 1,
+							slidesToScroll: 1,
+							prevArrow: '<button type="button" class="slider__direction slick-arrow slick-prev">' +
+							'<i class="fas fa-2x fa-chevron-left"></i><span class="hidden">이전</span></button>',
+							nextArrow: '<button type="button" class="slider__direction slick-arrow slick-next">' +
+							'<i class="fas fa-2x fa-chevron-right"></i><span class="hidden">다음</span></button>'
+						});
+					});
+				</script>--></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+	<!-- //slider -->
+
+	<!-- grid -->
+	<section class="components" id="grid">
+		<h1 class="components__title components__title--emphasized">grid</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title">DEMO</h3>
+			<section class="components__item--demo">
+				<div class="grid grid--text-center">
+					<div class="grid__item">ITEM 1</div>
+					<div class="grid__item">ITEM 2</div>
+					<div class="grid__item">ITEM 3</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title">CODE</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+
+				</pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+	<!-- //grid -->
+
+</div>
+<!-- //contents -->
+
+<!-- scripts -->
+	<!-- common -->
+	<script src="/common/js/jquery.js"></script>
+	<script src="/common/js/uilab-library.js"></script>
+	<script type="text/javascript">
+	// fullscreen
+	function toggleFullScreen() {
+		if ((document.fullScreenElement && document.fullScreenElement !== null) ||
+			(!document.mozFullScreen && !document.webkitIsFullScreen)) {
+			if (document.documentElement.requestFullScreen) {
+				document.documentElement.requestFullScreen();
+			} else if (document.documentElement.mozRequestFullScreen) {
+				document.documentElement.mozRequestFullScreen();
+			} else if (document.documentElement.webkitRequestFullScreen) {
+				document.documentElement.webkitRequestFullScreen(Element.ALLOW_KEYBOARD_INPUT);
+			}
+		} else {
+			if (document.cancelFullScreen) {
+				document.cancelFullScreen();
+			} else if (document.mozCancelFullScreen) {
+				document.mozCancelFullScreen();
+			} else if (document.webkitCancelFullScreen) {
+				document.webkitCancelFullScreen();
+			}
+		}
+	}
+
+	// basic toggle
+    function basicToggle(self, activeClass) {
+        var _self = self;
+        var actC = activeClass;
+        _self.toggleClass(actC);
+    }
+
+	window.addEventListener('DOMContentLoaded', function(){
+		// jquery execution
+	    $(function() {
+            // scroll gnb active
+            $(window).on('scroll', function(){
+                var scroll = $(window).scrollTop();
+                var components = $('.components');
+                var gnb = $('[data-js=gnb__toggle] > a');
+
+                $.each(components, function(index){
+                    var target = components.eq(index);
+                    var targetTop = target.offset().top - 120;
+
+                    if (targetTop <= scroll) {
+                        gnb.removeClass('is-scroll');
+                        gnb.eq(index).addClass('is-scroll');
+                    }
+                    if (scroll == ($(document).height() - $(window).height())) {
+                        var gnbNum = gnb.length / 2;
+
+                        gnb.removeClass('is-scroll');
+                        gnb.eq(gnbNum-1).addClass('is-scroll');
+                    }
+                });
+
+                // click gnb item
+                gnb.on('click', function(e){
+                    e.preventDefault();
+
+                    var gnb = $(this);
+                    var gnbTarget = gnb.attr('href');
+                    var gnbTargetTop = $(gnbTarget).offset().top;
+
+                    $('html, body').stop().animate({
+                        scrollTop : gnbTargetTop - 120
+                    }, 500);
+                    gnb.addClass('is-active').siblings().removeClass('is-active');
+                });
+            });
+
+            // mobile menu active
+            function mobileAction(){
+				var deviceWidth = $('body').width();
+                var $aside = $('.aside--mobile');
+
+                if(deviceWidth <= 767){
+                    $('[data-js=aside__toggle]').on('click', function(e) {
+                        e.preventDefault();
+                        basicToggle($aside, 'is-active');
+                    });
+                } else {
+                    return false;
+                }
+				if($(window).resize === true) {
+					location.reload();
+				}
+            }
+            mobileAction();
+        });
+	});
+	</script>
+
+	<!-- modal -->
+	<script src="/common/js/remodal.js"></script>
+	<!-- //modal -->
+
+	<!-- slider -->
+	<script src="/common/js/slick.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('.slider').slick({
+				slidesToShow: 1,
+				slidesToScroll: 1,
+				prevArrow: '<button type="button" class="slider__direction slick-arrow slick-prev">' +
+				'<i class="fas fa-2x fa-chevron-left"></i><span class="hidden">이전</span></button>',
+				nextArrow: '<button type="button" class="slider__direction slick-arrow slick-next">' +
+				'<i class="fas fa-2x fa-chevron-right"></i><span class="hidden">다음</span></button>'
+			});
+		});
+	</script>
+	<!-- //slider -->
+
+	<!-- syntax Highlighter -->
+	<script type="text/javascript" src="/common/lib/syntaxhighlighter/js/shCore.js"></script>
+	<script type="text/javascript" src="/common/lib/syntaxhighlighter/js/shBrushCss.js"></script>
+	<script type="text/javascript" src="/common/lib/syntaxhighlighter/js/shBrushJScript.js"></script>
+	<script type="text/javascript" src="/common/lib/syntaxhighlighter/js/shBrushXml.js"></script>
+	<script type="text/javascript">
+		SyntaxHighlighter.all();
+	</script>
+	<!-- //syntax Highlighter -->
+<!-- scripts -->
+</body>
+</html>

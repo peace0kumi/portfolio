@@ -1,0 +1,351 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; TABS</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">tabs</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4" data-js="tab__panel" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //기본 -->
+
+		<!-- 알약형태 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">pills</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--pills" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-2" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-2" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-2" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--pills" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-2" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-2" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-2" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-2" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-2" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //알약형태 -->
+
+		<!-- 유동적인 넓이 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">flex</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--flex" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-3" aria-controls="section1" aria-selected="true">SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-3" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-3" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--flex" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-3" aria-controls="section1" aria-selected="true">SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-3" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-3" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-3" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-3" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //유동적인 넓이 -->
+
+		<!-- 수직 위로 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">align top</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-top" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-4" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-4" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-4" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-4" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-top" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-4" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-4" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-4" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-4" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-4" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수직 위로 정렬 -->
+
+		<!-- 수직 아래로 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">align bottom</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-bottom" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-5" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-5" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-5" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-5" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-bottom" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-5" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-5" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-5" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-5" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-5" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수직 아래로 정렬 -->
+
+		<!-- 수평 가운데 정렬 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">align center</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- 탭 -->
+				<div class="tabs tabs--align-center" role="tablist" data-js="tab">
+					<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-6" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																							SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+					<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-6" aria-controls="section2" aria-selected="false">SECTION 2</a>
+					<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-6" aria-controls="section3" aria-selected="false">SECTION 3</a>
+					<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-6" aria-controls="section4" aria-selected="false">DISABLED</a>
+				</div>
+				<!-- //탭 -->
+
+				<!-- 탭내용 -->
+				<div class="tabs__content" id="tabContent">
+					<div class="tabs__panel is-active" id="section1-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+					<div class="tabs__panel" id="section2-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+					<div class="tabs__panel" id="section3-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+					<div class="tabs__panel" id="section4-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+				</div>
+				<!-- //탭내용 -->
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<!-- 탭 -->
+					<div class="tabs tabs--align-center" role="tablist" data-js="tab">
+						<a class="tabs__link is-active" id="section1Tab" data-js="tab__anchor" href="#section1-6" aria-controls="section1" aria-selected="true">SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1
+																																								SECTION 1 SECTION 1 SECTION 1 SECTION 1 SECTION 1</a>
+						<a class="tabs__link" id="section2Tab" data-js="tab__anchor" href="#section2-6" aria-controls="section2" aria-selected="false">SECTION 2</a>
+						<a class="tabs__link" id="section3Tab" data-js="tab__anchor" href="#section3-6" aria-controls="section3" aria-selected="false">SECTION 3</a>
+						<a class="tabs__link is-disabled" id="section4Tab" data-js="tab__anchor" href="#section4-6" aria-controls="section4" aria-selected="false">DISABLED</a>
+					</div>
+					<!-- //탭 -->
+
+					<!-- 탭내용 -->
+					<div class="tabs__content" id="tabContent">
+						<div class="tabs__panel is-active" id="section1-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section1-tab">1번</div>
+						<div class="tabs__panel" id="section2-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section2-tab">2번</div>
+						<div class="tabs__panel" id="section3-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section3-tab">3번</div>
+						<div class="tabs__panel" id="section4-6" data-js="tab__panel" role="tabpanel" aria-labelledby="section4-tab">4번</div>
+					</div>
+					<!-- //탭내용 --></pre>
+			</section>
+			<!-- //CODE -->
+
+		</section>
+		<!-- //수평 가운데 정렬 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+</body>
+</html>

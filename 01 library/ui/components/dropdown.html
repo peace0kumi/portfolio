@@ -1,0 +1,97 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; DROPDOWN</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">dropdown</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 -->
+				<div class="dropdown">
+					<a class="dropdown__toggle button" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						DROPDOWN</a>
+					<div class="dropdown__menu" aria-labelledby="dropdownMenu">
+						<a class="dropdown__item" href="#">MENU 1</a>
+						<a class="dropdown__item" href="#">MENU 2</a>
+						<a class="dropdown__item" href="#">MENU 3</a>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="dropdown">
+						<a class="dropdown__toggle button" href="#" role="button" id="dropdownMenu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							DROPDOWN</a>
+						<div class="dropdown__menu" aria-labelledby="dropdownMenu">
+							<a class="dropdown__item" href="#">MENU 1</a>
+							<a class="dropdown__item" href="#">MENU 2</a>
+							<a class="dropdown__item" href="#">MENU 3</a>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+		<!-- 다크 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">dark theme</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 -->
+				<div class="dropdown dropdown--dark">
+					<a class="dropdown__toggle button" href="#" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+						DROPDOWN</a>
+					<div class="dropdown__menu is-active" aria-labelledby="dropdownMenu1">
+						<a class="dropdown__item" href="#">MENU 1</a>
+						<a class="dropdown__item" href="#">MENU 2</a>
+						<a class="dropdown__item" href="#">MENU 3</a>
+					</div>
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="dropdown dropdown--dark">
+						<a class="dropdown__toggle button" href="#" role="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							DROPDOWN</a>
+						<div class="dropdown__menu" aria-labelledby="dropdownMenu1">
+							<a class="dropdown__item" href="#">MENU 1</a>
+							<a class="dropdown__item" href="#">MENU 2</a>
+							<a class="dropdown__item" href="#">MENU 3</a>
+						</div>
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //다크 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+</body>
+</html>

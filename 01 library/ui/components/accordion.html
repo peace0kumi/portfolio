@@ -1,0 +1,121 @@
+@@include('./incl/page-top.inc')
+	<title>UI Lab &#124; ACCORDION</title>
+	<link rel="stylesheet" href="../common/css/uilab-library.css">
+	<!-- Syntax highlighter -->
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shCoreDefault.css">
+	<link type="text/css" rel="stylesheet" href="../common/lib/syntaxhighlighter/styles/shThemeDefault.css">
+	<!-- //Syntax highlighter -->
+</head>
+<body>
+
+	@@include('./incl/header.inc')
+
+	<section class="components">
+		<h1 class="components__title title--h1">accordion</h1>
+
+		<!-- 기본 -->
+		<section class="components__item">
+			<h2 class="components__title title--h4">DEFAULT</h2>
+
+			<!-- DEMO -->
+			<h3 class="components__title title--h5">DEMO</h3>
+			<section class="components__item--demo">
+				<!--<div class="accordion" id="accrodion" data-js="accordion">-->
+				<div class="accordion" id="accrodion" data-js="accordion" data-options='{"mode":"slide"}'>
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button is-active" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+							Accordion Heading #1
+						</a>
+						<div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+							Accordion Heading #2
+						</a>
+						<div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+
+					<!-- 행 -->
+					<div class="accordion__row">
+						<a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+							Accordion Heading #3
+						</a>
+						<div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree">
+							<div class="accordion__contents">
+								Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+							</div>
+						</div>
+					</div>
+					<!-- //행 -->
+				</div>
+			</section>
+			<!-- //DEMO -->
+
+			<!-- CODE -->
+			<h3 class="components__title title--h5">HTML</h3>
+			<section class="components__item--code">
+				<pre class="brush: html">
+					<div class="accordion" id="accrodion">
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button is-active" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+								Accordion Heading #1
+							</a>
+							<div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+								Accordion Heading #2
+							</a>
+							<div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+
+						<!-- 행 -->
+						<div class="accordion__row">
+							<a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+								Accordion Heading #3
+							</a>
+							<div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree">
+								<div class="accordion__contents">
+									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+								</div>
+							</div>
+						</div>
+						<!-- //행 -->
+					</div></pre>
+			</section>
+			<!-- //CODE -->
+		</section>
+		<!-- //기본 -->
+
+	</section>
+
+	@@include('./incl/footer.inc')
+
+</body>
+</html>

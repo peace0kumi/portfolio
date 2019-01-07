@@ -1,0 +1,248 @@
+*,
+*::after,
+*::before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+body {
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	font-family: 'Roboto Condensed', Avenir, sans-serif;
+	color: #1e156d;
+	background: #fafafa;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+main {
+	overflow: hidden;
+}
+.js .loading::before {
+	content: '';
+	position: fixed;
+	color: #fff;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #5141d6;
+	z-index: 100;
+	text-align: center;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+}
+.js .loading::after {
+	content: '';
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 70px;
+	height: 70px;
+	margin: -35px 0 0 -35px;
+	pointer-events: none;
+	z-index: 101;
+	border: 7px solid #4133b4;
+	border-top-color: #fff;
+	border-radius: 50%;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+	-webkit-animation: rotateLoader 0.8s linear infinite forwards;
+	animation: rotateLoader 0.8s linear infinite forwards;
+}
+@-webkit-keyframes rotateLoader {
+	to {
+		-webkit-transform: rotate3d(0, 0, 1, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+@keyframes rotateLoader {
+	to {
+		-webkit-transform: rotate3d(0, 0, 1, 360deg);
+		transform: rotate3d(0, 0, 1, 360deg);
+	}
+}
+/* Links */
+a {
+	text-decoration: none;
+	color: #f0f0f0;
+	outline: none;
+}
+a:hover,
+a:focus {
+	color: #1e156d;
+}
+.hidden {
+	position: absolute;
+	overflow: hidden;
+	width: 0;
+	height: 0;
+	pointer-events: none;
+}
+/* Buttons */
+.btn {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #3f51b5;
+	color: #fff;
+	font-family: 'Lato', Calibri, Arial, sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+}
+.btn:focus {
+	outline: none;
+}
+.btn:hover {
+	opacity: 0.5;
+}
+.btn--modal-trigger {
+	margin: 2em 0 0 0;
+}
+.no-js .btn--modal-trigger {
+	display: none;
+}
+.btn--close {
+	color: #1e156d;
+}
+.btn--prev {
+	margin: 0 1.5em 0 0.5em;
+}
+.btn--hidden {
+	pointer-events: none;
+	opacity: 0;
+}
+.actions {
+	position: absolute;
+	right: 10%;
+	top: 10vh;
+	text-align: center;
+}
+.no-js .actions {
+	display: none;
+}
+/* Icons */
+.icon {
+	display: block;
+	width: 1.5em;
+	height: 1.5em;
+	margin: 0 auto;
+	fill: currentColor;
+}
+/* Section Links */
+.section-link {
+	font-size: 1.25em;
+	position: absolute;
+	top: 60px;
+	left: 6vw;
+	cursor: pointer;
+	color: #fff;
+	-webkit-transition: opacity 0.2s;
+	transition: opacity 0.2s;
+}
+.section-link:hover {
+	opacity: 0.5;
+	color: #fff;
+}
+/* Content */
+.content {
+	position: relative;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	width: 100%;
+	height: 100%;
+	min-height: 816px;
+	color: #3f51b5;
+	background: #fafafa;
+}
+.js .content {
+	overflow: hidden;
+}
+/* Text styles */
+.title {
+	margin: 0;
+	font-size: 10vw;
+	position: relative;
+	text-transform: uppercase;
+	font-family: 'Lato', 'Arial Black', sans-serif;
+}
+.title--centered {
+	width: 100%;
+	text-align: center;
+}
+.js .title--centered {
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+.title--right {
+	width: 100%;
+	text-align: right;
+}
+.js .title--right {
+	-webkit-justify-content: flex-end;
+	-ms-flex-pack: flex-end;
+	justify-content: flex-end;
+}
+[class*="letter"] {
+	display: block;
+	position: relative;
+	-webkit-flex: none;
+	-ms-flex: none;
+	flex: none;
+	white-space: pre;
+}
+.title--style-9 [class*="letter"] {
+	-webkit-transform-origin: 0% 50%;
+	transform-origin: 0% 50%;
+}
+.title--style-10 [class*="letter"] {
+	-webkit-transform-origin: -200% 50%;
+	transform-origin: -200% 50%;
+}
+/* Slideshow */
+.slideshow,
+.slide {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.slide {
+	padding: 0 6vw;
+}
+.js .slide {
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-direction: row;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+.js .slide:not(.slide--current) {
+	position: absolute;
+	top: 0;
+	pointer-events: none;
+	opacity: 0;
+}
+@media screen and (max-width:60em) {
+	.content {
+		height: calc(100vh - 124px);
+	}
+}

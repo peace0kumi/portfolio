@@ -1,0 +1,31 @@
+{
+  "name": "hyowonlee",
+  "version": "1.0.0",
+  "description": "using gulp",
+  "main": "index.js",
+  "scripts": {
+    "test": "hello gulp"
+  },
+  "keywords": [
+    "ui-lab seed"
+  ],
+  "author": "hyowonlee",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "gulp": "^3.9.1",
+    "gulp-if": "^2.0.2",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "gulp-watch": "^4.3.9",
+    "gulp-ws": "^1.0.0",
+    "path": "^0.12.7",
+    "run-sequence": "^1.2.2"
+  },
+  "dependencies": {
+    "@uirouter/angularjs": "^1.0.11",
+    "gulp-sourcemaps": "^2.2.0",
+    "merge-stream": "^1.0.1",
+    "node-bourbon": "^4.2.8"
+  }
+}

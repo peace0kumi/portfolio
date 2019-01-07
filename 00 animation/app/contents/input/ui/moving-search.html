@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=3">
+    <link rel="stylesheet" type="text/css" href="css/common.css">
+    <title></title>
+</head>
+<body>
+    <div class="container moving-search">
+        <fieldset class="fieldset">
+            <input type="text" placeholder="UI Lab Animation" class="input" />
+            <div class="icon">
+                <div class="icon--search"></div>
+                <div class="icon--close">
+                    <div class="icon--close-up"></div>
+                    <div class="icon--close-down"></div>
+                </div>
+            </div>
+        </fieldset>
+    </div>
+
+    <!-- scripts -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script type="text/javascript">
+        $(document).on('ready', function() {
+
+            $('.input').on('focus', function() {
+                $('body').addClass('is-focus');
+            });
+
+            $('.input').on('blur', function() {
+                $('body').removeClass('is-focus is-type');
+            });
+
+            $('.input').on('keydown', function(event) {
+                $('body').addClass('is-type');
+                if((event.which === 8) && $(this).val() === '') {
+                    $('body').removeClass('is-type');
+                }
+            });
+
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/* Main SVG */
+.letters {
+	position: relative;
+	display: block;
+	min-height: 400px;
+	max-height: 70vh;
+	margin: 0 auto;
+}
+/* Letter path */
+.letter__layer {
+	fill: none;
+	stroke-miterlimit: 3;
+	stroke-linecap: butt;
+	stroke-linejoin: bevel;
+}
+/* Individual effects/styles */
+/* Effect 1 */
+.letters--effect-1 .letter__layer:first-child {
+	stroke-width: 9px;
+}
+.letters--effect-1 .letter__layer:nth-child(2) {
+	stroke-width: 9.5px;
+}
+.letters--effect-1 .letter__layer:nth-child(3) {
+	stroke-width: 10px;
+}
+/* Effect 1 colors */
+.color-1 { stroke: #dea521; }
+.color-2 { stroke: #f84242; }
+.color-3 { stroke: #3758a7; }
+.color-4 { stroke: #f79c8c; }
+.color-5 { stroke: #84b5bd; }
+.color-6 { stroke: #feefde; }
+/* Effect 2 */
+.letters--effect-2 .letter__layer:first-child {
+	stroke: #1ea441;
+	stroke-width: 1px;
+}
+.letters--effect-2 .letter__layer:nth-child(2) {
+	stroke: #4ddb65;
+	stroke-width: 4px;
+}
+.letters--effect-2 .letter__layer:nth-child(3) {
+	stroke: #f3e80e;
+	stroke-width: 10px;
+}
+/* Effect 3 */
+.letters--effect-3 .letter__layer:first-child {
+	-webkit-transform: translate3d(-2px, -2px, 0);
+	transform: translate3d(-2px, -2px, 0);
+	stroke: #dddde6;
+	stroke-width: 10px;
+}
+.letters--effect-3 .letter__layer:nth-child(2) {
+	stroke: #63c4c0;
+	stroke-width: 6px;
+}
+.letters--effect-3 .letter__layer:nth-child(3) {
+	stroke: #31332f;
+	stroke-width: 8px;
+}
+/* Effect 4 */
+.letters--effect-4 .letter__layer:first-child {
+	stroke: #3f51b5;
+	stroke-width: 10px;
+}
+.letters--effect-4 .letter__layer:nth-child(2) {
+	stroke: #202857;
+	stroke-width: 4px;
+}
+.letters--effect-4 .letter__layer:nth-child(3) {
+	stroke: #fcec9b;
+	stroke-width: 1px;
+}
+/* media query */
+@media screen and (max-width: 767px) {
+	.letters { width: 260px; }
+	.actions { right: auto; left: 50%; }
+}

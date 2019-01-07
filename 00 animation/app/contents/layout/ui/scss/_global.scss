@@ -1,0 +1,186 @@
+/* iframe layout */
+body {
+	position: relative;
+	background-color: #fafafa;
+}
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	-o-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	cursor: pointer;
+}
+.actions {
+	position: absolute;
+	right: 6vw;
+	bottom: 60px;
+	text-align: center;
+}
+.btn {
+	border: none;
+	padding: 0.6em 1.2em;
+	background: #3f51b5;
+	color: #fff;
+	font-family: 'Lato', 'Arial', sans-serif;
+	font-size: 1.5em;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	cursor: pointer;
+	display: inline-block;
+	margin: 3px 2px;
+	border-radius: 2px;
+	&:focus {
+		outline: none;
+	}
+	&:hover {
+		opacity: 0.5;
+	}
+}
+.no-js {
+	.actions {
+		display: none;
+	}
+}
+
+/* zoom in out */
+.zoom-in-out {
+	width: 100%;
+	height: 100%;
+	.cols {
+		width: 100%;
+		clear: both;
+		.tile {
+			float: left;
+			overflow: hidden;
+			height: 100%;
+			opacity: 0.4;
+			background-size: cover;
+			background-position: 50% 50%;
+			background-repeat: no-repeat;
+			transition: 1s;
+			&.pic0 {
+				background-image: url("http://pipsum.com/850x600.jpg");
+			}
+			&.pic1 {
+				background-image: url("http://pipsum.com/800x600.jpg");
+			}
+			&.pic2 {
+				background-image: url("http://pipsum.com/800x650.jpg");
+			}
+			&.pic3 {
+				background-image: url("http://pipsum.com/800x550.jpg");
+			}
+			&:hover {
+				opacity: 1;
+				font-size: 10em;
+			}
+		}
+		&.two {
+			.tile {
+				width: 50%;
+			}
+			&:hover {
+				.tile {
+					width: 20%;
+					&:hover {
+						width: 80%;
+					}
+				}
+			}
+		}
+		&.three {
+			.tile {
+				width: 33%;
+				&:last-of-type {
+					width: 34%;
+				}
+			}
+			&:hover {
+				.tile {
+					width: 20%;
+					&:hover {
+						width: 60%;
+					}
+				}
+			}
+		}
+		&.four {
+			.tile {
+				width: 25%;
+			}
+			&:hover {
+				.tile {
+					width: 20%;
+					&:hover {
+						width: 40%;
+					}
+				}
+			}
+		}
+	}
+	.rows {
+		height: 100%;
+		background: black;
+		.cols {
+			transition: 1s;
+		}
+		&.two {
+			.cols {
+				height: 50%;
+			}
+			&:hover {
+				.cols {
+					height: 20%;
+					&:hover {
+						height: 80%;
+					}
+				}
+			}
+		}
+		&.three {
+			.cols {
+				height: 33%;
+				&:last-of-type {
+					height: 34%;
+				}
+			}
+			&:hover {
+				.cols {
+					height: 20%;
+					&:hover {
+						height: 60%;
+					}
+				}
+			}
+		}
+		&.four {
+			.cols {
+				height: 25%;
+			}
+			&:hover {
+				.cols {
+					height: 20%;
+					&:hover {
+						height: 40%;
+					}
+				}
+			}
+		}
+	}
+	.tile {
+
+		color: white;
+		align: center;
+		.content {
+			position: relative;
+			top: 50%;
+			left: 50%;
+			width: 50%;
+			margin-left: -25%;
+		}
+	}
+}
