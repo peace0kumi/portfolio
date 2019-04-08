@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* import */
+@import url(../layout/default.css);
+
+/* header */
+#header .title											{margin: 0; padding: 10px 60px; font-size: 36px; line-height: 44px; border-bottom: 1px #eeeeee solid;}
+
+/* content */
+#container .content-primary								{padding: 20px 60px;}
+#container .content-primary .sub-title					{margin: 0 0 20px 0; padding: 0; font-size: 20px; line-height: 28px;}
+#container .content-primary .data-wrap+.data-wrap		{margin-top: 20px;}
+
+/* tabs */
+.tabs													{}
+.tabs:after												{content: ''; display: block; clear: both; width: 0; height: 0; visibility: hidden;}
+.tabs .tabs-item										{float: left; box-sizing: border-box; cursor: pointer;}
+.tabs .tabs-item.event-target							{display: none;}
+.tabs .tabs-item.active.event-target					{display: block;}
+.tabs.medium .tabs-item .tabs-info						{height: 50px; line-height: 50px; font-size: 14px;}
+
+/* theme-a */
+.tabs.theme-a											{}
+.tabs.theme-a .tabs-item								{display: block; width: 200px; height: 50px; margin: -1px 0 0 -1px; border: 1px #d9d9d9 solid; text-align: center; background-color: #f7f7f7;}
+.tabs.theme-a .tabs-item.active							{color: #ffffff; border: 0 none; background-color: #e36a35;}
+
+/* theme-b */
+.tabs.theme-b											{overflow: hidden;}
+.tabs.theme-b .tabs-item								{display: block; position: relative; left: -21px; height: 50px; padding: 0 20px;}
+.tabs.theme-b .tabs-item:before							{content: '|'; display: inline-block; position: absolute; top: 12px; left: -1px; width: 1px; color: #d9d9d9; font-size: 16px;}
+.tabs.theme-b .tabs-item.active							{color: #e36a35;}
+.tabs.theme-b .tabs-item+.tabs-item						{}
+
+/* theme-c */
+.tabs.theme-c											{overflow: hidden;}
+.tabs.theme-c .tabs-item								{display: block; position: relative; left: -2px; width: 200px; height: 50px; text-align: center; background-color: #f7f7f7;}
+.tabs.theme-c .tabs-item:before							{content: '|'; display: inline-block; position: absolute; top: 12px; left: -1px; width: 1px; color: #d9d9d9; font-size: 16px;}
+.tabs.theme-c .tabs-item.active							{color: #ffffff; background-color: #e36a35;}
+.tabs.theme-c .tabs-item.active:before					{z-index: -1;}
+
+/* footer */
+#footer													{padding: 10px; text-align: center; border-top: 1px #eeeeee solid;}

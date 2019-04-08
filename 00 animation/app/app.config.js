@@ -4,7 +4,6 @@
   angular.module('UILabani')
 
   .constant('ApiEndpoint', 'http://ui-lab.co.kr/api/v2')
-
   .config(function($stateProvider,$urlRouterProvider,$mdIconProvider) {
 
     $mdIconProvider
@@ -29,6 +28,7 @@
       //         }
       //     }
       // })
+      
        // Default Routing
       $urlRouterProvider.otherwise('/app');
   });
