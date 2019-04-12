@@ -21,6 +21,7 @@
 	font-family: $font-family;
 }
 *::selection {
+	color: #fff;
 	background-color: $accent;
 }
 html, body {
@@ -79,11 +80,14 @@ body {
 		text-decoration: none;
 		height: 100px;
 		.header__image {
+			display: inline-block;
 			vertical-align: middle;
 			border: none;
+			height: 40px;
 		}
 		.header__title {
 			display: inline-block;
+			vertical-align: middle;
 			margin-left: 10px;
 			letter-spacing: 5px;
 			padding: 40px 0;
@@ -183,7 +187,7 @@ body {
 		margin-bottom: 0;
 	}
 	&__item {
-		margin: 20px 0 10px;
+		margin: 20px 0;
 		h2.components__title {
 			margin-bottom: 10px;
 			padding-left: 5px;

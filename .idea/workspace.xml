@@ -2,16 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0d0cd98-3e10-4b16-afc6-673acec24e10" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/00 animation/UILabanimates.sublime-workspace" beforeDir="false" afterPath="$PROJECT_DIR$/00 animation/UILabanimates.sublime-workspace" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00 animation/app/app.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/00 animation/app/app.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/00 animation/app/platform/platform.template.html" beforeDir="false" afterPath="$PROJECT_DIR$/00 animation/app/platform/platform.template.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 library/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/01 library/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/01 library/ui/incl/footer.inc" beforeDir="false" afterPath="$PROJECT_DIR$/01 library/ui/incl/footer.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 starter/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/02 starter/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 starter/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/02 starter/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/02 starter/work/include/footer.inc" beforeDir="false" afterPath="$PROJECT_DIR$/02 starter/work/include/footer.inc" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 gyeongju/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/03 gyeongju/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/03 gyeongju/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/03 gyeongju/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/css/layout/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/css/layout/default.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/css/module/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/css/module/tabs.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/html/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/html/tabs.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/images/tabs.png" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/images/tabs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/js/tabs.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/스터디.txt" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/스터디.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/04 index/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/04 index/work/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/05 peachy/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/05 peachy/work/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/dist/css/global.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/dist/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,11 +29,39 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/04 index/work/html/index.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+            <state relative-caret-position="1248">
+              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -47,6 +80,12 @@
       <find>gulp</find>
       <find>include</find>
       <find>buildCache</find>
+      <find>scss</find>
+      <find>gulp-sass</find>
+      <find>cleanSrc</find>
+      <find>header__</find>
+      <find>cleanDist</find>
+      <find>image</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -57,32 +96,35 @@
       <list>
         <option value="$PROJECT_DIR$/02 starter/package.json" />
         <option value="$PROJECT_DIR$/04 index/index.html" />
-        <option value="$PROJECT_DIR$/04 index/gulpfile.js" />
         <option value="$PROJECT_DIR$/04 index/work/js/common.js" />
         <option value="$PROJECT_DIR$/05 lessonmon/work/include/common/index-base.inc" />
         <option value="$PROJECT_DIR$/04 index/work/html/index.html" />
         <option value="$PROJECT_DIR$/04 index/work/include/base.inc" />
+        <option value="$PROJECT_DIR$/06 dongwon/package.json" />
+        <option value="$PROJECT_DIR$/06 dongwon/gulpfile.js" />
+        <option value="$PROJECT_DIR$/03 gyeongju/gulpfile.js" />
+        <option value="$PROJECT_DIR$/04 index/work/scss/base/_variables.scss" />
+        <option value="$PROJECT_DIR$/04 index/gulpfile.js" />
+        <option value="$PROJECT_DIR$/05 peachy/package.json" />
+        <option value="$PROJECT_DIR$/04 index/package.json" />
+        <option value="$PROJECT_DIR$/06 dongwon/work/html/index.html" />
+        <option value="$PROJECT_DIR$/05 peachy/work/scss/global.scss" />
+        <option value="$PROJECT_DIR$/04 index/work/scss/global.scss" />
+        <option value="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" />
+        <option value="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/00 animation/package.json" />
   </component>
-  <component name="ProjectConfigurationFiles">
-    <option name="files">
-      <list>
-        <option value="$PROJECT_DIR$/.idea/portfolio.iml" />
-        <option value="$PROJECT_DIR$/.idea/misc.xml" />
-        <option value="$PROJECT_DIR$/.idea/modules.xml" />
-        <option value="$PROJECT_DIR$/.idea/vcs.xml" />
-        <option value="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="953" />
-    <option name="width" value="974" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="796" />
+    <option name="width" value="1131" />
     <option name="height" value="1047" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -96,6 +138,24 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
+              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
+              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
+              <item name="work" type="462c0819:PsiDirectoryNode" />
+              <item name="scss" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -106,15 +166,21 @@
   <component name="PropertiesComponent">
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../peace0kumi.github.com" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/06 dongwon" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio\06 dongwon" />
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio\05 peachy" />
       <recent name="C:\Users\PC\Desktop\workspace\portfolio\04 index" />
     </key>
   </component>
@@ -147,16 +213,18 @@
       <workItem from="1554232305891" duration="219000" />
       <workItem from="1554235195360" duration="781000" />
       <workItem from="1554536462016" duration="623000" />
+      <workItem from="1555026902157" duration="5065000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8873000" />
+    <option name="totallyTimeSpent" value="13938000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.27915567" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21688655" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -168,7 +236,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" weight="0.41156462" />
+      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4047619" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -183,7 +251,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/04 index/gulpfile.js</url>
-          <line>164</line>
+          <line>188</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>
@@ -219,37 +287,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/04 index/index.html" />
-    <entry file="file://$PROJECT_DIR$/04 index/20170124_tab/스터디.txt">
+    <entry file="file://$PROJECT_DIR$/20170124_tab/스터디.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/additional-info-edit-after.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="57" selection-start-line="15" selection-start-column="57" selection-end-line="15" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/additional-info-edit-after.html" />
     <entry file="file://$PROJECT_DIR$/04 index/work/js/jquery.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/04 index/20170124_tab/js/tabs.js">
+    <entry file="file://$PROJECT_DIR$/20170124_tab/js/tabs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
           <caret line="10" column="3" selection-start-line="10" selection-start-column="3" selection-end-line="10" selection-end-column="3" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="17" lean-forward="true" selection-start-line="17" selection-end-line="17" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/04 index/work/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
@@ -257,20 +313,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/04 index/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="72" column="11" lean-forward="true" selection-start-line="72" selection-start-column="11" selection-end-line="72" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="9" column="27" selection-start-line="9" selection-start-column="27" selection-end-line="9" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/index.html" />
     <entry file="file://$PROJECT_DIR$/04 index/dist/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="336">
@@ -285,43 +328,172 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/additional-info-edit-before.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/agree-terms.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-coupon.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-coupon-none.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-point.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/buy-now-layer.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/include/common/index-base.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="4" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/additional-info-edit-before.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/agree-terms.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-coupon.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-coupon-none.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/benefit-point.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/html/mobile/buy-now-layer.html" />
+    <entry file="file://$PROJECT_DIR$/05 lessonmon/work/include/common/index-base.inc" />
     <entry file="file://$PROJECT_DIR$/04 index/work/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+        <state relative-caret-position="240">
+          <caret line="10" column="12" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03 gyeongju/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="22" lean-forward="true" selection-start-line="10" selection-start-column="22" selection-end-line="10" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/include/base.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/package-lock.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05 peachy/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03 gyeongju/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="358">
+          <caret line="154" column="22" lean-forward="true" selection-start-line="154" selection-start-column="22" selection-end-line="154" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/base/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="30" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/base/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/base/_mixin.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="619">
+          <caret line="49" column="5" lean-forward="true" selection-start-line="49" selection-start-column="5" selection-end-line="49" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/base/_reset.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="45" column="9" lean-forward="true" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05 peachy/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="4" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05 peachy/work/js/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/js/common.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/gulpfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="195" selection-start-line="195" selection-end-line="195" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05 peachy/work/include/base.inc">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/04 index/work/scss/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="188" column="22" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/05 peachy/work/scss/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="188" column="22" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1248">
+          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
         </state>
       </provider>
     </entry>
