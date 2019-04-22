@@ -2,21 +2,114 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f0d0cd98-3e10-4b16-afc6-673acec24e10" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/css/layout/default.css" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/css/layout/default.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/css/module/tabs.css" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/css/module/tabs.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/html/tabs.html" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/html/tabs.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/images/tabs.png" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/images/tabs.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/js/tabs.js" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/js/tabs.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/20170124_tab/스터디.txt" beforeDir="false" afterPath="$PROJECT_DIR$/20170124_tab/스터디.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/04 index/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/04 index/work/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/05 peachy/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/05 peachy/work/scss/global.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/css/global.css" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/dist/css/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/dist/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06 dongwon/work/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/html/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" beforeDir="false" afterPath="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/css/global.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/css/icon.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/image/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/js/vendor.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-DemiLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-DemiLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/NotoSansKR-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/dist/webfonts/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/gulpfile.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Black.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Black.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Black.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Bold.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Bold.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-DemiLight.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-DemiLight.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-DemiLight.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Light.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Light.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Light.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Medium.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Medium.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Medium.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Regular.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Regular.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Thin.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Thin.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/fonts/NotoSansKR-Thin.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/html/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-brands-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-brands-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-brands-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-brands-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-brands-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-regular-400.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-regular-400.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-regular-400.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-regular-400.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-regular-400.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-solid-900.eot" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-solid-900.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-solid-900.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-solid-900.woff" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/icon/fa-solid-900.woff2" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/image/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/include/base.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/include/footer.inc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/js/common.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/js/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_mixin.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_reset.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_animated.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_bordered-pulled.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_brands.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_core.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_fixed-width.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_icons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_larger.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_list.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_regular.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_rotated-flipped.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_shims.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_solid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_stacked.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_v4-shims.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/scss/icon/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/vendor/remodal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/06 dongwon/work/vendor/slick.js" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,45 +121,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1248">
-              <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -107,21 +162,24 @@
         <option value="$PROJECT_DIR$/04 index/gulpfile.js" />
         <option value="$PROJECT_DIR$/05 peachy/package.json" />
         <option value="$PROJECT_DIR$/04 index/package.json" />
-        <option value="$PROJECT_DIR$/06 dongwon/work/html/index.html" />
         <option value="$PROJECT_DIR$/05 peachy/work/scss/global.scss" />
         <option value="$PROJECT_DIR$/04 index/work/scss/global.scss" />
         <option value="$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" />
         <option value="$PROJECT_DIR$/06 dongwon/work/scss/global.scss" />
+        <option value="$PROJECT_DIR$/06 dongwon/work/html/index.html" />
+        <option value="$PROJECT_DIR$/03 gyeongju/work/html/index.html" />
+        <option value="$PROJECT_DIR$/06 dongwon/work/html/dist.html" />
       </list>
     </option>
   </component>
   <component name="PackageJsonUpdateNotifier">
     <dismissed value="$PROJECT_DIR$/00 animation/package.json" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="796" />
-    <option name="width" value="1131" />
-    <option name="height" value="1047" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="1039" />
+    <option name="y" value="447" />
+    <option name="width" value="1940" />
+    <option name="height" value="1061" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -131,6 +189,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -138,29 +197,10 @@
               <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
               <item name="portfolio" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="portfolio" type="b2602c69:ProjectViewProjectNode" />
-              <item name="portfolio" type="462c0819:PsiDirectoryNode" />
-              <item name="06 dongwon" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="scss" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -168,20 +208,22 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/06 dongwon" />
+    <property name="last_opened_file_path" value="C:/inetpub/wwwroot" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\PC\Desktop\workspace\portfolio" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\PC\Desktop\workspace\portfolio\06 dongwon" />
       <recent name="C:\Users\PC\Desktop\workspace\portfolio\05 peachy" />
       <recent name="C:\Users\PC\Desktop\workspace\portfolio\04 index" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio\06 dongwon" />
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio\06 dongwon\201904" />
+      <recent name="C:\Users\PC\Desktop\workspace\portfolio" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -213,22 +255,23 @@
       <workItem from="1554232305891" duration="219000" />
       <workItem from="1554235195360" duration="781000" />
       <workItem from="1554536462016" duration="623000" />
-      <workItem from="1555026902157" duration="5065000" />
+      <workItem from="1555026902157" duration="5262000" />
+      <workItem from="1555495278175" duration="748000" />
+      <workItem from="1555821366511" duration="2462000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13938000" />
+    <option name="totallyTimeSpent" value="17345000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21688655" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21687697" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32984716" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -236,7 +279,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.4047619" />
+      <window_info anchor="bottom" id="Terminal" order="9" weight="0.4609815" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -470,30 +513,61 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1248">
-          <caret line="62" column="30" lean-forward="true" selection-start-line="62" selection-start-column="30" selection-end-line="62" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state>
-          <caret column="17" lean-forward="true" selection-start-column="17" selection-end-column="17" />
+          <caret column="17" selection-start-column="17" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="23" column="16" selection-start-line="23" selection-start-column="16" selection-end-line="23" selection-end-column="16" />
+        <state relative-caret-position="431">
+          <caret line="57" column="81" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/201904/dist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding>
+            <element signature="e#120#126#0" expanded="true" />
+            <element signature="e#132#138#0" expanded="true" />
+            <element signature="n#style#0;n#spna#0;n#div#0;n#div#0;n#header#0;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#4;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#12;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#1;n#div#12;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#34288#34293#0" expanded="true" />
+            <element signature="e#36523#36529#1" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../IIS 바로가기.lnk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/03 gyeongju/work/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="688">
+          <caret line="50" column="45" selection-start-line="50" selection-start-column="45" selection-end-line="50" selection-end-column="45" />
         </state>
       </provider>
     </entry>
