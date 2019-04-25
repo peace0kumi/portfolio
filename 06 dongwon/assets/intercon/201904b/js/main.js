@@ -1,3 +1,4 @@
+/*
 $(document).ready(function(){
 
 	var isVisible1 = false;
@@ -13,7 +14,6 @@ $(document).ready(function(){
 
 
 	$(window).scroll(function(){
-
 	    if (checkVisible($('.post-contents01'))&&!isVisible1) {
 	        isVisible1=true;
 			setTimeout(function(){
@@ -159,14 +159,14 @@ function checkVisible( elm, eval ) {
 }
 
 
-/*
+/!*
 $('.post-header').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/main01.jpg'});
 $('.post-contents03').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/main03.jpg'});
 $('.post-contents07').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/post-contents07-back.jpg'});
 $('.post-contents09').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/main09.jpg'});
 $('.post-contents11').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/main11.jpg'});
 $('.post-contents09-m').parallax({imageSrc: 'http://promotion.socialmc.co.kr/dongwon/contents/intercon/201902a/img/main09_m.jpg'});
-*/
+*!/
 
 // swiper1
 new Swiper('.swiper1', {
@@ -201,4 +201,4 @@ var textTitle = $(".post-header .post-header-content .post-text").text();
 $(".header-post .header-post-title em").html(textInfo);
 $(".header-post .header-post-p").html(textTitle);
 
-});
+});*/
