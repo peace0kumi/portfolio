@@ -175,6 +175,8 @@ new Swiper('.swiper1', {
 		nextEl : '.swiper-button-next', 
 		prevEl : '.swiper-button-prev', 
 	},
+
+
 });
 
 // swiper2
