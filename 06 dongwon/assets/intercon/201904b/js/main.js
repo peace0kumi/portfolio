@@ -4,7 +4,17 @@ $(document).ready(function(){
     var isVisible3 = false;
     var isVisible4 = false;
     var isVisible5 = false;
+    var isVisible6 = false;
 
+    if (checkVisible($('.post-contents.primary')) && !isVisible1) {
+        isVisible1=true;
+        setTimeout(function () {
+            $(".post-contents.primary #typewriter1").css("opacity", "1");
+            var typer = document.getElementById('typewriter1');
+            typewriter = setupTypewriter(typewriter1);
+            typewriter.type();
+        }, 250);
+    }
     $(window).scroll(function(){
         if (checkVisible($('.post-contents.primary')) && !isVisible1) {
             isVisible1=true;
@@ -13,7 +23,7 @@ $(document).ready(function(){
                 var typer = document.getElementById('typewriter1');
                 typewriter = setupTypewriter(typewriter1);
                 typewriter.type();
-            }, 300);
+            }, 250);
         }
         if (checkVisible($('.post-contents.episode-first')) && !isVisible2) {
             isVisible2=true;
@@ -24,32 +34,30 @@ $(document).ready(function(){
                 typewriter.type();
             }, 500);
         }
-        if (checkVisible($('.post-contents.has-slider')) && !isVisible3) {
+        if (checkVisible($('.post-contents.secondary')) && !isVisible3) {
             isVisible3=true;
             setTimeout(function () {
-                $(".post-contents.has-slider #typewriter3").css("opacity", "1");
+                $(".post-contents.secondary #typewriter3").css("opacity", "1");
                 var typer = document.getElementById('typewriter3');
                 typewriter = setupTypewriter(typewriter3);
                 typewriter.type();
             }, 500);
         }
-
-        if (checkVisible($('.post-contents.final')) && !isVisible4) {
+        if (checkVisible($('.post-contents.has-slider')) && !isVisible4) {
             isVisible4=true;
             setTimeout(function () {
-                $(".post-contents.final #typewriter4").css("opacity", "1");
+                $(".post-contents.has-slider #typewriter4").css("opacity", "1");
                 var typer = document.getElementById('typewriter4');
                 typewriter = setupTypewriter(typewriter4);
                 typewriter.type();
-            }, 400);
+            }, 500);
             setTimeout(function () {
-                $(".post-contents.final #typewriter5").css("opacity", "1");
+                $(".post-contents.has-slider #typewriter5").css("opacity", "1");
                 var typer = document.getElementById('typewriter5');
                 typewriter = setupTypewriter(typewriter5);
                 typewriter.type();
-            }, 2600);
+            }, 500);
         }
-
         if (checkVisible($('.post-contents.final')) && !isVisible5) {
             isVisible5=true;
             setTimeout(function () {
@@ -62,6 +70,21 @@ $(document).ready(function(){
                 $(".post-contents.final #typewriter7").css("opacity", "1");
                 var typer = document.getElementById('typewriter7');
                 typewriter = setupTypewriter(typewriter7);
+                typewriter.type();
+            }, 2600);
+        }
+        if (checkVisible($('.post-contents.final')) && !isVisible6) {
+            isVisible6=true;
+            setTimeout(function () {
+                $(".post-contents.final #typewriter8").css("opacity", "1");
+                var typer = document.getElementById('typewriter8');
+                typewriter = setupTypewriter(typewriter8);
+                typewriter.type();
+            }, 400);
+            setTimeout(function () {
+                $(".post-contents.final #typewriter9").css("opacity", "1");
+                var typer = document.getElementById('typewriter9');
+                typewriter = setupTypewriter(typewriter9);
                 typewriter.type();
             }, 2600);
         }
@@ -100,4 +123,4 @@ $(document).ready(function(){
         loop: true,
         autoplay: true
     });
-})
+});
