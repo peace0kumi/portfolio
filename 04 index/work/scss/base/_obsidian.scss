@@ -1,0 +1,119 @@
+/**
+ * Obsidian style
+ * ported by Alexander Marenin (http://github.com/ioncreature)
+ */
+
+.highlight {
+	margin: 20px 0;
+	padding: 10px 0;
+	border-radius: 5px;
+	border: 1px solid #eee;
+	table {
+		table-layout: fixed;
+		width: 100%;
+	}
+	.hljs {
+		display: block;
+		overflow-x: auto;
+		padding: 0;
+		background: #fff;
+		border-radius: 5px;
+		color: #eee;
+		&.cs {
+			color: #ccc;
+			.hljs-meta {
+				color: #0a6ab9;
+			}
+		}
+		&-keyword,
+		&-selector-tag,
+		&-literal,
+		&-selector-id {
+			color: #93c763;
+		}
+		&-number {
+			color: #ffcd22;
+		}
+		&-attribute {
+			color: #668bb0;
+		}
+		&-code,
+		&-class,
+		&-title,
+		&-section {
+			color: white;
+		}
+		&-regexp,
+		&-link {
+			color: #d39745;
+		}
+		&-meta {
+			color: #557182;
+		}
+		&-tag,
+		&-name,
+		&-bullet,
+		&-subst,
+		&-emphasis,
+		&-type,
+		&-built_in,
+		&-selector-attr,
+		&-selector-pseudo,
+		&-addition,
+		&-variable,
+		&-template-tag,
+		&-template-variable {
+			color: #8cbbad;
+		}
+		&-string,
+		&-symbol {
+			color: #ec7600;
+		}
+		&-comment,
+		&-quote,
+		&-deletion {
+			color: #818e96;
+		}
+		&-selector-class {
+			color: #a082bd;
+		}
+		&-ln {
+			width: 100%;
+			tr {
+				border: 0;
+			}
+		}
+		&-ln-code {
+			padding-left: 10px;
+			color: #9d9d9d;
+			font-size: 13px;
+		}
+		&-keyword,
+		&-selector-tag,
+		&-literal,
+		&-doctag,
+		&-title,
+		&-section,
+		&-type,
+		&-name,
+		&-strong {
+			font-weight: bold;
+		}
+		&-ln-numbers {
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			text-align: center;
+			color: #949494;
+			border-right: 1px solid #CCC;
+			vertical-align: top;
+			padding-right: 5px;
+			width: 50px;
+			font-size: 12px;
+		}
+	}
+}
+
