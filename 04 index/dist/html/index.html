@@ -75,7 +75,7 @@
             <section class="components__item">
                 <h2 class="components__title">업무요건</h2>
                 <section class="components__item">
-                    <div class="">
+                    <div class="table table--theme-a row-table">
                         <table>
                             <caption class="hidden">업무요건</caption>
                             <colgroup>
@@ -127,37 +127,39 @@
             <section class="components__item">
                 <h2 class="components__title">설치프로그램</h2>
                 <section class="components__item">
-                    <table>
-                        <caption>설치프로그램</caption>
-                        <colgroup>
-                            <col style="width:70px;">
-                            <col style="width:20%;">
-                            <col>
-                            <col style="width:20%;">
-                        </colgroup>
-                        <thead>
-                            <tr>
-                                <th scope="col" class="strong">설치순서</th>
-                                <th scope="col" class="strong">프로그램명</th>
-                                <th scope="col" class="strong">다운로드</th>
-                                <th scope="col" class="strong">버전</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td>1</td>
-                                <td>Node.js</td>
-                                <td><a href="https://nodejs.org/ko/download/" target="_blank">https://nodejs.org/ko/download/</a></td>
-                                <td>10.13.0 (npm 6.4.1 포함)</td>
-                            </tr>
-                            <tr>
-                                <td>2</td>
-                                <td>Tortoise SVN</td>
-                                <td><a href="https://tortoisesvn.net/downloads.html" target="_blank">https://tortoisesvn.net/downloads.html</a></td>
-                                <td>1.11.0</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                    <div class="table table--theme-a">
+                        <table>
+                            <caption class="hidden">설치프로그램</caption>
+                            <colgroup>
+                                <col style="width:70px;">
+                                <col style="width:20%;">
+                                <col>
+                                <col style="width:20%;">
+                            </colgroup>
+                            <thead>
+                                <tr>
+                                    <th scope="col" class="strong">설치순서</th>
+                                    <th scope="col" class="strong">프로그램명</th>
+                                    <th scope="col" class="strong">다운로드</th>
+                                    <th scope="col" class="strong">버전</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>1</td>
+                                    <td>Node.js</td>
+                                    <td><a href="https://nodejs.org/ko/download/" target="_blank">https://nodejs.org/ko/download/</a></td>
+                                    <td>10.13.0 (npm 6.4.1 포함)</td>
+                                </tr>
+                                <tr>
+                                    <td>2</td>
+                                    <td>Tortoise SVN</td>
+                                    <td><a href="https://tortoisesvn.net/downloads.html" target="_blank">https://tortoisesvn.net/downloads.html</a></td>
+                                    <td>1.11.0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </section>
 
                 <h2 class="components__title">프로젝트 빌드도구 설치 <p class="support-text" data-content="'node-gyp'를 사용하는 패키지들이 있을 경우 해당 설치를 건너뛰면 오류가 나므로 미리 설치해둘 필요있음"></p>
@@ -224,7 +226,7 @@
             <h1 class="components__title components__title--emphasized">폴더구조</h1>
             <!-- 기본 -->
             <section class="components__item">
-                <div class="">
+                <div class="table table--theme-a">
                     <table>
                         <caption class="hidden">폴더구조 - 1 Depth, 2 Depth, 3 Depth, 4 Depth, 설명</caption>
                         <colgroup>
@@ -565,7 +567,7 @@ Ex) 잘못된 작성 방법
 
                 <h3 class="components__title">접근성</h3>
                 <section class="components__item">
-                    <div class="">
+                    <div class="table table--theme-a">
                         <table>
                             <caption class="hidden">접근성</caption>
                             <colgroup>
@@ -1326,168 +1328,206 @@ Ex) 잘못된 작성 방법
                 <!-- //modal -->
 
                 <!-- accordion -->
-                <section class="components" id="accordion" data-js="accordion">
+                <section class="components__item">
                     <h2 class="components__title">accordion</h2>
 
-                    <!-- 기본 -->
-                    <section class="components__item">
-                        <h2 class="components__title">DEFAULT</h2>
-
-                        <!-- DEMO -->
-                        <h3 class="components__title">DEMO</h3>
-                        <section class="components__item--demo">
-                            <div class="accordion" id="accrodion">
-                                <!-- 행 -->
-                                <div class="accordion__row">
-                                    <a class="accordion__button button" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                        Accordion Heading #1
-                                    </a>
-                                    <div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne" data-parent="#accordion">
-                                        <div class="accordion__contents">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
+                    <!-- DEMO -->
+                    <h3 class="components__title">DEMO</h3>
+                    <section class="components__item--demo">
+                        <div class="accordion" id="accrodion" data-js="accordion">
+                            <!-- 행 -->
+                            <div class="accordion__row">
+                                <a class="accordion__button button" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    Accordion Heading #1
+                                </a>
+                                <div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne" data-parent="#accordion">
+                                    <div class="accordion__contents">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
-                                <!-- //행 -->
-
-                                <!-- 행 -->
-                                <div class="accordion__row">
-                                    <a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        Accordion Heading #2
-                                    </a>
-                                    <div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo" data-parent="#accordion">
-                                        <div class="accordion__contents">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //행 -->
-
-                                <!-- 행 -->
-                                <div class="accordion__row">
-                                    <a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        Accordion Heading #3
-                                    </a>
-                                    <div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree" data-parent="#accordion">
-                                        <div class="accordion__contents">
-                                            Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- //행 -->
                             </div>
-                        </section>
-                        <!-- //DEMO -->
+                            <!-- //행 -->
 
-                        <!-- CODE -->
-                        <h3 class="components__title">CODE</h3>
-                        <section class="components__item--code">
-                            <pre class="brush: html">
-					<div class="accordion" id="accrodion">
-						<!-- 행 -->
-						<div class="accordion__row">
-							<a class="accordion__button button" id="headingOne" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseOne">
-								Accordion Heading #1
-							</a>
-							<div id="collapseOne" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingOne" data-parent="#accordion">
-								<div class="accordion__contents">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<!-- //행 -->
+                            <!-- 행 -->
+                            <div class="accordion__row">
+                                <a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                    Accordion Heading #2
+                                </a>
+                                <div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo" data-parent="#accordion">
+                                    <div class="accordion__contents">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //행 -->
 
-						<!-- 행 -->
-						<div class="accordion__row">
-							<a class="accordion__button button" id="headingTwo" role="button" data-js="accordion__anchor" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-								Accordion Heading #2
-							</a>
-							<div id="collapseTwo" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingTwo" data-parent="#accordion">
-								<div class="accordion__contents">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<!-- //행 -->
-
-						<!-- 행 -->
-						<div class="accordion__row">
-							<a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-								Accordion Heading #3
-							</a>
-							<div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree" data-parent="#accordion">
-								<div class="accordion__contents">
-									Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-								</div>
-							</div>
-						</div>
-						<!-- //행 -->
-					</div></pre>
-                        </section>
-                        <!-- //CODE -->
+                            <!-- 행 -->
+                            <div class="accordion__row">
+                                <a class="accordion__button button" id="headingThree" role="button" data-js="accordion__anchor" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                    Accordion Heading #3
+                                </a>
+                                <div id="collapseThree" class="accordion__body" data-js="accordion__panel" aria-labelledby="headingThree" data-parent="#accordion">
+                                    <div class="accordion__contents">
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+                                        3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+                                        Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+                                        Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+                                        Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+                                        raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- //행 -->
+                        </div>
                     </section>
-                    <!-- //기본 -->
+                    <!-- //DEMO -->
+
+                    <!-- CODE -->
+                    <h3 class="components__title">CODE</h3>
+                    <section class="components__item--code">
+                        <figure class="highlight html">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            <pre><code>&lt;div class=&quot;accordion&quot; id=&quot;accrodion&quot;&gt;
+	&lt;!-- 행 --&gt;
+	&lt;div class=&quot;accordion__row&quot;&gt;
+		&lt;a class=&quot;accordion__button button&quot; id=&quot;headingOne&quot; role=&quot;button&quot; data-js=&quot;accordion__anchor&quot; data-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseOne&quot;&gt;
+			Accordion Heading #1
+		&lt;/a&gt;
+		&lt;div id=&quot;collapseOne&quot; class=&quot;accordion__body&quot; data-js=&quot;accordion__panel&quot; aria-labelledby=&quot;headingOne&quot; data-parent=&quot;#accordion&quot;&gt;
+			&lt;div class=&quot;accordion__contents&quot;&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+				3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+				Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+				raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //행 --&gt;
+
+	&lt;!-- 행 --&gt;
+	&lt;div class=&quot;accordion__row&quot;&gt;
+		&lt;a class=&quot;accordion__button button&quot; id=&quot;headingTwo&quot; role=&quot;button&quot; data-js=&quot;accordion__anchor&quot; data-target=&quot;#collapseTwo&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseTwo&quot;&gt;
+			Accordion Heading #2
+		&lt;/a&gt;
+		&lt;div id=&quot;collapseTwo&quot; class=&quot;accordion__body&quot; data-js=&quot;accordion__panel&quot; aria-labelledby=&quot;headingTwo&quot; data-parent=&quot;#accordion&quot;&gt;
+			&lt;div class=&quot;accordion__contents&quot;&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+				3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+				Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+				raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //행 --&gt;
+
+	&lt;!-- 행 --&gt;
+	&lt;div class=&quot;accordion__row&quot;&gt;
+		&lt;a class=&quot;accordion__button button&quot; id=&quot;headingThree&quot; role=&quot;button&quot; data-js=&quot;accordion__anchor&quot; data-target=&quot;#collapseThree&quot; aria-expanded=&quot;false&quot; aria-controls=&quot;collapseThree&quot;&gt;
+			Accordion Heading #3
+		&lt;/a&gt;
+		&lt;div id=&quot;collapseThree&quot; class=&quot;accordion__body&quot; data-js=&quot;accordion__panel&quot; aria-labelledby=&quot;headingThree&quot; data-parent=&quot;#accordion&quot;&gt;
+			&lt;div class=&quot;accordion__contents&quot;&gt;Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid.
+				3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod.
+				Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et.
+				Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident.
+				Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table,
+				raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	&lt;!-- //행 --&gt;
+&lt;/div&gt;
+</code></pre>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+                    </section>
+                    <!-- //CODE -->
                 </section>
                 <!-- //accordion -->
 
                 <!-- dropdown -->
-                <section class="components" id="dropdown">
+                <section class="components__item">
                     <h2 class="components__title">dropdown</h2>
-                    <!-- 기본 -->
-                    <section class="components__item">
-                        <h2 class="components__title">DEFAULT</h2>
 
-                        <!-- DEMO -->
-                        <h3 class="components__title">DEMO</h3>
-                        <section class="components__item--demo">
-                            <!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 -->
-                            <div class="dropdown" data-js="dropdown">
-                                <a class="dropdown__toggle button" href="#" role="button" data-target="#dropdownMenu" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="false" aria-activedescendant="DROPDOWN">
-                                    DROPDOWN</a>
-                                <div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu">
-                                    <a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_1">THIS CONTENTS1</a>
-                                    <a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_2">THIS CONTENTS2</a>
-                                    <a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item1_3">THIS CONTENTS3</a>
-                                </div>
+                    <!-- DEMO -->
+                    <h3 class="components__title">DEMO</h3>
+                    <section class="components__item--demo">
+                        <!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 -->
+                        <div class="dropdown" id="dropdown" data-js="dropdown">
+                            <a class="dropdown__toggle button" href="#" role="button" data-target="#dropdownMenu" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="false" aria-activedescendant="DROPDOWN">
+                                DROPDOWN</a>
+                            <div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu">
+                                <a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_1">THIS CONTENTS1</a>
+                                <a class="dropdown__item" data-js="dropdown__item" href="#" id="item1_2">THIS CONTENTS2</a>
+                                <a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item1_3">THIS CONTENTS3</a>
                             </div>
-                            <div class="dropdown dropdown--dark" data-js="dropdown">
-                                <a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu1" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="true" aria-activedescendant="DROPDOWN">
-                                    DROPDOWN</a>
-                                <div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu1">
-                                    <a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_1">THIS CONTENTS1</a>
-                                    <a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_2">THIS CONTENTS2</a>
-                                    <a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item2_3">THIS CONTENTS3</a>
-                                </div>
+                        </div>
+                        <div class="dropdown dropdown--dark" data-js="dropdown">
+                            <a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu1" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="true" aria-activedescendant="DROPDOWN">
+                                DROPDOWN</a>
+                            <div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu1">
+                                <a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_1">THIS CONTENTS1</a>
+                                <a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_2">THIS CONTENTS2</a>
+                                <a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item2_3">THIS CONTENTS3</a>
                             </div>
-                        </section>
-                        <!-- //DEMO -->
-
-                        <!-- CODE -->
-                        <h3 class="components__title">CODE</h3>
-                        <section class="components__item--code">
-                            <pre class="brush: html">
-					<div class="dropdown" data-js="dropdown">
-						<a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="false" aria-activedescendant="DROPDOWN">
-							DROPDOWN</a>
-						<div class="dropdown__menu" data-js="dropdown__panel" id="dropdownMenu">
-							<a class="dropdown__item" data-js="dropdown__item" href="#">THIS CONTENTS1</a>
-							<a class="dropdown__item" data-js="dropdown__item" href="#">THIS CONTENTS2</a>
-							<a class="dropdown__item dropdown__divider" data-js="dropdown__item"href="#">THIS CONTENTS3</a>
-						</div>
-					</div>
-					<div class="dropdown dropdown--dark" data-js="dropdown">
-						<a class="dropdown__toggle button" href="#" role="button" data-target="dropdownMenu1" data-js="dropdown__anchor" aria-haspopup="true" aria-expanded="true" aria-activedescendant="DROPDOWN">
-							DROPDOWN</a>
-						<div class="dropdown__menu" data-js="dropdown_panel" id="dropdownMenu1">
-							<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_1">THIS CONTENTS1</a>
-							<a class="dropdown__item" data-js="dropdown__item" href="#" id="item2_2">THIS CONTENTS3</a>
-							<a class="dropdown__item dropdown__divider" data-js="dropdown__item" href="#" id="item2_3">THIS CONTENTS3</a>
-						</div>
-					</div></pre>
-                        </section>
-                        <!-- //CODE -->
+                        </div>
                     </section>
-                    <!-- //기본 -->
+                    <!-- //DEMO -->
+
+                    <!-- CODE -->
+                    <h3 class="components__title">CODE</h3>
+                    <section class="components__item--code">
+                        <figure class="highlight html">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td class="code">
+                                            <pre><code>&lt;!-- dropdown__menu에 is-active 추가 시 드롭다운 활성화 --&gt;
+&lt;div class=&quot;dropdown&quot; id=&quot;dropdown&quot; data-js=&quot;dropdown&quot;&gt;
+	&lt;a class=&quot;dropdown__toggle button&quot; href=&quot;#&quot; role=&quot;button&quot; data-target=&quot;#dropdownMenu&quot; data-js=&quot;dropdown__anchor&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot; aria-activedescendant=&quot;DROPDOWN&quot;&gt;
+		DROPDOWN&lt;/a&gt;
+	&lt;div class=&quot;dropdown__menu&quot; data-js=&quot;dropdown__panel&quot; id =&quot;dropdownMenu&quot;&gt;
+		&lt;a class=&quot;dropdown__item&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item1_1&quot;&gt;THIS CONTENTS1&lt;/a&gt;
+		&lt;a class=&quot;dropdown__item&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item1_2&quot;&gt;THIS CONTENTS2&lt;/a&gt;
+		&lt;a class=&quot;dropdown__item dropdown__divider&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item1_3&quot;&gt;THIS CONTENTS3&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;dropdown dropdown--dark&quot; data-js=&quot;dropdown&quot;&gt;
+	&lt;a class=&quot;dropdown__toggle button&quot; href=&quot;#&quot; role=&quot;button&quot; data-target=&quot;dropdownMenu1&quot; data-js=&quot;dropdown__anchor&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;true&quot; aria-activedescendant=&quot;DROPDOWN&quot;&gt;
+		DROPDOWN&lt;/a&gt;
+	&lt;div class=&quot;dropdown__menu&quot; data-js=&quot;dropdown__panel&quot; id=&quot;dropdownMenu1&quot;&gt;
+		&lt;a class=&quot;dropdown__item&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item2_1&quot;&gt;THIS CONTENTS1&lt;/a&gt;
+		&lt;a class=&quot;dropdown__item&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item2_2&quot;&gt;THIS CONTENTS2&lt;/a&gt;
+		&lt;a class=&quot;dropdown__item dropdown__divider&quot; data-js=&quot;dropdown__item&quot; href=&quot;#&quot; id=&quot;item2_3&quot;&gt;THIS CONTENTS3&lt;/a&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+</code></pre>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </figure>
+
+                    </section>
+                    <!-- //CODE -->
                 </section>
                 <!-- //dropdown -->
             </section>

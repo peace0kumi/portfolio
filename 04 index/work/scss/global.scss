@@ -28,6 +28,9 @@
 	background-color: $accent;
     color: $white;
 }
+:root {
+	font-size: 10px;
+}
 html, body {
 	height: 100vh;
 }
@@ -80,7 +83,7 @@ body {
 	&__link {
 		float: left;
 		color: #000;
-		font-size: 14px;
+		font-size: 1.4rem;
 		text-decoration: none;
 		height: 100px;
 		.header__image {
@@ -120,7 +123,7 @@ body {
 		&__title {
 			margin-bottom: 10px;
 			padding-left: 10px;
-			font-size: 11px;
+			font-size: 1.1rem;
 			font-weight: bold;
 			color: #666;
 		}
@@ -133,7 +136,7 @@ body {
 			vertical-align: middle;
 			text-transform: uppercase;
 			text-decoration: none;
-			font-size: 14px;
+			font-size: 1.4rem;
 			letter-spacing: 0.5px;
 			color: #000;
 			white-space: nowrap;
@@ -202,7 +205,7 @@ body {
 		h2.components__title {
 			margin-bottom: 20px;
 			padding-left: 5px;
-			font-size: 14px;
+			font-size: 1.4rem;
 			letter-spacing: .1rem;
 			line-height: 1.5;
 			font-weight: bold;
@@ -211,7 +214,7 @@ body {
 		h3.components__title {
 			display: inline-block;
 			padding: 5px;
-			font-size: 14px;
+			font-size: 1.4rem;
 			border: 1px $accent dashed;
 		}
 		&--demo,
@@ -229,7 +232,7 @@ body {
 	&__title {
 		margin: 0;
 		padding: 0;
-		font-size: 20px;
+		font-size: 2rem;
 		font-weight: normal;
 		text-transform: uppercase;
 		&--emphasized {
@@ -248,14 +251,33 @@ body {
 			}
 		}
 	}
+	ol {
+		padding-left: 2rem;
+		list-style: decimal-leading-zero;
+	}
+}
+.table {
+	table {
+		width: 100%;
+		table-layout: fixed;
+		font-size: 1.3rem;
+		th, td {
+			padding: 10px;
+		}
+	}
+	&--theme-a {
+		th {
+			@include rgba($accent, .5);
+			text-align: center;
+			& + th {
+				border-top: 1px solid;
+				border-color: $accent;
+			}
+		}
+	}
 }
 
 /* media query */
-@include tablet {
-	.aside {
-		max-width: 160px;
-	}
-}
 @include mobile {
 	.header {
 		display: none;
