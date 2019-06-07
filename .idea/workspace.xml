@@ -121,7 +121,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375" />
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -141,7 +141,15 @@
       <find>header__</find>
       <find>cleanDist</find>
       <find>image</find>
+      <find>braces</find>
+      <find>braces&quot;: &quot;^2.3.1&quot;</find>
     </findStrings>
+    <replaceStrings>
+      <replace>braces&quot;: &quot;&gt;=2.3.1&quot;</replace>
+    </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\박영후\Desktop\workspace\portfolio</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -176,10 +184,10 @@
     <dismissed value="$PROJECT_DIR$/00 animation/package.json" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1039" />
-    <option name="y" value="447" />
-    <option name="width" value="1940" />
-    <option name="height" value="1061" />
+    <option name="x" value="85" />
+    <option name="y" value="-8" />
+    <option name="width" value="1843" />
+    <option name="height" value="1096" />
   </component>
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -208,7 +216,7 @@
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="C:/inetpub/wwwroot" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -258,20 +266,21 @@
       <workItem from="1555026902157" duration="5262000" />
       <workItem from="1555495278175" duration="748000" />
       <workItem from="1555821366511" duration="2462000" />
+      <workItem from="1559894433770" duration="157000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17345000" />
+    <option name="totallyTimeSpent" value="17502000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="2575" height="1415" extended-state="6" />
+    <frame x="85" y="-8" width="1843" height="1096" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21687697" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2166205" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32984716" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32905984" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -392,20 +401,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/include/base.inc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/package-lock.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="624">
-          <caret line="26" column="6" selection-start-line="26" selection-start-column="6" selection-end-line="26" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/include/base.inc" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/package-lock.json" />
     <entry file="file://$PROJECT_DIR$/05 peachy/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="24">
@@ -413,13 +410,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/gulpfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="68" column="34" selection-start-line="68" selection-start-column="34" selection-end-line="68" selection-end-column="34" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/gulpfile.js" />
     <entry file="file://$PROJECT_DIR$/03 gyeongju/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="358">
@@ -458,13 +449,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="12" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/package.json" />
     <entry file="file://$PROJECT_DIR$/05 peachy/package.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
@@ -482,9 +467,7 @@
     <entry file="file://$PROJECT_DIR$/05 peachy/work/js/common.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/js/common.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/js/common.js" />
     <entry file="file://$PROJECT_DIR$/04 index/gulpfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="189">
@@ -513,57 +496,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="17" selection-start-column="17" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="431">
-          <caret line="57" column="81" selection-start-line="57" selection-start-column="81" selection-end-line="57" selection-end-column="81" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/06 dongwon/201904/dist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="552">
-          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
-          <folding>
-            <element signature="e#120#126#0" expanded="true" />
-            <element signature="e#132#138#0" expanded="true" />
-            <element signature="n#style#0;n#spna#0;n#div#0;n#div#0;n#header#0;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#4;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#12;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#iframe#0;n#div#0;n#div#0;n#div#1;n#div#12;n#div#1;n#article#0;n#main#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#34288#34293#0" expanded="true" />
-            <element signature="e#36523#36529#1" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../../IIS 바로가기.lnk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="47" selection-start-line="1" selection-start-column="47" selection-end-line="1" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_variables.scss" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_fonts.scss" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/global.scss" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/scss/base/_layout.scss" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/work/html/index.html" />
+    <entry file="file://$PROJECT_DIR$/06 dongwon/201904/dist.html" />
+    <entry file="file://$PROJECT_DIR$/../../IIS 바로가기.lnk" />
     <entry file="file://$PROJECT_DIR$/03 gyeongju/work/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
